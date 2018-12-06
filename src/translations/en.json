@@ -1,0 +1,26 @@
+{
+  "navigation.home": "Home",
+  "navigation.ourstory": "Our story",
+  "navigation.services": "Services",
+  "navigation.gallery": "Gallery",
+  "navigation.contact": "Contact us",
+  "navigation.press": "Press",
+
+  "home.header": "Flors Carolina",
+  "home.description": "The oldest florist in Barcelona.",
+
+  "ourstory.header": "Our story",
+  "ourstory.description": "We're the oldest florist in Barcelona",
+
+  "gallery.header": "Gallery",
+  "gallery.description": "Here are some examples of our work",
+
+  "press.header": "Press",
+  "press.description": "In the media...",
+
+  "contact.header": "Contact us",
+  "contact.description": "Send us a request.",
+
+  "services.header": "Our services",
+  "services.description": "What we offer."
+}
