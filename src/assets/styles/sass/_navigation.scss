@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  src: url("./assets/fonts/PlayfairDisplay-Regular.otf") format("opentype");
+  font-family: "Futura-Book-Regular";
+  src: url("./assets/fonts/Futura-Book-Regular.otf") format("opentype");
+}
+
+body {
+  background-color: #fff;
+
+  div .navigation-container {
+    .navigation,
+    .language-picker {
+      width: 100%;
+      list-style: none;
+      .languagepicker-item {
+        font-family: "Futura-Book-Regular";
+        display: inline-block;
+        margin: 0 15px 0 0;
+        color: #2d2d2d;
+        font-size: 0.8em;
+        text-decoration: none;
+      }
+      .languagepicker-item:hover {
+        text-decoration: underline;
+      }
+      .nav-item {
+        font-family: "PlayfairDisplay-Regular";
+        font-size: 1.2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        display: inline-block;
+        margin: 0 20px 0 0;
+        color: #2d2d2d;
+        a {
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -5,14 +5,14 @@ export default class LanguagePicker extends PureComponent {
     const { changeLanguage } = this.props;
     return (
       <div>
-        <ul className="nav justify-content-end">
-          <li id="en" className="nav-item" onClick={changeLanguage}>
+        <ul className="language-picker">
+          <li id="en" className="languagepicker-item" onClick={changeLanguage}>
             EN
           </li>
-          <li id="es" className="nav-item" onClick={changeLanguage}>
+          <li id="es" className="languagepicker-item" onClick={changeLanguage}>
             ES
           </li>
-          <li id="cat" className="nav-item" onClick={changeLanguage}>
+          <li id="cat" className="languagepicker-item" onClick={changeLanguage}>
             CAT
           </li>
         </ul>
