@@ -1,0 +1,26 @@
+{
+  "navigation.home": "Inici",
+  "navigation.ourstory": "La nostra història",
+  "navigation.services": "Serveis",
+  "navigation.gallery": "Galeria",
+  "navigation.contact": "Contacti amb nosaltres",
+  "navigation.press": "Notícies",
+
+  "home.header": "Flors Carolina",
+  "home.description": "La floristeria més antiga de Barcelona.",
+
+  "ourstory.header": "La nostra història",
+  "ourstory.description": "Establert a La Rambla, Barcelona, el 1888.",
+
+  "gallery.header": "Galeria",
+  "gallery.description": "Aquests són alguns exemples del nostre treball.",
+
+  "press.header": "Notícies",
+  "press.description": "Als mitjans de comunicació ...",
+
+  "contact.header": "Contacti amb nosaltres",
+  "contact.description": "Envieu-nos una sol·licitud.",
+
+  "services.header": "Els nostres serveis",
+  "services.description": "El que oferim"
+}
