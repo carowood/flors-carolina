@@ -6,9 +6,9 @@ import Translate from "../translations/translate";
 class Navigation extends React.Component {
   render() {
     return (
-      <React.Fragment>
-        <ul id="navigation">
-          <LanguagePicker changeLanguage={this.props.changeLanguage} />
+      <div className="navigation-container">
+        <LanguagePicker changeLanguage={this.props.changeLanguage} />
+        <ul className="navigation">
           <li className="nav-item">
             <Link to="/">
               <Translate string={"navigation.home"} />
@@ -40,7 +40,7 @@ class Navigation extends React.Component {
             </Link>
           </li>
         </ul>
-      </React.Fragment>
+      </div>
     );
   }
 }
