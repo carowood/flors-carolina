@@ -1,7 +1,7 @@
 import React from "react";
-import Translate from "../../translations/translate";
+import Translate from "../../translations/Translate";
 
-export default function contact() {
+export default function Contact() {
   return (
     <div>
       <h1>

@@ -1,7 +1,7 @@
 import React from "react";
-import Translate from "../../translations/translate";
+import Translate from "../../translations/Translate";
 
-export default function press() {
+export default function Press() {
   return (
     <div>
       <h1>
