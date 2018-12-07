@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LanguagePicker from "../components/language-picker";
-import Translate from "../translations/translate";
+import LanguagePicker from "../components/LanguagePicker";
+import Translate from "../translations/Translate";
 
 class Navigation extends React.Component {
   render() {

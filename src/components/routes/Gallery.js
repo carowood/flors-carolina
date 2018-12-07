@@ -1,7 +1,7 @@
 import React from "react";
-import Translate from "../../translations/translate";
+import Translate from "../../translations/Translate";
 
-export default function gallery() {
+export default function Gallery() {
   return (
     <div>
       <h1>

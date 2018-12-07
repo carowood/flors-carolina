@@ -1,7 +1,7 @@
 import React from "react";
-import Translate from "../../translations/translate";
+import Translate from "../../translations/Translate";
 
-export default function services() {
+export default function Services() {
   return (
     <div>
       <h1>
