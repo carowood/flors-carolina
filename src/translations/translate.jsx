@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { LocaleContext } from "./locale-context";
+import { LocaleContext } from "./LocaleContext";
 
 import en from "./en.json";
 import es from "./es.json";
