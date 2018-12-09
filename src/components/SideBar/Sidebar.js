@@ -11,9 +11,7 @@ const sideBar = props => {
 
   return (
     <nav className={drawerClasses}>
-      <button className="sidebar-button" onClick={props.close}>
-        X
-      </button>
+      <button className="sidebar-button" onClick={props.close} />
       <Navigation />
       <LanguagePicker changeLanguage={props.changeLanguage} />
     </nav>
