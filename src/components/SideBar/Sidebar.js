@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "../Navigation";
-import LanguagePicker from "../LanguagePicker";
+import LanguagePicker from "../LanguagePicker/LanguagePicker";
 
 const sideBar = props => {
   let drawerClasses = "sidebar";

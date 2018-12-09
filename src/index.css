@@ -11,8 +11,9 @@ html {
 body {
   height: 100%;
   font-family: Futura-Book-Regular;
-  margin: 100px 0 0 50px;
+  margin: 7rem 0 0 50px;
   padding: 0;
+  position: fixed;
   background-color: #ffd1ff;
 
   /* 
