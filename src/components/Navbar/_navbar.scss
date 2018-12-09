@@ -1,50 +1,48 @@
 .navbar {
   position: fixed;
   width: 100%;
-  background-color: purple;
+  //background-color: white;
+  background: transparent;
   top: 0;
   left: 0;
   height: 56px;
-}
+  .navbar__navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    .navbar__logo a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+    .spacer {
+      flex: 1;
+    }
+    .navbar__navigation-items {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        li {
+          padding: 0 0.5rem;
+          a {
+            color: white;
+            text-decoration: none;
+          }
+          a:hover,
+          a:active {
+            color: orange;
+          }
+        }
+      }
+    }
 
-.navbar__toggle-button {
-  margin-right: 1rem;
-}
-.navbar__logo a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.spacer {
-  flex: 1;
-}
-
-.navbar__navigation {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 1rem;
-}
-
-.navbar__navigation-items ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.navbar__navigation-items li {
-  padding: 0 0.5rem;
-}
-
-.navbar__navigation-items a {
-  color: white;
-  text-decoration: none;
-}
-
-.navbar__navigation-items a:hover,
-.navbar__navigation-items a:active {
-  color: orange;
+    .navbar__toggle-button {
+      margin-right: 1rem;
+    }
+  }
 }
 
 @media (max-width: 768px) {
