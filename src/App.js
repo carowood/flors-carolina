@@ -13,27 +13,24 @@ import Backdrop from "./components/Backdrop/Backdrop";
 import "./App.scss";
 
 class App extends Component {
+  // CHANGE THE DEFAULT LANG TO CAT or ES ?
   state = {
-    sideBarOpen: false
+    menuSideBarOpen: false,
+    preferredLocale: "en"
   };
-  drawerToggleClickHandler = () => {
+
+  menuSidebarToggleClickHandler = () => {
     this.setState(prevState => {
-      return { sideBarOpen: !prevState.sideBarOpen };
+      return { menuSideBarOpen: !prevState.menuSideBarOpen };
     });
   };
 
-  backdropClickHandler = () => {
-    this.setState({ sideBarOpen: false });
+  menuBackdropClickHandler = () => {
+    this.setState({ menuSideBarOpen: false });
   };
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      preferredLocale: "en"
-    };
-  }
-
-  changeLanguage = ({ currentTarget: { id } }) => {
+  changeLanguage = event => {
+    let id = event.currentTarget.id;
     this.setState({
       preferredLocale: id
     });
@@ -42,21 +39,21 @@ class App extends Component {
   render() {
     let menuBackdrop;
 
-    if (this.state.sideBarOpen) {
-      menuBackdrop = <Backdrop click={this.backdropClickHandler} />;
+    if (this.state.menuSideBarOpen) {
+      menuBackdrop = <Backdrop click={this.menuBackdropClickHandler} />;
     }
 
     return (
-      <div className="App" style={{ height: "100%" }}>
+      <div className="App">
         <LocaleContext.Provider value={this.state.preferredLocale}>
           <Navbar
             changeLanguage={this.changeLanguage}
-            drawerClickHandler={this.drawerToggleClickHandler}
+            menuSidebarClickHandler={this.menuSidebarToggleClickHandler}
           />
           <SideBar
             changeLanguage={this.changeLanguage}
-            show={this.state.sideBarOpen}
-            close={this.backdropClickHandler}
+            show={this.state.menuSideBarOpen}
+            close={this.menuBackdropClickHandler}
           />
           {menuBackdrop}
           <Route exact path="/" component={Home} />
