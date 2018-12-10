@@ -5,7 +5,6 @@ import LanguagePicker from "../LanguagePicker/LanguagePicker";
 
 class navbar extends React.Component {
   render() {
-    console.log("this", this.context.value);
     return (
       <header className="navbar">
         <nav className="navbar__navigation">
@@ -18,7 +17,7 @@ class navbar extends React.Component {
             <Navigation />
           </div>
           <div className="navbar__toggle-button">
-            <SidebarToggleButton click={this.props.drawerClickHandler} />
+            <SidebarToggleButton click={this.props.menuSidebarClickHandler} />
           </div>
         </nav>
       </header>
