@@ -2,7 +2,7 @@ import React from "react";
 import SidebarToggleButton from "../SideBar/SidebarToggleButton";
 import Navigation from "../Navigation";
 import LanguagePicker from "../LanguagePicker/LanguagePicker";
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/logo/logo-white.svg";
 
 class navbar extends React.Component {
   render() {
