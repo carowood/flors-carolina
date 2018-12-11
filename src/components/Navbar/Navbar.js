@@ -11,6 +11,7 @@ class navbar extends React.Component {
         <nav className="navbar__navigation">
           <div className="navbar__logo"> 
           <img src={logo}  alt="logo" />
+            <a href="/">Flors Carolina</a>
           </div>
           <div className="spacer" />
           <div className="navbar__navigation-items">
