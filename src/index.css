@@ -3,9 +3,9 @@ html {
 }
 @font-face {
   font-family: "PlayfairDisplay-Regular";
-  src: url("./assets/fonts/PlayfairDisplay-Regular.otf") format("opentype");
+  src: url("./scss/settings/fonts/PlayfairDisplay-Regular.otf") format("opentype");
   font-family: "Futura-Book-Regular";
-  src: url("./assets/fonts/Futura-Book-Regular.otf") format("opentype");
+  src: url("./scss/settings/fonts/Futura-Book-Regular.otf") format("opentype");
 }
 
 body {
