@@ -3,9 +3,9 @@ html {
 }
 @font-face {
   font-family: "PlayfairDisplay-Regular";
-  src: url("./assets/fonts/PlayfairDisplay-Regular.otf") format("opentype");
+  src: url("./scss/settings/fonts/PlayfairDisplay-Regular.otf") format("opentype");
   font-family: "Futura-Book-Regular";
-  src: url("./assets/fonts/Futura-Book-Regular.otf") format("opentype");
+  src: url("./scss/settings/fonts/Futura-Book-Regular.otf") format("opentype");
 }
 
 body {
@@ -14,7 +14,13 @@ body {
   margin: 7rem 0 0 50px;
   padding: 0;
   position: fixed;
-  background-color: #ffd1ff;
+  background: url(./assets/images/background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
 
   /* 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
