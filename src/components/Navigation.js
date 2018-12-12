@@ -6,11 +6,11 @@ class Navigation extends React.Component {
   render() {
     return (
       <ul className="">
-        <li className="">
+        {/* <li className="">
           <Link to="/">
             <Translate string={"navigation.home"} />
           </Link>
-        </li>
+        </li> */}
         <li className="">
           <Link to="/ourstory">
             <Translate string={"navigation.ourstory"} />
