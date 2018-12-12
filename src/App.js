@@ -56,7 +56,7 @@ class App extends Component {
             close={this.menuBackdropClickHandler}
           />
           {menuBackdrop}
-          <Route exact path="/" component={Home} />
+          {/* <Route exact path="/" component={Home} /> */}
           <Route path="/ourstory" component={OurStory} />
           <Route path="/services" component={Services} />
           <Route path="/gallery" component={Gallery} />

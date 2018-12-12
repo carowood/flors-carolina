@@ -31,10 +31,13 @@
           a {
             color: white;
             text-decoration: none;
+            font-family: $font-playfair;
+            text-transform:uppercase;
+            letter-spacing: 5px;
           }
           a:hover,
           a:active {
-            color: orange;
+            color:orange;
           }
         }
       }
