@@ -49,13 +49,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $screen-md) {
   .navbar__navigation-items {
     display: none;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: $screen-md) {
   .navbar__toggle-button {
     display: none;
   }
