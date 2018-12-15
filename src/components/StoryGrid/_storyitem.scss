@@ -1,0 +1,101 @@
+.story-item__container {
+  width: 10em;
+  margin: 10px;
+  height: 20em;
+  overflow: hidden;
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: 0.5vw;
+  .story-item__image-container {
+    border: 1px solid blue;
+    position: relative;
+
+    height: auto;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-attachment: fixed;
+
+    // background-size: cover;
+
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+
+    .story-item__image {
+      width: 100%;
+      //height: 100%;
+    }
+    .story-item__title {
+      color: white;
+      position: absolute;
+      top: 4em;
+      left: 0px;
+      background-color: rgba(128, 0, 128, 0.8);
+      padding: 5px 20px;
+    }
+  }
+  .story-item__bodytext {
+    border: 1px solid blue;
+    height: 7em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// .story-grid__container {
+//   padding: 0.5vw;
+//   font-size: 0;
+//   display: -ms-flexbox;
+//   -ms-flex-wrap: wrap;
+//   -ms-flex-direction: column;
+//   -webkit-flex-flow: row wrap;
+//   flex-flow: row wrap;
+//   display: -webkit-box;
+//   display: flex;
+//   height: auto;
+//   .story-item__image-container {
+//     width: 100%;
+//     height: auto;
+//     border: 1px solid blue;
+//     position: relative;
+//     .story-item__image {
+//       width: 100%;
+//       //height: 100%;
+//     }
+//     .story-item__title {
+//       color: white;
+//       position: absolute;
+//       top: 4em;
+//       left: 0px;
+//       background-color: rgba(128, 0, 128, 0.8);
+//       padding: 5px 20px;
+//     }
+//   }
+//   .story-item__bodytext {
+//     border: 1px solid blue;
+//     height: 7em;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//   }
+// }
+// .story-grid__container div {
+//   -webkit-box-flex: auto;
+//   -ms-flex: auto;
+//   flex: auto;
+//   width: 200px;
+//   margin: 0.5vw;
+// }
+
+@media screen and (max-width: 400px) {
+  header div {
+    margin: 0;
+  }
+  header {
+    padding: 0;
+  }
+}

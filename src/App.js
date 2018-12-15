@@ -47,6 +47,7 @@ class App extends Component {
       <div className="App">
         <LocaleContext.Provider value={this.state.preferredLocale}>
           <Navbar
+            path={this.props}
             changeLanguage={this.changeLanguage}
             menuSidebarClickHandler={this.menuSidebarToggleClickHandler}
           />
@@ -57,7 +58,7 @@ class App extends Component {
           />
           {menuBackdrop}
           {/* <Route exact path="/" component={Home} /> */}
-          <Route path="/ourstory" component={OurStory} />
+          <Route path="/ourstory" component={OurStory} hello="test" />
           <Route path="/services" component={Services} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/contact" component={Contact} />

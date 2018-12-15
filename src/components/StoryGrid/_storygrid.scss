@@ -1,0 +1,15 @@
+.story-grid__container {
+  border: 2px solid green;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+  height: auto;
+  padding: 0.5vw;
+  width: 80%;
+  margin: 0 auto;
+}

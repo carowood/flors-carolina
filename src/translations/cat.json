@@ -22,5 +22,9 @@
   "contact.description": "Envieu-nos una sol·licitud.",
 
   "services.header": "Els nostres serveis",
-  "services.description": "El que oferim"
+  "services.description": "El que oferim",
+
+  "test.lorem_short": "Lorem ipsum dolor sit amet",
+  "test.lorem_medium": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tortor nibh. Fusce et dui sed dui egestas tempus eget et libero. Nullam nec risus faucibus, condimentum urna ac, luctus dolor. ",
+  "test.lorem_long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tortor nibh. Fusce et dui sed dui egestas tempus eget et libero. Nullam nec risus faucibus, condimentum urna ac, luctus dolor. Etiam mi mi, fermentum ac nibh eu, molestie pulvinar mi. Aenean tincidunt hendrerit tincidunt. Cras nec dignissim tellus. Maecenas ornare pretium urna dapibus feugiat. Morbi pretium id metus vitae commodo. Nulla nec quam ac quam consequat feugiat. Sed id enim libero"
 }
