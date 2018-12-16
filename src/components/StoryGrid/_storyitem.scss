@@ -1,0 +1,55 @@
+.story-item__container {
+  background-color: $color-white;
+  height: auto;
+  width: auto;
+  margin: 10px;
+  .story-item__content {
+    position: relative;
+    .story-item__image-container {
+      height: 300px;
+      width: auto;
+      background-color: white;
+    }
+    .story-item__image {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .story-item__title {
+      color: $color-white;
+      position: absolute;
+      bottom: 5%;
+      left: 0px;
+      background-color: $color-main-purple;
+      padding: 5px 20px;
+    }
+  }
+  .story-item__bodytext {
+    padding: 10px;
+    color: $color-grey;
+    text-align: justify;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .text {
+    font-size: 4vw;
+  }
+}
+
+// <div className="story-item__container">
+//         <div className="story-item__content">
+//           <div className="story-item__image-container">
+//             <img className="story-item__image" src={image} alt="story" />
+//           </div>
+//           <p className="story-item__title">{this.props.children[0]}</p>
+//         </div>
+
+//         <p className="story-item__bodytext">{this.props.children[1]}</p>
+//       </div>
