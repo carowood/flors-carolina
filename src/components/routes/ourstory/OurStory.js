@@ -1,7 +1,8 @@
 import React from "react";
-import Translate from "../../translations/Translate";
-import StoryItem from "../../components/StoryGrid/StoryItem";
-import StoryGridContainer from "../../components/StoryGrid/StoryGridContainer";
+import Translate from "../../../translations/Translate";
+import StoryItem from "../../StoryGrid/StoryItem";
+
+import StoryGridContainer from "../../StoryGrid/StoryGridContainer";
 
 export default function OurStory(props) {
   return (
