@@ -58,7 +58,7 @@ class App extends Component {
           />
           {menuBackdrop}
           {/* <Route exact path="/" component={Home} /> */}
-          <Route path="/ourstory" component={OurStory} hello="test" />
+          <Route path="/ourstory" component={OurStory} />
           <Route path="/services" component={Services} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/contact" component={Contact} />

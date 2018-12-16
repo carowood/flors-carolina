@@ -1,101 +1,55 @@
 .story-item__container {
-  width: 10em;
+  background-color: $color-white;
+  height: auto;
+  width: auto;
   margin: 10px;
-  height: 20em;
-  overflow: hidden;
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
-  width: 200px;
-  margin: 0.5vw;
-  .story-item__image-container {
-    border: 1px solid blue;
+  .story-item__content {
     position: relative;
-
-    height: auto;
-    // background-repeat: no-repeat;
-    // background-position: center center;
-    // background-attachment: fixed;
-
-    // background-size: cover;
-
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
-
+    .story-item__image-container {
+      height: 300px;
+      width: auto;
+      background-color: white;
+    }
     .story-item__image {
+      height: 300px;
       width: 100%;
-      //height: 100%;
+      object-fit: cover;
     }
     .story-item__title {
-      color: white;
+      color: $color-white;
       position: absolute;
-      top: 4em;
+      bottom: 5%;
       left: 0px;
-      background-color: rgba(128, 0, 128, 0.8);
+      background-color: $color-main-purple;
       padding: 5px 20px;
     }
   }
   .story-item__bodytext {
-    border: 1px solid blue;
-    height: 7em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    padding: 10px;
+    color: $color-grey;
+    text-align: justify;
   }
 }
 
-// .story-grid__container {
-//   padding: 0.5vw;
-//   font-size: 0;
-//   display: -ms-flexbox;
-//   -ms-flex-wrap: wrap;
-//   -ms-flex-direction: column;
-//   -webkit-flex-flow: row wrap;
-//   flex-flow: row wrap;
-//   display: -webkit-box;
-//   display: flex;
-//   height: auto;
-//   .story-item__image-container {
-//     width: 100%;
-//     height: auto;
-//     border: 1px solid blue;
-//     position: relative;
-//     .story-item__image {
-//       width: 100%;
-//       //height: 100%;
-//     }
-//     .story-item__title {
-//       color: white;
-//       position: absolute;
-//       top: 4em;
-//       left: 0px;
-//       background-color: rgba(128, 0, 128, 0.8);
-//       padding: 5px 20px;
-//     }
-//   }
-//   .story-item__bodytext {
-//     border: 1px solid blue;
-//     height: 7em;
-//     white-space: nowrap;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//   }
-// }
-// .story-grid__container div {
-//   -webkit-box-flex: auto;
-//   -ms-flex: auto;
-//   flex: auto;
-//   width: 200px;
-//   margin: 0.5vw;
-// }
-
-@media screen and (max-width: 400px) {
-  header div {
-    margin: 0;
-  }
-  header {
-    padding: 0;
+@media (min-width: $screen-md) {
+  .text {
+    font-size: 16px;
   }
 }
+
+@media (max-width: $screen-sm) {
+  .text {
+    font-size: 4vw;
+  }
+}
+
+// <div className="story-item__container">
+//         <div className="story-item__content">
+//           <div className="story-item__image-container">
+//             <img className="story-item__image" src={image} alt="story" />
+//           </div>
+//           <p className="story-item__title">{this.props.children[0]}</p>
+//         </div>
+
+//         <p className="story-item__bodytext">{this.props.children[1]}</p>
+//       </div>

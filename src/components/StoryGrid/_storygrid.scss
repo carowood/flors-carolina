@@ -1,15 +1,12 @@
 .story-grid__container {
-  border: 2px solid green;
-  display: flex;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  display: -webkit-box;
-  display: flex;
-  height: auto;
-  padding: 0.5vw;
-  width: 80%;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0 20px;
+}
+
+@media (max-width: $screen-sm) {
+  .story-grid__container {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    margin: 0 10px;
+  }
 }

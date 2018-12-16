@@ -14,31 +14,31 @@ export default function OurStory(props) {
       </p> */}
 
       <StoryGridContainer>
-        <StoryItem image="/images/background.jpg">
+        <StoryItem image="/images/HP0019.jpg">
           <Translate string={"test.lorem_short"} />
           <Translate string={"test.lorem_medium"} />
         </StoryItem>
-        <StoryItem image="/images/background.jpg">
+        <StoryItem image="/images/HP0019.jpg">
           <Translate string={"test.lorem_short"} />
           <Translate string={"test.lorem_long"} />
         </StoryItem>
-        <StoryItem image="/images/background.jpg">
+        <StoryItem image="/images/HP0019.jpg">
           <Translate string={"test.lorem_short"} />
           <Translate string={"test.lorem_long"} />
         </StoryItem>
-        <StoryItem image="/images/background.jpg">
+        <StoryItem image="/images/HP0019.jpg">
           <Translate string={"test.lorem_short"} />
           <Translate string={"test.lorem_long"} />
         </StoryItem>
-        <StoryItem image="/images/background.jpg">
+        <StoryItem image="/images/HP0019.jpg">
           <Translate string={"test.lorem_short"} />
           <Translate string={"test.lorem_long"} />
         </StoryItem>
-        <StoryItem image="/images/background.jpg">
+        <StoryItem image="/images/HP0019.jpg">
           <Translate string={"test.lorem_short"} />
           <Translate string={"test.lorem_long"} />
         </StoryItem>
-        <StoryItem image="/images/background.jpg">
+        <StoryItem image="/images/HP0019.jpg">
           <Translate string={"test.lorem_short"} />
           <Translate string={"test.lorem_long"} />
         </StoryItem>
