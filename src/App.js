@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
-import Home from "./components/routes/Home";
-import OurStory from "./components/routes/OurStory";
-import Contact from "./components/routes/Contact";
-import Gallery from "./components/routes/Gallery";
-import Services from "./components/routes/Services";
-import Press from "./components/routes/Press";
+import Home from "./components/routes/home/Home";
+import OurStory from "./components/routes/ourstory/OurStory";
+import Contact from "./components/routes/contact/Contact";
+import Gallery from "./components/routes/gallery/Gallery";
+import Services from "./components/routes/services/Services";
+import Press from "./components/routes/press/Press";
 import { LocaleContext } from "./translations/LocaleContext";
 import Navbar from "./components/Navbar/Navbar";
 import SideBar from "./components/SideBar/Sidebar";

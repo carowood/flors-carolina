@@ -21,10 +21,15 @@
   "contact.header": "Contact us",
   "contact.description": "Send us a request.",
 
-  "services.header": "Our services",
-  "services.description": "What we offer.",
-
   "test.lorem_short": "Lorem ipsum dolor sit amet",
   "test.lorem_medium": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tortor nibh. Fusce et dui sed dui egestas tempus eget et libero. Nullam nec risus faucibus, condimentum urna ac, luctus dolor. ",
-  "test.lorem_long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tortor nibh. Fusce et dui sed dui egestas tempus eget et libero. Nullam nec risus faucibus, condimentum urna ac, luctus dolor. Etiam mi mi, fermentum ac nibh eu, molestie pulvinar mi. Aenean tincidunt hendrerit tincidunt. Cras nec dignissim tellus. Maecenas ornare pretium urna dapibus feugiat. Morbi pretium id metus vitae commodo. Nulla nec quam ac quam consequat feugiat. Sed id enim libero"
+  "test.lorem_long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tortor nibh. Fusce et dui sed dui egestas tempus eget et libero. Nullam nec risus faucibus, condimentum urna ac, luctus dolor. Etiam mi mi, fermentum ac nibh eu, molestie pulvinar mi. Aenean tincidunt hendrerit tincidunt. Cras nec dignissim tellus. Maecenas ornare pretium urna dapibus feugiat. Morbi pretium id metus vitae commodo. Nulla nec quam ac quam consequat feugiat. Sed id enim libero",
+
+  "services.wheader1": "Weddings",
+  "services.wdescription": "On your special day we would love to create the most personalized flower arrangements.The services we offer are:",
+  "services.woption1": "- Bride bouquet & groom detail.",
+  "services.woption2": "- Restaurant decoration & center pieces.",
+  "services.woption3": "- Groom party details.",
+  "services.woption4": "- Church decoration.",
+  "services.woption5": "- Special gifts such as parents bouquets"
 }
