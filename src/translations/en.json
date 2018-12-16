@@ -21,6 +21,13 @@
   "contact.header": "Contact us",
   "contact.description": "Send us a request.",
 
-  "services.header": "Our services",
-  "services.description": "What we offer."
+
+  "services.wheader1":"Weddings",
+  "services.wdescription": "On your special day we would love to create the most personalized flower arrangements.The services we offer are:",
+  "services.woption1": "- Bride bouquet & groom detail.",
+  "services.woption2": "- Restaurant decoration & center pieces.",
+  "services.woption3": "- Groom party details.",
+  "services.woption4": "- Church decoration.",
+  "services.woption5": "- Special gifts such as parents bouquets"
+
 }
