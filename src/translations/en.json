@@ -21,6 +21,9 @@
   "contact.header": "Contact us",
   "contact.description": "Send us a request.",
 
-  "services.header": "Our services",
-  "services.description": "What we offer."
+  "services.wedding": {
+        "header":"Weddings",
+        "description": "On your special day we would love to create the most personalized flower arrangements.The services we offer are:"
+  }
+
 }
