@@ -23,7 +23,10 @@
 
 
   "services.wheader1":"Weddings",
-  "services.wdescription": "On your special day we would love to create the most personalized flower arrangements.The services we offer are:",
+  "services.wdescription1": "On your special day we love to create",
+  "services.wdescription2":"personalized flower arrangements.",
+  "services.wdescription3":"The services we offer are:",
+
   "services.woption1": "- Bride bouquet & groom detail.",
   "services.woption2": "- Restaurant decoration & center pieces.",
   "services.woption3": "- Groom party details.",

@@ -21,6 +21,14 @@
   "contact.header": "Contáctenos",
   "contact.description": "Envíenos una solicitud.",
 
-  "services.header": "Nuestros servicios",
-  "services.description": "Lo que ofrecemos."
+  "services.wheader1":"Enlaces Matrimoniales",
+  "services.wdescription1": "En vuestro día especial creamos conjuntos",
+  "services.wdescription2": "florales personalizados.",
+  "services.wdescription3": "Los servicios que ofrecemos son:",
+
+  "services.woption1": "- Ramo de novia y detalle del novio a conjunto.",
+  "services.woption2": "- Detalles para padrinos o testigos.",
+  "services.woption3": "- Decoración del banquete",
+  "services.woption4": "- Decoración de la iglesia.",
+  "services.woption5": "- Detalles para los padres."
 }
