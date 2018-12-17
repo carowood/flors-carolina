@@ -35,15 +35,15 @@
   "services.woption4": "- Decoración de la iglesia.",
   "services.woption5": "- Detalles para los padres.",
 
-  "services.bheader1":"Bouquets & Center Pieces",
-  "services.bdescription1":"We create personalized bouquets for any kind of special",
-  "services.bdescription2":"occasion. Let us know what you dream on given and if",
-  "services.bdescription3":"you have any flower preference. We also have personal",
-  "services.bdescription4":"delivery. Bouquets can be a present on:",
-  "services.boption1":"- Birthday gifts.",
-  "services.boption2":"- Maternity gifts.",
-  "services.boption3":"- Special celebrations.",
-  "services.boption4":"- Retirement gift.",
-  "services.boption5":"- Special dinner arrangement"
-
+  "services.bheader1":"Ramos & Centros",
+  "services.bdescription1":"Creamos ramos y centros de flores personalizados",
+  "services.bdescription2":"para cualquier ocasión especial. Los realizamos",
+  "services.bdescription3":"acorde con la ocasión y flores de preferencia.",
+  "services.bdescription4":"Realizamos envíos a domicilio.",
+  "services.bdescription5":"Son perfectos para ocasiones como:",
+  "services.boption1":"- Cumpleaños.",
+  "services.boption2":"- Regalo de maternidad.",
+  "services.boption3":"- Jubilaciones.",
+  "services.boption4":"- Celebraciones especiales.",
+  "services.boption5":"- Cenas especiales"
 }
