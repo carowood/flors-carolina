@@ -29,10 +29,22 @@
   "services.wdescription1": "En vuestro día especial creamos conjuntos",
   "services.wdescription2": "florales personalizados.",
   "services.wdescription3": "Los servicios que ofrecemos son:",
-
   "services.woption1": "- Ramo de novia y detalle del novio a conjunto.",
   "services.woption2": "- Detalles para padrinos o testigos.",
   "services.woption3": "- Decoración del banquete",
   "services.woption4": "- Decoración de la iglesia.",
-  "services.woption5": "- Detalles para los padres."
+  "services.woption5": "- Detalles para los padres.",
+
+  "services.bheader1":"Bouquets & Center Pieces",
+  "services.bdescription1":"We create personalized bouquets for any kind of special",
+  "services.bdescription2":"occasion. Let us know what you dream on given and if",
+  "services.bdescription3":"you have any flower preference. We also have personal",
+  "services.bdescription4":"delivery. Bouquets can be a present on:",
+  "services.boption1":"- Birthday gifts.",
+  "services.boption2":"- Maternity gifts.",
+  "services.boption3":"- Special celebrations.",
+  "services.boption4":"- Retirement gift.",
+  "services.boption5":"- Special dinner arrangement"
+
+
 }
