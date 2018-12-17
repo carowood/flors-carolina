@@ -28,10 +28,23 @@
   "services.wheader1":"Enllaços Matrimonials",
   "services.wdescription1": "En el vostre dia creem conjunts de flors personalitzats.",
   "services.wdescription2": "Els serveis que oferim són:",
-
   "services.woption1": "- Ram de núvia i detall del nuvi a conjunt. ",
   "services.woption2": "- Detalls per al nuvi i padrins.",
   "services.woption3": "- Decoració del banquet.",
   "services.woption4": "- Decoració de l'església.",
-  "services.woption5": "- Detalls per als pares."
+  "services.woption5": "- Detalls per als pares.",
+
+  "services.bheader1":"Ramos & Centros",
+  "services.bdescription1":"Creem rams i centres de flors personalitzats",
+  "services.bdescription2":"per a qualsevol ocasió especial. Els realitzem",
+  "services.bdescription3":"d'acord amb l'ocasió i flors de preferència.",
+  "services.bdescription4":"Realitzem enviaments a domicili.",
+  "services.bdescription5":"Són perfectes per a ocasions com:",
+  "services.boption1":"- Aniversaris.",
+  "services.boption2":"- Regal de maternitat.",
+  "services.boption3":"- Jubilacions.",
+  "services.boption4":"- Celebracions especials.",
+  "services.boption5":"- Sopars especials"
+
+
 }
