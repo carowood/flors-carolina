@@ -27,5 +27,27 @@
   "test.year": "1920",
   "test.lorem_short": "Lorem ipsum dolor sit amet",
   "test.lorem_medium": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tortor nibh. Fusce et dui sed dui egestas tempus eget et libero. Nullam nec risus faucibus, condimentum urna ac, luctus dolor. ",
-  "test.lorem_long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tortor nibh. Fusce et dui sed dui egestas tempus eget et libero. Nullam nec risus faucibus, condimentum urna ac, luctus dolor. Etiam mi mi, fermentum ac nibh eu, molestie pulvinar mi. Aenean tincidunt hendrerit tincidunt. Cras nec dignissim tellus. Maecenas ornare pretium urna dapibus feugiat. Morbi pretium id metus vitae commodo. Nulla nec quam ac quam consequat feugiat. Sed id enim libero"
+  "test.lorem_long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tortor nibh. Fusce et dui sed dui egestas tempus eget et libero. Nullam nec risus faucibus, condimentum urna ac, luctus dolor. Etiam mi mi, fermentum ac nibh eu, molestie pulvinar mi. Aenean tincidunt hendrerit tincidunt. Cras nec dignissim tellus. Maecenas ornare pretium urna dapibus feugiat. Morbi pretium id metus vitae commodo. Nulla nec quam ac quam consequat feugiat. Sed id enim libero",
+
+  "services.wheader1": "Enlaces Matrimoniales",
+  "services.wdescription1": "En vuestro día especial creamos conjuntos",
+  "services.wdescription2": "florales personalizados.",
+  "services.wdescription3": "Los servicios que ofrecemos son:",
+  "services.woption1": "- Ramo de novia y detalle del novio a conjunto.",
+  "services.woption2": "- Detalles para padrinos o testigos.",
+  "services.woption3": "- Decoración del banquete",
+  "services.woption4": "- Decoración de la iglesia.",
+  "services.woption5": "- Detalles para los padres.",
+
+  "services.bheader1": "Ramos & Centros",
+  "services.bdescription1": "Creamos ramos y centros de flores personalizados",
+  "services.bdescription2": "para cualquier ocasión especial. Los realizamos",
+  "services.bdescription3": "acorde con la ocasión y flores de preferencia.",
+  "services.bdescription4": "Realizamos envíos a domicilio.",
+  "services.bdescription5": "Son perfectos para ocasiones como:",
+  "services.boption1": "- Cumpleaños.",
+  "services.boption2": "- Regalo de maternidad.",
+  "services.boption3": "- Jubilaciones.",
+  "services.boption4": "- Celebraciones especiales.",
+  "services.boption5": "- Cenas especiales"
 }

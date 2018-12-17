@@ -1,0 +1,26 @@
+.bouquets {
+  margin:0px;
+  padding:0px;
+  background-color:yellow;
+  &_title{
+    font-family:$font-playfair;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+  &_description{
+    margin:10px;
+    font-family:$font-futura-book;
+    ul {
+      list-style: none;
+    }
+  }
+  &_options{
+    margin:20px;
+    font-family:$font-futura-book;
+    ul{
+      list-style:none;
+    }
+  }
+
+}

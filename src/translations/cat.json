@@ -27,5 +27,26 @@
   "test.year": "1920",
   "test.lorem_short": "Lorem ipsum dolor sit amet",
   "test.lorem_medium": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tortor nibh. Fusce et dui sed dui egestas tempus eget et libero. Nullam nec risus faucibus, condimentum urna ac, luctus dolor. ",
-  "test.lorem_long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tortor nibh. Fusce et dui sed dui egestas tempus eget et libero. Nullam nec risus faucibus, condimentum urna ac, luctus dolor. Etiam mi mi, fermentum ac nibh eu, molestie pulvinar mi. Aenean tincidunt hendrerit tincidunt. Cras nec dignissim tellus. Maecenas ornare pretium urna dapibus feugiat. Morbi pretium id metus vitae commodo. Nulla nec quam ac quam consequat feugiat. Sed id enim libero"
+  "test.lorem_long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet tortor nibh. Fusce et dui sed dui egestas tempus eget et libero. Nullam nec risus faucibus, condimentum urna ac, luctus dolor. Etiam mi mi, fermentum ac nibh eu, molestie pulvinar mi. Aenean tincidunt hendrerit tincidunt. Cras nec dignissim tellus. Maecenas ornare pretium urna dapibus feugiat. Morbi pretium id metus vitae commodo. Nulla nec quam ac quam consequat feugiat. Sed id enim libero",
+
+  "services.wheader1": "Enllaços Matrimonials",
+  "services.wdescription1": "En el vostre dia creem conjunts de flors personalitzats.",
+  "services.wdescription2": "Els serveis que oferim són:",
+  "services.woption1": "- Ram de núvia i detall del nuvi a conjunt. ",
+  "services.woption2": "- Detalls per al nuvi i padrins.",
+  "services.woption3": "- Decoració del banquet.",
+  "services.woption4": "- Decoració de l'església.",
+  "services.woption5": "- Detalls per als pares.",
+
+  "services.bheader1": "Ramos & Centros",
+  "services.bdescription1": "Creem rams i centres de flors personalitzats",
+  "services.bdescription2": "per a qualsevol ocasió especial. Els realitzem",
+  "services.bdescription3": "d'acord amb l'ocasió i flors de preferència.",
+  "services.bdescription4": "Realitzem enviaments a domicili.",
+  "services.bdescription5": "Són perfectes per a ocasions com:",
+  "services.boption1": "- Aniversaris.",
+  "services.boption2": "- Regal de maternitat.",
+  "services.boption3": "- Jubilacions.",
+  "services.boption4": "- Celebracions especials.",
+  "services.boption5": "- Sopars especials"
 }
