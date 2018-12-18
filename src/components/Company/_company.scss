@@ -1,6 +1,7 @@
-.bouquets {
+.company {
   margin:0px;
   padding:0px;
+
   &_title{
     font-family:$font-playfair;
     font-size:30px;
@@ -14,12 +15,4 @@
       list-style: none;
     }
   }
-  &_options{
-    margin:20px;
-    font-family:$font-futura-book;
-    ul{
-      list-style:none;
-    }
-  }
-
 }
