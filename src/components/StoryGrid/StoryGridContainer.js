@@ -61,6 +61,15 @@ export default class StoryGridContainer extends React.Component {
           <Translate string={"test.year"} />
           <Translate string={"test.lorem_long"} />
         </StoryItem>
+        <StoryItem
+          sid="story-item-6"
+          image="/images/shopfront.jpg"
+          selected={this.state.selected}
+          onClick={this.storyItemClickHandler}
+        >
+          <Translate string={"test.year"} />
+          <Translate string={"test.lorem_long"} />
+        </StoryItem>
       </div>
     );
   }
