@@ -1,5 +1,4 @@
 import React from "react";
-import Translate from "../../translations/Translate";
 
 export default class StoryItem extends React.Component {
   render() {
@@ -18,7 +17,7 @@ export default class StoryItem extends React.Component {
           <div className="story-item__image-container">
             <img className="story-item__image" src={image} alt="story" />
             <p className="story-item__title">
-              <a href="#">{this.props.children[0]}</a>
+              <a href="/">{this.props.children[0]}</a>
             </p>
           </div>
         </div>

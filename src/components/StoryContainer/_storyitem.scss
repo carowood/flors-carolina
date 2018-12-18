@@ -41,6 +41,11 @@ div.story-item-main__container {
   }
 }
 
+@media (max-width: $screen-md) {
+  div.story-item-main__container {
+    display: none;
+  }
+}
 // @media (max-width: $screen-sm) {
 //   div.story-item-main__container {
 //     background-color: blue;
