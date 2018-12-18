@@ -16,7 +16,7 @@ class App extends Component {
   // CHANGE THE DEFAULT LANG TO CAT or ES ?
   state = {
     menuSideBarOpen: false,
-    preferredLocale: "es"
+    preferredLocale: "en"
   };
 
   menuSidebarToggleClickHandler = () => {
