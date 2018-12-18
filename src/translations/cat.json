@@ -38,15 +38,32 @@
   "services.woption4": "- Decoració de l'església.",
   "services.woption5": "- Detalls per als pares.",
 
-  "services.bheader1": "Ramos & Centros",
-  "services.bdescription1": "Creem rams i centres de flors personalitzats",
-  "services.bdescription2": "per a qualsevol ocasió especial. Els realitzem",
-  "services.bdescription3": "d'acord amb l'ocasió i flors de preferència.",
-  "services.bdescription4": "Realitzem enviaments a domicili.",
-  "services.bdescription5": "Són perfectes per a ocasions com:",
-  "services.boption1": "- Aniversaris.",
-  "services.boption2": "- Regal de maternitat.",
-  "services.boption3": "- Jubilacions.",
-  "services.boption4": "- Celebracions especials.",
-  "services.boption5": "- Sopars especials"
+  "services.bheader1":"Ramos & Centros",
+  "services.bdescription1":"Creem rams i centres de flors personalitzats",
+  "services.bdescription2":"per a qualsevol ocasió especial. Els realitzem",
+  "services.bdescription3":"d'acord amb l'ocasió i flors de preferència.",
+  "services.bdescription4":"Realitzem enviaments a domicili.",
+  "services.bdescription5":"Són perfectes per a ocasions com:",
+  "services.boption1":"- Aniversaris.",
+  "services.boption2":"- Regal de maternitat.",
+  "services.boption3":"- Jubilacions.",
+  "services.boption4":"- Celebracions especials.",
+  "services.boption5":"- Sopars especials",
+
+  "services.btn1":"Contacta'ns en fes-nos saber com podem",
+  "services.btn2":"ajudar-te en el teu dia tan especial",
+  "services.btn3":"Contacte",
+
+  "services.pheader1":"Corones & Coixins",
+  "services.pdescription1":"Creem corones de tardor, hivern, primavera",
+  "services.pdescription2":"i estiu. També realitzem corones i",
+  "services.pdescription3":"coixins personalitzats per a funerals.",
+
+  "services.cheader1":"Serveis a empreses",
+  "services.cdescription1":"Oferim serveis setmanals i mensuals personalitzats a hotels, restaurants i empreses privades.",
+
+  "services.cbtn1":"Contacte'ns, explica'ns el pressupost, les preferències i nosaltres",
+  "services.cbtn2":"ens assegurem que quedis satisfet amb el teu producte!",
+  "services.cbtn3":"Contacte"
+
 }
