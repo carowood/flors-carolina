@@ -1,3 +1,5 @@
+/* ========== TABLET ========== */
+
 @media (max-width: $screen-md) {
   .story-item__container {
     background-color: $color-white;
@@ -45,7 +47,7 @@
   }
 }
 
-/* ========== SASS DESKTOP ========== */
+/* ========== DESKTOP ========== */
 
 @media only screen and (min-width: $screen-md) {
   div.story-grid__container {
@@ -57,6 +59,8 @@
     border-radius: 5px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     height: 20.5em;
+    padding-left: 0.2vw;
+
     div.story-item__container {
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
@@ -68,7 +72,7 @@
       float: left;
       width: 6%;
       height: 95%;
-      margin: 0.5em 0 0.5em 0.5em;
+      margin: 0.5em 0.05em 0 0.5em;
       color: #333;
       background-color: $color-line-purple;
       overflow: hidden;
@@ -78,40 +82,49 @@
         div.story-item__image-container {
           height: 100%;
           margin: 0;
+          background-color: $color-line-purple;
+
           img.story-item__image {
-            display: none;
+            position: relative;
+            height: 20.5em;
+            z-index: -1;
+            background-color: $color-line-purple;
+            opacity: 0.32;
+            z-index: 0;
           }
-        }
-        p.story-item__title {
-          position: relative;
-          font-size: 1em;
-          font-weight: bold;
-          width: 4.5em;
-          height: 2em;
-          top: 300px;
-          left: 0;
-          text-indent: 1em;
-          padding: 0;
-          margin: 0;
-          color: $color-white;
-          background-color: $color-main-purple;
-          -webkit-transform-origin: 0 0;
-          -moz-transform-origin: 0 0;
-          -ms-transform-origin: 0 0;
-          -o-transform-origin: 0 0;
-          transform-origin: 0 0;
-          -webkit-transform: rotate(-90deg);
-          -moz-transform: rotate(-90deg);
-          -ms-transform: rotate(-90deg);
-          -o-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-          a {
-            display: block;
-            width: 100%;
-            line-height: 2em;
-            text-decoration: none;
+
+          p.story-item__title {
+            position: relative;
+            font-size: 1em;
+            font-weight: bold;
+            width: 4.5em;
+            height: 2em;
+            bottom: 40px;
+            left: 0;
+            text-indent: 1em;
+            padding: 0;
+            margin: 0;
             color: $color-white;
-            outline: 0 none;
+            background-color: $color-main-purple;
+            -webkit-transform-origin: 0 0;
+            -moz-transform-origin: 0 0;
+            -ms-transform-origin: 0 0;
+            -o-transform-origin: 0 0;
+            transform-origin: 0 0;
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+
+            a {
+              display: block;
+              width: 100%;
+              line-height: 2em;
+              text-decoration: none;
+              color: $color-white;
+              outline: 0 none;
+            }
           }
         }
       }
@@ -120,11 +133,13 @@
         font-size: 12px;
       }
     }
+    div.story-item__container:last-child {
+      margin-right: 1vw;
+    }
     div.selected {
       background-color: $color-white;
-      width: 70%;
+      width: 69%;
       cursor: default;
-
       div.story-item__content {
         color: #333;
         background-color: $color-white;
@@ -133,37 +148,37 @@
           width: 50%;
           float: right;
           margin: 0 5px;
-
           img.story-item__image {
             display: block;
             height: 320px;
             width: 100%;
             object-fit: cover;
+            background-color: none;
+            opacity: 1;
           }
-        }
-        p.story-item__title {
-          display: block;
-          bottom: 0px;
-          position: absolute;
-          font-size: 1.3em;
-          text-indent: 0;
-          background-color: $color-white;
 
-          -webkit-transform: rotate(0deg);
-          -moz-transform: rotate(0deg);
-          -ms-transform: rotate(0deg);
-          -o-transform: rotate(0deg);
-          transform: rotate(0deg);
-
-          top: 9px;
-          right: 16px;
-          cursor: default;
-          a {
-            margin-left: 5px;
-            text-decoration: none;
-            font-family: $font-playfair;
-            color: $color-main-purple;
+          p.story-item__title {
+            display: block;
+            bottom: 0px;
+            position: absolute;
+            font-size: 1.3em;
+            text-indent: 0;
+            background-color: $color-white;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            top: 9px;
+            right: 16px;
             cursor: default;
+            a {
+              margin-left: 5px;
+              text-decoration: none;
+              font-family: $font-playfair;
+              color: $color-main-purple;
+              cursor: default;
+            }
           }
         }
       }
