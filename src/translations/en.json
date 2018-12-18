@@ -44,9 +44,22 @@
   "services.boption2":"- Maternity gifts.",
   "services.boption3":"- Special celebrations.",
   "services.boption4":"- Retirement gift.",
-  "services.boption5":"- Special dinner arrangement"
+  "services.boption5":"- Special dinner arrangement",
 
+  "services.wbtn1":"Let us know how we can help",
+  "services.wbtn2":"you on your special day",
+  "services.wbtn3":"Contact Us",
 
+  "services.pheader1":"Wreaths & Pillows",
+  "services.pdescription1":"We create beautiful wreaths for every special",
+  "services.pdescription2":"occasion, such as in autumn, Christmas, spring",
+  "services.pdescription3":"and summer. We as well provide thoughtful",
+  "services.pdescription4":"personalized funeral wreaths & pillows.",
 
+  "services.cheader1":"Company Services",
+  "services.cdescription1":"We provide weekley & monthly personalized services to hotels, restaurants and private companies.",
 
+  "services.cbtn1":"Contact us, tell us your budget, preferences and we",
+  "services.cbtn2":"will make sure you are happy with your product!",
+  "services.cbtn3":"Contact"
 }

@@ -45,5 +45,22 @@
   "services.boption2":"- Regalo de maternidad.",
   "services.boption3":"- Jubilaciones.",
   "services.boption4":"- Celebraciones especiales.",
-  "services.boption5":"- Cenas especiales"
+  "services.boption5":"- Cenas especiales",
+
+  "services.btn1":"Contactanos y haznos saber como",
+  "services.btn2":"podemos ayudarte en tu dia especial",
+  "services.btn3":"Contacto",
+
+  "services.pheader1":"Coronas & Almohadas",
+  "services.pdescription1":"Creamos coronas de otoño, invierno, primavera",
+  "services.pdescription2":"y verano. También realizamos coronas y ",
+  "services.pdescription3":"almohadas personalizadas para funerales.",
+
+  "services.cheader1":"Servicios a empresas",
+  "services.cdescription1":"Ofrecemos servicios semanales y mensuales personalizados a hoteles, restaurantes y empresas privadas.",
+
+  "services.cbtn1":"Contactanos, danos tu presupuesto y preferencias,nos",
+  "services.cbtn2":"aseguramos de que quedes satisfecho con tu producto",
+  "services.cbtn3":"Contacto"
+
 }
