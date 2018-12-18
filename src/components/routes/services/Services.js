@@ -1,11 +1,11 @@
 import React from "react";
 import Translate from "../../../translations/Translate";
-import Wedding from "../../Wedding/Wedding.js";
-import Bouquets from "../../Bouquets/Bouquets.js";
-import Pillows from "../../Pillows/Pillows.js";
-import BtnWedding from "../../Btn-wedding/BtnWedding.js";
-import Company from "../../Company/Company.js";
-import BtnCompany from "../../Btn-company/BtnCompany.js";
+import Wedding from "../../Wedding/Wedding";
+import Bouquets from "../../Bouquets/Bouquets";
+import Pillows from "../../Pillows/Pillows";
+import BtnWedding from "../../Btn-wedding/BtnWedding";
+import Company from "../../Company/Company";
+import BtnCompany from "../../Btn-company/BtnCompany";
 
 export default function Services() {
   return (
@@ -21,10 +21,10 @@ export default function Services() {
         <Pillows/>
       </div>
       <div className="company">
-       <Company/>
+        <Company/>
       </div>
       <div className="contact-btn">
-      <BtnCompany/>
+        <BtnCompany/>
       </div>
     </div>
   );

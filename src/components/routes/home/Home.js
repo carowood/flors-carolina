@@ -1,15 +1,10 @@
 import React from "react";
 import Translate from "../../../translations/Translate";
-
+import Logo from "../../logo/Logo.js";
 export default function Home() {
   return (
-    <div>
-      <h1>
-        <Translate string={"home.header"} />
-      </h1>
-      <p>
-        <Translate string={"home.description"} />
-      </p>
+    <div className="Home">
+
     </div>
   );
 }

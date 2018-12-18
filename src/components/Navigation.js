@@ -6,7 +6,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <ul className="">
-        {/* <li className="">
+        {/*<li className="">
           <Link to="/">
             <Translate string={"navigation.home"} />
           </Link>
