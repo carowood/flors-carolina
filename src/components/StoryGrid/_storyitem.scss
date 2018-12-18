@@ -1,55 +1,203 @@
-.story-item__container {
-  background-color: $color-white;
-  height: auto;
-  width: auto;
-  margin: 10px;
-  .story-item__content {
-    position: relative;
-    .story-item__image-container {
-      height: 300px;
-      width: auto;
-      background-color: white;
+@media (max-width: $screen-md) {
+  .story-item__container {
+    background-color: $color-white;
+    height: auto;
+    width: auto;
+    margin: 10px;
+    .story-item__content {
+      position: relative;
+      .story-item__image-container {
+        height: 300px;
+        width: auto;
+        background-color: white;
+      }
+      .story-item__image {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .story-item__title {
+        color: $color-white;
+        position: absolute;
+        bottom: 5%;
+        left: 0px;
+        background-color: $color-main-purple;
+        padding: 5px 20px;
+      }
     }
-    .story-item__image {
-      height: 300px;
-      width: 100%;
-      object-fit: cover;
+    .story-item__bodytext {
+      padding: 10px;
+      color: $color-grey;
+      text-align: justify;
+      font-size: 0.8em;
     }
-    .story-item__title {
-      color: $color-white;
-      position: absolute;
-      bottom: 5%;
-      left: 0px;
-      background-color: $color-main-purple;
-      padding: 5px 20px;
-    }
-  }
-  .story-item__bodytext {
-    padding: 10px;
-    color: $color-grey;
-    text-align: justify;
-  }
-}
-
-@media (min-width: $screen-md) {
-  .text {
-    font-size: 16px;
   }
 }
 
 @media (max-width: $screen-sm) {
-  .text {
-    font-size: 4vw;
+  .story-item__bodytext {
+    font-size: 4em;
   }
 }
 
-// <div className="story-item__container">
-//         <div className="story-item__content">
-//           <div className="story-item__image-container">
-//             <img className="story-item__image" src={image} alt="story" />
-//           </div>
-//           <p className="story-item__title">{this.props.children[0]}</p>
-//         </div>
+/* ========== SASS DESKTOP ========== */
+@media only screen and (min-width: $screen-md) {
+  div.story-grid__container {
+    box-sizing: border-box;
+    //border: solid blue 2px;
+    //display: block;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    //overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    height: 20.5em;
+    padding: 5px;
+    padding-left: 20px;
 
-//         <p className="story-item__bodytext">{this.props.children[1]}</p>
-//       </div>
+    div.story-item__container {
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      position: relative;
+      display: block;
+      float: left;
+      width: 5%;
+      height: 95%;
+      margin: 0.5em 0 0.5em 0.5em;
+      color: #333;
+      //background-color: #0f0;
+      background-color: #333;
+      overflow: hidden;
+      border-radius: 3px;
+      //border: solid 2px red;
+      //margin: 0 5px;
+
+      div.story-item__content {
+        div.story-item__image-container {
+          height: 100%;
+          //width: 50%;
+          //float: right;
+
+          img.story-item__image {
+            display: none;
+          }
+        }
+
+        p.story-item__title {
+          //position: absolute;
+          position: relative;
+          font-size: 1em;
+          font-weight: bold;
+          //width: 12em;
+          width: 4.5em;
+          height: 2em;
+          //bottom: -30px;
+          top: 300px;
+          left: 0;
+          text-indent: 1em;
+          padding: 0;
+          margin: 0;
+          color: #ddd;
+          color: $color-white;
+          background-color: $color-main-purple;
+          -webkit-transform-origin: 0 0;
+          -moz-transform-origin: 0 0;
+          -ms-transform-origin: 0 0;
+          -o-transform-origin: 0 0;
+          transform-origin: 0 0;
+          -webkit-transform: rotate(-90deg);
+          -moz-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          -o-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+          a {
+            display: block;
+            width: 100%;
+            line-height: 2em;
+            text-decoration: none;
+            color: inherit;
+
+            outline: 0 none;
+          }
+        }
+      }
+      p.story-item__bodytext {
+        display: none;
+        font-size: 12px;
+      }
+    }
+    div.selected {
+      background-color: #fff;
+      width: 70%;
+
+      div.story-item__content {
+        //border: solid 3px orange;
+        //width: 70%;
+        //padding: 0 1em;
+        color: #333;
+        background-color: #fff;
+        //display: inline-block;
+        div.story-item__image-container {
+          //border: solid yellow 10px;
+          height: 100%;
+          width: 50%;
+
+          float: right;
+          margin: 0 5px;
+
+          img.story-item__image {
+            display: block;
+            height: 320px;
+            //   height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        p.story-item__title {
+          display: block;
+          bottom: 0px;
+          position: absolute;
+          font-size: 1.3em;
+          text-indent: 0;
+          background-color: purple;
+
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+
+          top: 9px;
+          right: 16px;
+          a {
+            margin-left: 20px;
+          }
+        }
+      }
+      p.story-item__bodytext {
+        //border: solid 2px green;
+        height: 100%;
+        color: black;
+        display: block;
+        width: 45%;
+        float: left;
+        //display: inline;
+        font-size: 16px;
+        margin-top: 60px;
+        //position: absolute;
+
+        text-indent: 0;
+        background-color: white;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
