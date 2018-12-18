@@ -22,8 +22,8 @@ export default class StoryGridContainer extends React.Component {
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
-          <Translate string={"test.year"} />
-          <Translate string={"test.lorem_medium"} />
+          <Translate string={"ourstory.title2"} />
+          <Translate string={"test.lorem_long"} />
         </StoryItem>
         <StoryItem
           sid="story-item-2"
@@ -31,8 +31,8 @@ export default class StoryGridContainer extends React.Component {
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
-          <Translate string={"test.year"} />
-          <Translate string={"test.lorem_long"} />
+          <Translate string={"ourstory.title3"} />
+          <Translate string={"ourstory.bodytext3"} />
         </StoryItem>
         <StoryItem
           sid="story-item-3"
@@ -40,8 +40,8 @@ export default class StoryGridContainer extends React.Component {
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
-          <Translate string={"test.year"} />
-          <Translate string={"test.lorem_long"} />
+          <Translate string={"ourstory.title4"} />
+          <Translate string={"ourstory.bodytext4"} />
         </StoryItem>
         <StoryItem
           sid="story-item-4"
@@ -49,8 +49,8 @@ export default class StoryGridContainer extends React.Component {
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
-          <Translate string={"test.year"} />
-          <Translate string={"test.lorem_long"} />
+          <Translate string={"ourstory.title5"} />
+          <Translate string={"ourstory.bodytext5"} />
         </StoryItem>
         <StoryItem
           sid="story-item-5"
@@ -58,8 +58,8 @@ export default class StoryGridContainer extends React.Component {
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
-          <Translate string={"test.year"} />
-          <Translate string={"test.lorem_long"} />
+          <Translate string={"ourstory.title6"} />
+          <Translate string={"ourstory.bodytext6"} />
         </StoryItem>
         <StoryItem
           sid="story-item-6"
@@ -67,8 +67,8 @@ export default class StoryGridContainer extends React.Component {
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
-          <Translate string={"test.year"} />
-          <Translate string={"test.lorem_long"} />
+          <Translate string={"ourstory.title1"} />
+          <Translate string={"ourstory.bodytext1-paragraph1"} />
         </StoryItem>
       </div>
     );
