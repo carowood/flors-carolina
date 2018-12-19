@@ -27,7 +27,7 @@ export default class StoryGridContainer extends React.Component {
         </StoryItem>
         <StoryItem
           sid="story-item-2"
-          image="/images/HP0019.jpg"
+          image="/images/HP0006.jpg"
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
@@ -36,7 +36,7 @@ export default class StoryGridContainer extends React.Component {
         </StoryItem>
         <StoryItem
           sid="story-item-3"
-          image="/images/HP0019.jpg"
+          image="/images/HP0007.jpg"
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
@@ -45,7 +45,7 @@ export default class StoryGridContainer extends React.Component {
         </StoryItem>
         <StoryItem
           sid="story-item-4"
-          image="/images/HP0019.jpg"
+          image="/images/HP0013.jpg"
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
@@ -54,7 +54,7 @@ export default class StoryGridContainer extends React.Component {
         </StoryItem>
         <StoryItem
           sid="story-item-5"
-          image="/images/HP0019.jpg"
+          image="/images/HP0018.jpg"
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
