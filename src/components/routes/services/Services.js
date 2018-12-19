@@ -9,7 +9,7 @@ import BtnCompany from "../../Btn-company/BtnCompany";
 
 export default function Services() {
   return (
-    <div>
+    <div className="services">
       <div className="wedding">
         <Wedding/>
         <BtnWedding/>

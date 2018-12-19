@@ -6,18 +6,19 @@ div.languagepicker {
       color: white;
       font-size: 0.8rem;
       margin: 20px 0;
+      color:$color-main-purple;
     }
     @media (max-width: 768px) {
       li.languagepicker__list-item {
-        color: purple;
+        color: $color-main-purple;
       }
     }
     li.languagepicker__list-item:hover {
-      color: purple;
+      color: $color-main-purple;
     }
     li.selected {
       color: white;
-      background: orange;
+      background: $color-main-purple;
     }
   }
 }
