@@ -12,11 +12,11 @@ export default class StoryItem extends React.Component {
         </div>
         <div className="story-item-main__textcontent">
           <p className="story-item-main__title">
-            <Translate string={"test.year"} />
+            <Translate string={"ourstory.title1"} />
           </p>
 
           <p className="story-item-main__bodytext">
-            <Translate string={"test.lorem_long"} />
+            <Translate string={"ourstory.bodytext1-paragraph1"} />
           </p>
         </div>
       </div>
