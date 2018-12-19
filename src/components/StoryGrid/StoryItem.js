@@ -1,5 +1,5 @@
 import React from "react";
-import Translate from "../../translations/Translate";
+//import Translate from "";
 
 export default class StoryItem extends React.Component {
   render() {
@@ -8,6 +8,18 @@ export default class StoryItem extends React.Component {
     if (this.props.selected === this.props.sid) {
       selected = " selected";
     }
+    console.log(this.props);
+    let title = this.props.children[0];
+    let bodyText = this.props.children.map((child, index) => {
+      if (index > 0) {
+        return (
+          <p key={index} className="story-item__bodytext">
+            {child}
+          </p>
+        );
+      }
+    });
+
     return (
       <div
         id={this.props.sid}
@@ -17,13 +29,13 @@ export default class StoryItem extends React.Component {
         <div className="story-item__content">
           <div className="story-item__image-container">
             <img className="story-item__image" src={image} alt="story" />
+            <p className="story-item__title">
+              <a href="/">{title}</a>
+            </p>
           </div>
-          <p className="story-item__title">
-            <a href="#">{this.props.children[0]}</a>
-          </p>
         </div>
 
-        <p className="story-item__bodytext">{this.props.children[1]}</p>
+        {bodyText}
       </div>
     );
   }

@@ -40,3 +40,8 @@ div.story-item-main__container {
     }
   }
 }
+@media (max-width: $screen-md) {
+ div.story-item-main__container {
+   display: none;
+ }
+}
