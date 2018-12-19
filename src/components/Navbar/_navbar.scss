@@ -7,7 +7,6 @@
   z-index: 10;
   margin-bottom: 140px;
 
-
   &__navigation {
     display: flex;
     align-items: center;
@@ -19,45 +18,45 @@
       padding: 20px 30px;
     }
   }
-  &__logo a img{
-      width: 100px;
-   
-      @media (min-width: $screen-md) {
-        width: 150px;
-        height: 150px;
-      }
-    }
+  &__logo a img {
+    width: 100px;
 
-    .spacer {
-      flex: 1;
+    @media (min-width: $screen-md) {
+      width: 150px;
+      height: 150px;
     }
-    .navbar__navigation-items {
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        li {
-          padding: 0 0.5rem;
-          a {
-            color: black;
-            text-decoration: none;
-            font-family: $font-playfair;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-          }
-          a:hover,
-          a:active {
-            color: $color-main-purple;
-          }
+  }
+
+  .spacer {
+    flex: 1;
+  }
+  .navbar__navigation-items {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      li {
+        padding: 0 0.5rem;
+        a {
+          color: black;
+          text-decoration: none;
+          font-family: $font-playfair;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        a:hover,
+        a:active {
+          color: $color-main-purple;
         }
       }
     }
+  }
 
-    .navbar__toggle-button {
-      margin-right: 1rem;
-      background-color: purple;
-    }
+  .navbar__toggle-button {
+    margin-right: 1rem;
+    //background-color: purple;
+  }
 }
 
 @media (max-width: $screen-md) {
