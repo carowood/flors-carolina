@@ -40,42 +40,8 @@ div.story-item-main__container {
     }
   }
 }
-
 @media (max-width: $screen-md) {
-  div.story-item-main__container {
-    display: none;
-  }
+ div.story-item-main__container {
+   display: none;
+ }
 }
-// @media (max-width: $screen-sm) {
-//   div.story-item-main__container {
-//     background-color: blue;
-//     border-radius: 0px;
-//     height: auto;
-//     width: 100%;
-//     margin: 0 10px;
-//     cursor: default;
-//     .story-item-main_image-container {
-//       width: 100%;
-//       display: none;
-//       float: none;
-
-//       img.story-item-main__image {
-//         height: 300px;
-//         width: 100%;
-//         display: none;
-//       }
-//     }
-//     .story-item-main__textcontent {
-//       width: 100%;
-//       display: block;
-//       display: block;
-//       float: none;
-//     }
-//     .story-item-main__bodytext {
-//       width: 100%;
-//       display: block;
-//       display: block;
-//       float: none;
-//     }
-//   }
-// }

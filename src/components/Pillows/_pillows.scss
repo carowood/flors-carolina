@@ -2,13 +2,13 @@
   margin:0px;
   padding:0px;
 
-  &_title{
+  &__title{
     font-family:$font-playfair;
     font-size:30px;
     text-transform:uppercase;
     letter-spacing:1px;
   }
-  &_description{
+  &__description{
     margin:10px;
     font-family:$font-futura-book;
     ul {

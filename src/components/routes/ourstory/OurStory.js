@@ -13,9 +13,7 @@ export default function OurStory(props) {
       <p>
         <Translate string={"ourstory.description"} />
       </p> */}
-      <Heading>
-        <Translate string={"test.lorem_short"} />
-      </Heading>
+
       <StoryGridContainer />
       <StoryContainer />
     </React.Fragment>

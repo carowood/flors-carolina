@@ -1,6 +1,7 @@
 import React from "react";
 import Translate from "../../translations/Translate";
 
+
 export default function Wedding() {
   return (
     <div>
@@ -22,6 +23,10 @@ export default function Wedding() {
             <li><Translate string={"services.woption4"} /></li>
             <li><Translate string={"services.woption5"} /></li>
           </ul>
+       </div>
+       <div className="wedding_pictures">
+
+
        </div>
     </div>
 

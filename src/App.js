@@ -8,6 +8,7 @@ import Services from "./components/routes/services/Services";
 import Press from "./components/routes/press/Press";
 import { LocaleContext } from "./translations/LocaleContext";
 import Navbar from "./components/Navbar/Navbar";
+//import NavbarDark from "./components/Navbar/NavbarDark";
 import SideBar from "./components/SideBar/Sidebar";
 import Backdrop from "./components/Backdrop/Backdrop";
 import "./scss/App.scss";
@@ -46,7 +47,7 @@ class App extends Component {
     return (
       <div className="App">
         <LocaleContext.Provider value={this.state.preferredLocale}>
-          <Navbar
+         <Navbar
             path={this.props}
             changeLanguage={this.changeLanguage}
             menuSidebarClickHandler={this.menuSidebarToggleClickHandler}
@@ -57,7 +58,7 @@ class App extends Component {
             close={this.menuBackdropClickHandler}
           />
           {menuBackdrop}
-          {/* <Route exact path="/" component={Home} /> */}
+          {/*<Route exact path="/home" component={Home} />*/}
           <Route path="/ourstory" component={OurStory} />
           <Route path="/services" component={Services} />
           <Route path="/gallery" component={Gallery} />
