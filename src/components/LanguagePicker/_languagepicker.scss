@@ -6,7 +6,7 @@ div.languagepicker {
       color: white;
       font-size: 0.8rem;
       margin: 20px 0;
-      color:$color-main-purple;
+      color: $color-main-purple;
     }
     @media (max-width: 768px) {
       li.languagepicker__list-item {
@@ -14,7 +14,7 @@ div.languagepicker {
       }
     }
     li.languagepicker__list-item:hover {
-      color: $color-main-purple;
+      color: $color-white;
     }
     li.selected {
       color: white;
