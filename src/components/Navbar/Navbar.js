@@ -11,7 +11,7 @@ class navbar extends React.Component {
       <header className="navbar">
             <nav className="navbar__navigation">
               <div className="navbar__logo">
-                <a href="/Home"><img src={logo}  alt="logo" width="150" height="150" /></a>
+                <a href="/Home"><img src={logo}  alt="logo"/></a>
               </div>
               <div className="spacer" />
               <div className="navbar__navigation-items">

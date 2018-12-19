@@ -5,11 +5,9 @@
   left: 0;
   height: 56px;
   z-index: 10;
+  margin-bottom: 140px;
 
-  &__border{
-  
-  }
-  .navbar__navigation {
+  &__navigation {
     display: flex;
     align-items: center;
     height: 100%;
@@ -24,12 +22,13 @@
       text-decoration: none;
       font-size: 1.5rem;
     } */
-    &__logo img{
-    width: 50px;
-    height: 50px;
+  }
+  &__logo a img{
+      width: 100px;
+
       @media (min-width: $screen-md) {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
       }
     }
 
@@ -45,11 +44,11 @@
         li {
           padding: 0 0.5rem;
           a {
-            color: $color-main-purple;
+            color: black;
             text-decoration: none;
             font-family: $font-playfair;
             text-transform: uppercase;
-            letter-spacing: 5px;
+            letter-spacing: 2px;
           }
           a:hover,
           a:active {
@@ -61,9 +60,8 @@
 
     .navbar__toggle-button {
       margin-right: 1rem;
+      background-color: purple;
     }
-  }
-
 }
 
 @media (max-width: $screen-md) {
