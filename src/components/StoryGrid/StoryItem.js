@@ -30,7 +30,7 @@ export default class StoryItem extends React.Component {
           <div className="story-item__image-container">
             <img className="story-item__image" src={image} alt="story" />
             <p className="story-item__title">
-              <a href="/">{title}</a>
+              <span>{title}</span>
             </p>
           </div>
         </div>

@@ -3,7 +3,7 @@ import Translate from "../../../translations/Translate";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="page-container">
       <h1>
         <Translate string={"contact.header"} />
       </h1>
