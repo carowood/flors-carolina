@@ -6,7 +6,7 @@ import Heading from "../../Headings/H1/H1";
 
 export default function OurStory(props) {
   return (
-    <React.Fragment>
+    <div className="page-container">
       {/* <h1>
         <Translate string={"ourstory.header"} />
       </h1>
@@ -16,6 +16,6 @@ export default function OurStory(props) {
 
       <StoryGridContainer />
       <StoryContainer />
-    </React.Fragment>
+    </div>
   );
 }
