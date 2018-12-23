@@ -1,15 +1,15 @@
 import React from "react";
 import Translate from "../../../translations/Translate";
+import Heading from "../../Headings/H1/H1";
+import Form from "../../Form/Form";
 
 export default function Contact() {
   return (
     <div className="page-container">
-      <h1>
-        <Translate string={"contact.header"} />
-      </h1>
-      <p>
-        <Translate string={"contact.description"} />
-      </p>
+      <Heading>
+        <Translate string={"contact.heading"} />
+      </Heading>
+      <Form />
     </div>
   );
 }

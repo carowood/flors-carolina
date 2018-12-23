@@ -83,5 +83,12 @@
   "ourstory.title5": "",
   "ourstory.bodytext5": "",
   "ourstory.title6": "",
-  "ourstory.bodytext6": ""
+  "ourstory.bodytext6": "",
+
+  "contact.formsendbtn": "Enviar Missatge",
+  "contact.heading": "Contacta amb nosaltres",
+  "contact.name": "Nom",
+  "contact.email": "Correu electrònic",
+  "contact.telephone": "Telèfon",
+  "contact.message": "Missatge"
 }

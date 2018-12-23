@@ -76,5 +76,12 @@
 
   "services.cbtn1": "Contact us, tell us your budget, preferences and we",
   "services.cbtn2": "will make sure you are happy with your product!",
-  "services.cbtn3": "Contact"
+  "services.cbtn3": "Contact",
+
+  "contact.formsendbtn": "Send Message",
+  "contact.heading": "Contact Us",
+  "contact.name": "Name",
+  "contact.email": "Email",
+  "contact.telephone": "Telephone",
+  "contact.message": "Message"
 }

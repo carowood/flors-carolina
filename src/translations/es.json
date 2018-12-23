@@ -84,5 +84,12 @@
   "ourstory.title5": "",
   "ourstory.bodytext5": "",
   "ourstory.title6": "",
-  "ourstory.bodytext6": ""
+  "ourstory.bodytext6": "",
+
+  "contact.formsendbtn": "Enviar Mensaje",
+  "contact.heading": "Contáctenos",
+  "contact.name": "Nombre",
+  "contact.email": "Correo electrónico",
+  "contact.telephone": "Teléfono",
+  "contact.message": "Mensaje"
 }
