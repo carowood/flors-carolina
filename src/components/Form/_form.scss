@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+
+  form.form-group {
+    border: 1px solid red;
+    label {
+      color: $color-grey;
+      font-family: $font-futura-book;
+      span.required {
+      }
+    }
+    .form-field {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $color-light-grey;
+      height: 5em;
+      margin: 2em 0;
+      font-family: $font-futura-book;
+    }
+    .button {
+      text-align: center;
+    }
+  }
+}
