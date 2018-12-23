@@ -2,6 +2,9 @@
 @import "settings/_font.scss";
 @import "settings/_variables.scss";
 
+@import "../components/Headings/H1/_h1.scss";
+@import "../components/Headings/H2/_h2.scss";
+
 @import "../components/Navbar/_navbar.scss";
 @import "../components/Navbar/_navbardark.scss";
 @import "../components/SideBar/_sidebartogglebutton.scss";
@@ -12,7 +15,6 @@
 @import "../components/StoryGrid/_storyitem.scss";
 @import "../components/StoryGrid/_storygrid.scss";
 @import "../components/StoryContainer/_storyitem.scss";
-@import "../components/Headings/H1/_h1.scss";
 @import "../components/ImageContainerLarge/_imagecontainerlarge.scss";
 
 @import "../components/Wedding/_wedding.scss";
@@ -31,3 +33,5 @@
 
 @import "../components/Form/_form.scss";
 @import "../components/Btn-send/_btnsend.scss";
+@import "../components/Map/_map.scss";
+@import "../components/Address/_address.scss";

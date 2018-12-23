@@ -91,5 +91,6 @@
   "contact.name": "Nombre",
   "contact.email": "Correo electrónico",
   "contact.telephone": "Teléfono",
-  "contact.message": "Mensaje"
+  "contact.message": "Mensaje",
+  "contact.address": "Dirección"
 }

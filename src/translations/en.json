@@ -83,5 +83,6 @@
   "contact.name": "Name",
   "contact.email": "Email",
   "contact.telephone": "Telephone",
-  "contact.message": "Message"
+  "contact.message": "Message",
+  "contact.address": "Address"
 }

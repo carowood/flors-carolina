@@ -1,3 +1,20 @@
-.page-container {
-  margin: 7rem 0 0 0px;
+* {
+  box-sizing: border-box;
+  .page-container {
+    .heading-h1 {
+      margin-top: -70px;
+    }
+    margin: 7rem 0 0 0px;
+    .contact-flex-container {
+      height: auto;
+      display: flex;
+      .form-container {
+        width: 50%;
+      }
+      .address-map-container {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
 }
