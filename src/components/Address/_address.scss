@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  div.address-container {
+    background-color: paleturquoise;
+    width: 100%;
+    h2.address-title {
+      text-align: center;
+      font-family: $font-futura-book;
+      color: $color-grey;
+      margin: 0;
+    }
+    p.address-line {
+      text-align: center;
+      font-family: $font-futura-book;
+      color: $color-grey;
+    }
+  }
+}

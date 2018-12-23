@@ -90,5 +90,6 @@
   "contact.name": "Nom",
   "contact.email": "Correu electrònic",
   "contact.telephone": "Telèfon",
-  "contact.message": "Missatge"
+  "contact.message": "Missatge",
+  "contact.address": "La nostra adreça"
 }
