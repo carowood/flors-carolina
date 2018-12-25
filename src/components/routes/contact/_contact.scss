@@ -9,11 +9,28 @@
       height: auto;
       display: flex;
       .form-container {
-        width: 50%;
+        width: 100%;
       }
       .address-map-container {
-        width: 50%;
+        width: 100%;
         height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-md) {
+  .page-container {
+    .contact-flex-container {
+      height: auto;
+      display: block;
+      .form-container {
+        width: 100%;
+      }
+      .address-map-container {
+        width: 100%;
+        height: auto;
+        margin-top: 2em;
       }
     }
   }
