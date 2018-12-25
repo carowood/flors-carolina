@@ -28,7 +28,7 @@ export default class Form extends React.Component {
         <textarea
           className="form-field"
           name="message"
-          id=""
+          id="message-field"
           cols="30"
           rows="5"
         />

@@ -2,7 +2,7 @@
   box-sizing: border-box;
 
   form.form-group {
-    padding: 0 3em 0 0;
+    padding: 0 2em 0 0;
     width: 100%;
     label {
       color: $color-grey;
@@ -14,9 +14,12 @@
       width: 100%;
       border: none;
       border-bottom: 1px solid $color-light-grey;
-      height: 5em;
+      height: 4em;
       margin: 2em 0;
       font-family: $font-futura-book;
+    }
+    #message-field {
+      height: auto;
     }
     .button {
       text-align: center;
