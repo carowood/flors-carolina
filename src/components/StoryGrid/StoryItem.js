@@ -18,6 +18,7 @@ export default class StoryItem extends React.Component {
           </p>
         );
       }
+      return null;
     });
 
     return (

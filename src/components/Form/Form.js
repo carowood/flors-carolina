@@ -30,7 +30,7 @@ export default class Form extends React.Component {
           name="message"
           id="message-field"
           cols="30"
-          rows="5"
+          rows="10"
         />
         <div className="button">
           <BtnSend>
