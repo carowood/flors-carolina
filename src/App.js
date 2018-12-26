@@ -60,6 +60,7 @@ class App extends Component {
             menuSidebarClickHandler={this.menuSidebarToggleClickHandler}
           />
           <SideBar
+            theme={this.state.navTheme}
             changeLanguage={this.changeLanguage}
             show={this.state.menuSideBarOpen}
             close={this.menuBackdropClickHandler}
