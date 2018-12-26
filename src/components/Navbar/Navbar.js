@@ -2,11 +2,13 @@ import React from "react";
 import SidebarToggleButton from "../SideBar/SidebarToggleButton";
 import Navigation from "../Navigation";
 import LanguagePicker from "../LanguagePicker/LanguagePicker";
-import logo from "../../assets/logo/logo.svg";
-//import Home from "../routes/home/Home"
+import logoDark from "../../assets/logo/logo.svg";
+import logoLight from "../../assets/logo/logo-white.svg";
 
 class navbar extends React.Component {
   render() {
+    let logo = this.props.theme === "light" ? logoLight : logoDark;
+
     return (
       <header className={"navbar " + this.props.theme}>
         <nav className="navbar__navigation">
