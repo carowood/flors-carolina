@@ -3,10 +3,16 @@ import React from "react";
 //import Logo from "../../logo/Logo.js";
 import ImageContainerLarge from "../../ImageContainerLarge/ImageContainerLarge";
 
-export default function Home() {
-  return (
-    <div className="page-container">
-      <ImageContainerLarge />
-    </div>
-  );
+export default class Home extends React.Component {
+  componentDidMount() {
+    this.props.changeTheme("light");
+  }
+
+  render() {
+    return (
+      <div className="page-container">
+        <ImageContainerLarge />
+      </div>
+    );
+  }
 }
