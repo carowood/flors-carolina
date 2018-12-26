@@ -1,0 +1,23 @@
+div.languagepicker-light {
+  ul.languagepicker__list {
+    display: flex;
+    justify-content: flex-end;
+    li.languagepicker__list-item {
+      font-size: 0.8rem;
+      margin: 20px 0;
+      color: $color-white;
+    }
+    @media (max-width: 768px) {
+      li.languagepicker__list-item {
+        color: $color-white;
+      }
+    }
+    li.languagepicker__list-item:hover {
+      color: #fe7e6a;
+    }
+    li.selected {
+      color: $color-main-purple;
+      background: $color-white;
+    }
+  }
+}
