@@ -8,7 +8,6 @@ import Services from "./components/routes/services/Services";
 import Press from "./components/routes/press/Press";
 import { LocaleContext } from "./translations/LocaleContext";
 import Navbar from "./components/Navbar/Navbar";
-//import NavbarDark from "./components/Navbar/NavbarDark";
 import SideBar from "./components/SideBar/Sidebar";
 import Backdrop from "./components/Backdrop/Backdrop";
 import "./scss/App.scss";
