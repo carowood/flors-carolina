@@ -7,25 +7,30 @@ import BtnWedding from "../../Btn-wedding/BtnWedding.js";
 import Company from "../../Company/Company.js";
 import BtnCompany from "../../Btn-company/BtnCompany.js";
 
-export default function Services() {
-  return (
-    <div className="services">
-      <div className="wedding">
-        <Wedding />
-        <BtnWedding />
+export default class Services extends React.Component {
+  componentDidMount() {
+    this.props.changeTheme("");
+  }
+  render() {
+    return (
+      <div className="services">
+        <div className="wedding">
+          <Wedding />
+          <BtnWedding />
+        </div>
+        <div className="bouquets">
+          <Bouquets />
+        </div>
+        <div className="pillows">
+          <Pillows />
+        </div>
+        <div className="company">
+          <Company />
+        </div>
+        <div className="contact-btn">
+          <BtnCompany />
+        </div>
       </div>
-      <div className="bouquets">
-        <Bouquets />
-      </div>
-      <div className="pillows">
-        <Pillows />
-      </div>
-      <div className="company">
-        <Company />
-      </div>
-      <div className="contact-btn">
-        <BtnCompany />
-      </div>
-    </div>
-  );
+    );
+  }
 }

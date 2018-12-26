@@ -8,7 +8,7 @@ import logo from "../../assets/logo/logo.svg";
 class navbar extends React.Component {
   render() {
     return (
-      <header className="navbar">
+      <header className={"navbar " + this.props.theme}>
         <nav className="navbar__navigation">
           <div className="navbar__logo">
             <a href="/Home">

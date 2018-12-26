@@ -1,0 +1,28 @@
+.light {
+  background: purple;
+
+  &__logo a img {
+    width: 100px;
+  }
+  .navbar__navigation-items {
+    ul {
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+          font-family: $font-playfair;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        a:hover,
+        a:active {
+          color: $color-main-purple;
+        }
+      }
+    }
+  }
+
+  .navbar__toggle-button {
+    //background-color: purple;
+  }
+}

@@ -17,7 +17,8 @@ class App extends Component {
   // CHANGE THE DEFAULT LANG TO CAT or ES ?
   state = {
     menuSideBarOpen: false,
-    preferredLocale: "en"
+    preferredLocale: "en",
+    navTheme: "light"
   };
 
   menuSidebarToggleClickHandler = () => {
@@ -37,6 +38,12 @@ class App extends Component {
     });
   };
 
+  changeTheme = theme => {
+    this.setState({
+      navTheme: theme
+    });
+  };
+
   render() {
     let menuBackdrop;
 
@@ -48,6 +55,7 @@ class App extends Component {
       <div className="App">
         <LocaleContext.Provider value={this.state.preferredLocale}>
           <Navbar
+            theme={this.state.navTheme}
             path={this.props}
             changeLanguage={this.changeLanguage}
             menuSidebarClickHandler={this.menuSidebarToggleClickHandler}
@@ -58,12 +66,43 @@ class App extends Component {
             close={this.menuBackdropClickHandler}
           />
           {menuBackdrop}
-          <Route exact path="/home" component={Home} />
-          <Route path="/ourstory" component={OurStory} />
-          <Route path="/services" component={Services} />
-          <Route path="/gallery" component={Gallery} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/press" component={Press} />
+          <Route
+            exact
+            path="/home"
+            render={routeProps => (
+              <Home {...routeProps} changeTheme={this.changeTheme} />
+            )}
+          />
+          <Route
+            path="/ourstory"
+            render={routeProps => (
+              <OurStory {...routeProps} changeTheme={this.changeTheme} />
+            )}
+          />
+          <Route
+            path="/services"
+            render={routeProps => (
+              <Services {...routeProps} changeTheme={this.changeTheme} />
+            )}
+          />
+          <Route
+            path="/gallery"
+            render={routeProps => (
+              <Gallery {...routeProps} changeTheme={this.changeTheme} />
+            )}
+          />
+          <Route
+            path="/contact"
+            render={routeProps => (
+              <Contact {...routeProps} changeTheme={this.changeTheme} />
+            )}
+          />
+          <Route
+            path="/press"
+            render={routeProps => (
+              <Press {...routeProps} changeTheme={this.changeTheme} />
+            )}
+          />
         </LocaleContext.Provider>
       </div>
     );
