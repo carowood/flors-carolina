@@ -1,4 +1,4 @@
-.toggle-button {
+.toggle-button-light {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -13,7 +13,7 @@
   .toggle-button__line {
     width: 35px;
     height: 3px;
-    background: $color-main-purple;
+    background: $color-white;
   }
 }
 

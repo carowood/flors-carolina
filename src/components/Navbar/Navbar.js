@@ -26,7 +26,10 @@ class navbar extends React.Component {
             <Navigation />
           </div>
           <div className="navbar__toggle-button">
-            <SidebarToggleButton click={this.props.menuSidebarClickHandler} />
+            <SidebarToggleButton
+              click={this.props.menuSidebarClickHandler}
+              theme={this.props.theme}
+            />
           </div>
         </nav>
       </header>
