@@ -19,7 +19,10 @@ class navbar extends React.Component {
           </div>
           <div className="spacer" />
           <div className="navbar__navigation-items">
-            <LanguagePicker changeLanguage={this.props.changeLanguage} />
+            <LanguagePicker
+              changeLanguage={this.props.changeLanguage}
+              theme={this.props.theme}
+            />
             <Navigation />
           </div>
           <div className="navbar__toggle-button">

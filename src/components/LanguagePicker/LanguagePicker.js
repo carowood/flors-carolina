@@ -7,7 +7,7 @@ export default class LanguagePicker extends PureComponent {
     const changeLanguage = this.props.changeLanguage;
 
     return (
-      <div className="languagepicker">
+      <div className={"languagepicker languagepicker-" + this.props.theme}>
         <ul className="languagepicker__list">
           {/* Pass the changeLanguage props to the LanguageOption component */}
           <LanguageOption changeLanguage={changeLanguage} language={"en"} />
