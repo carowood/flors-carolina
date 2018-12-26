@@ -4,6 +4,7 @@ import Translate from "../translations/Translate";
 
 class Navigation extends React.Component {
   render() {
+    console.log("props", this.props);
     return (
       <ul className="">
         {/*<li className="">
@@ -12,27 +13,27 @@ class Navigation extends React.Component {
           </Link>
         </li> */}
         <li className="">
-          <Link to="/ourstory">
+          <Link to="/ourstory" onClick={this.props.click}>
             <Translate string={"navigation.ourstory"} />
           </Link>
         </li>
         <li className="">
-          <Link to="/services">
+          <Link to="/services" onClick={this.props.click}>
             <Translate string={"navigation.services"} />
           </Link>
         </li>
         <li className="">
-          <Link to="/gallery">
+          <Link to="/gallery" onClick={this.props.click}>
             <Translate string={"navigation.gallery"} />
           </Link>
         </li>
         <li className="">
-          <Link to="/contact">
+          <Link to="/contact" onClick={this.props.click}>
             <Translate string={"navigation.contact"} />
           </Link>
         </li>
         <li className="">
-          <Link to="/press">
+          <Link to="/press" onClick={this.props.click}>
             <Translate string={"navigation.press"} />
           </Link>
         </li>

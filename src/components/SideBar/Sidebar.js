@@ -12,7 +12,7 @@ export default function sideBar(props) {
   return (
     <nav className={sideBarClasses}>
       <button className="sidebar-button" onClick={props.close} />
-      <Navigation />
+      <Navigation click={props.close} />
       <LanguagePicker changeLanguage={props.changeLanguage} />
     </nav>
   );
