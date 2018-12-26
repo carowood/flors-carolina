@@ -5,50 +5,82 @@
     margin:40px;
   }
   &_title{
-    font-family:$font-playfair;
-    font-size:30px;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin-left:50px;
+   font-family:$font-playfair;
+   font-size: 30px;
+   display: flex;
+   justify-content: center;
+   letter-spacing:1px;
+   text-transform:uppercase;
+   letter-spacing:1px;
+
+
     @media (min-width: $screen-md) {
-      font-size:30px;
+      margin-left:50px;
+      border-bottom:1px solid $color-main-purple;
+      width:50px;
     }
   }
+
   &_description{
-    margin:10px;
     font-family:$font-futura-book;
+    display: flex;
+    justify-content: center;
+    @media (min-width: $screen-md) {
+       width: 400px;
+    }
     ul {
       list-style: none;
       padding:0px;
 
     }
   }
+
   &_options{
-    margin:20px;
     font-family:$font-futura-book;
+    display: flex;
+    justify-content: center;
+    @media (min-width: $screen-md) {
+
+    }
     ul{
       list-style:none;
       padding:0px;
     }
   }
+
   &_image1{
-   @media (min-width: $screen-md) {
-     position: absolute;
-     top: 200px;
-     right: 110px;
-   }
+    margin:10px;
+    position:absolute;
+    right:100px;
+    img{
+     width: 100px;
+     @media (min-width: $screen-md) {
+        width: 400px;
+     }
+    }
   }
+
   &_image2{
     margin:10px;
     position:absolute;
     right:100px;
     img{
-     width: 400px;
+     width: 100px;
+     @media (min-width: $screen-md) {
+        width: 400px;
+     }
     }
   }
+
   &_image3{
+    margin:10px;
+    position:absolute;
+    right:100px;
     img{
-      width:600px;
+     width: 100px;
+     @media (min-width: $screen-md) {
+        width: 400px;
+     }
     }
 
   }
