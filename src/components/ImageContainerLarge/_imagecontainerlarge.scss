@@ -1,11 +1,16 @@
-.homepage-image {
-  height: 35em;
-  div.image-container-large {
-    display: block;
-    background-image: url(/images/background.jpg);
-    height: 100%;
-    width: 70%;
-    margin: 0 auto;
-    background-size: cover;
+img.home-background {
+  min-width: $screen-lg;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: $screen-lg) {
+  img.home-background {
+    left: 50%;
+    margin-left: -512px;
   }
 }

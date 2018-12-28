@@ -1,8 +1,14 @@
 .light {
-  background: purple;
-
-  &__logo a img {
+  .navbar__logo a img {
     width: 100px;
+    margin-top: 60px;
+    @media (min-width: $screen-md) {
+      width: 150px;
+      height: 150px;
+    }
+    @media (max-width: $screen-md) {
+      margin-top: 0;
+    }
   }
   .navbar__navigation-items {
     ul {
@@ -20,9 +26,5 @@
         }
       }
     }
-  }
-
-  .navbar__toggle-button {
-    //background-color: purple;
   }
 }

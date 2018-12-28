@@ -1,0 +1,12 @@
+.home-textbox {
+  font-family: $font-playfair;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px $color-white solid;
+  padding: 3em;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+}
