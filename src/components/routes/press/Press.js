@@ -7,6 +7,7 @@ export default class Press extends React.Component {
   componentDidMount() {
     this.props.changeTheme("");
   }
+
   render() {
     return (
       <div className="page-container">

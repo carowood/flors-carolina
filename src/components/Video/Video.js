@@ -1,17 +1,18 @@
 import React from "react";
+import ReactPlayer from "react-player";
 
 export default class Video extends React.Component {
   render() {
     return (
-      <div className="video">
-        <iframe
-          title="Flor Carolina"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/qqQTuMeHDFw"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+      <div className="player-wrapper">
+        <ReactPlayer
+          className="react-player"
+          url="https://www.youtube.com/embed/qqQTuMeHDFw"
+          youtubeConfig={{ playerVars: { showinfo: 0 } }}
+          playing
+          controls
+          width="100%"
+          height="100%"
         />
       </div>
     );

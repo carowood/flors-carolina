@@ -1,7 +1,25 @@
-.video {
-  width: 560px;
+.player-wrapper {
+  //background-color: black;
+  //border: 1px solid rgba(0, 0, 0, 0.3);
+  //   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  //   padding: 30px 0;
+  //   width: auto;
   margin: 0 auto;
-  iframe {
-    margin: 0 auto;
+  position: relative;
+  padding-top: 28.12%;
+  height: 50%;
+  width: 50%;
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .player-wrapper {
+    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+    height: 100%;
+    width: 100%;
   }
 }
