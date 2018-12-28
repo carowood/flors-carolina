@@ -17,6 +17,10 @@ body {
   margin: 10px 30px;
 }
 
+body.home {
+  border: none;
+}
+
 @media (max-width: 768px) {
   body {
     border: none;
