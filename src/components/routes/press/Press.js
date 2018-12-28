@@ -1,5 +1,7 @@
 import React from "react";
 import Translate from "../../../translations/Translate";
+import Heading from "../../Headings/H1/H1";
+import Video from "../../Video/Video";
 
 export default class Press extends React.Component {
   componentDidMount() {
@@ -8,12 +10,13 @@ export default class Press extends React.Component {
   render() {
     return (
       <div className="page-container">
-        <h1>
+        <Heading>
           <Translate string={"press.header"} />
-        </h1>
-        <p>
+        </Heading>
+        <Video />
+        {/* <p>
           <Translate string={"press.description"} />
-        </p>
+        </p> */}
       </div>
     );
   }
