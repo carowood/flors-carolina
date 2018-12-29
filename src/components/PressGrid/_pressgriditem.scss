@@ -1,0 +1,21 @@
+.press-grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  width: 48%;
+  height: auto;
+  margin: 1%;
+  padding: 0.9em;
+  &__title {
+    font-family: $font-playfair;
+  }
+  &__bodytext {
+    font-family: $font-futura-book;
+  }
+  &__url {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
