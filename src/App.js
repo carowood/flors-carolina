@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import Home from "./components/routes/home/Home";
 import OurStory from "./components/routes/ourstory/OurStory";
 import Contact from "./components/routes/contact/Contact";
@@ -73,6 +73,7 @@ class App extends Component {
               <Home {...routeProps} changeTheme={this.changeTheme} />
             )}
           />
+          <Route exact path="/" render={() => <Redirect to="/home" />} />
           <Route
             path="/ourstory"
             render={routeProps => (
