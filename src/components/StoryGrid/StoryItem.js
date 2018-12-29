@@ -1,5 +1,4 @@
 import React from "react";
-//import Translate from "";
 
 export default class StoryItem extends React.Component {
   render() {
@@ -8,7 +7,7 @@ export default class StoryItem extends React.Component {
     if (this.props.selected === this.props.sid) {
       selected = " selected";
     }
-    console.log(this.props);
+
     let title = this.props.children[0];
     let bodyText = this.props.children.map((child, index) => {
       if (index > 0) {

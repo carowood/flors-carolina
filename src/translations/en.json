@@ -84,5 +84,25 @@
   "contact.email": "Email",
   "contact.telephone": "Telephone",
   "contact.message": "Message",
-  "contact.address": "Address"
+  "contact.address": "Address",
+
+  "press.title1": "La florista irreductible",
+  "press.bodytext1": "A Carolina Pallés, quinta generación de floristas de la Rambla, no le gustan los suvenires...",
+  "press.url1": "https://www.elperiodico.com/es/barcelona/20130608/la-florista-irreductible-2412148",
+  "press.readmore1": "Read more",
+
+  "press.title2": "Portem quatre generacions de Carolines de la família a La Rambla",
+  "press.bodytext2": "La història de la Carolina Pallés està lligada a les flors i a la seva família. Ella, juntament amb la seva germana, gestiona actualment la floristeria que la seva àvia va adquirir l’any 1888, durant la Primera Exposició Universal a la ciutat.",
+  "press.url2": "http://infomercats.somdemercat.cat/portem-quatre-generacions-de-carolines-de-la-familia-a-la-rambla/",
+  "press.readmore2": "Read more",
+
+  "press.title3": "Fleming y Carolina",
+  "press.bodytext3": "Carolina Ruiz Serrat contaba 78 años cuando la entrevisté. Su hija, también Carolina, es la viuda del muy recordado y tan añorado Miquel Pallés, quien se ganó el simpático y bien indicativo apodo de Carolino.",
+  "press.url3": "https://www.pressreader.com/spain/la-vanguardia/20160331/282273844502595",
+  "press.readmore3": "Read more",
+
+  "press.title4": "Som de Mercat! Carolina Pallés",
+  "press.bodytext4": "Carolina Pallés, de família de floristes amb llarga tradició, explica la relació de la seva parada de flors amb el món de la cultura de Barcelona",
+  "press.url4": "https://www.youtube.com/watch?v=4OLoKl1KwtQ",
+  "press.readmore4": "Read more"
 }

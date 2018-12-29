@@ -9,7 +9,7 @@ export default class Video extends React.Component {
           className="react-player"
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/mNDA-o9yJNw"
+          src="https://www.youtube.com/embed/4OLoKl1KwtQ"
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
