@@ -5,7 +5,7 @@ import PressGridItem from "./PressGridItem";
 export default class PressGrid extends React.Component {
   render() {
     return (
-      <div>
+      <div className="press-grid-container">
         <PressGridItem
           title={<Translate string={"press.title1"} />}
           bodytext={<Translate string={"press.bodytext1"} />}
