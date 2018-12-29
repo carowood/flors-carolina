@@ -2,6 +2,7 @@ import React from "react";
 import Translate from "../../../translations/Translate";
 import Heading from "../../Headings/H1/H1";
 import Video from "../../Video/Video";
+import PressGrid from "../../PressGrid/PressGrid";
 
 export default class Press extends React.Component {
   componentDidMount() {
@@ -15,6 +16,8 @@ export default class Press extends React.Component {
           <Translate string={"press.header"} />
         </Heading>
         <Video />
+        <PressGrid />
+
         {/* <p>
           <Translate string={"press.description"} />
         </p> */}
