@@ -6,9 +6,8 @@ export default function BtnCompany() {
     <div>
         <div className="btn">
           <ul>
-            <li><Translate string={"services.cbtn1"}/></li>
-            <li><Translate string={"services.cbtn2"}/></li>
-            <li><button><Translate string={"services.cbtn3"}/></button></li>
+            <li><Translate string={"services.cbtn"}/></li>
+            <li><button><Translate string={"services.cbtncontact"}/></button></li>
           </ul>
         </div>
     </div>

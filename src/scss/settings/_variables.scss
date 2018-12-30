@@ -1,6 +1,15 @@
 /* Font sizes we need to decide them check the example below how they should look*/
-$font-size-base: 16;
-$font-size-headline: 36;
+//headline
+$font-headline-xs:2vh;
+$font-headline-sm:4vh;
+$font-headline-md:5vh;
+$font-headline-lg:8vh;
+
+$font-normal-xs:40px;
+$font-normal-sm:2.5vh;
+$font-normal-md:3vh;
+$font-normal-lg:40px;
+
 
 /* Media queries: all minimum sizes they start */
 

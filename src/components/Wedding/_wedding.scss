@@ -5,33 +5,38 @@
     margin:40px;
   }
   &_title{
+   padding:5px;
    font-family:$font-playfair;
    font-size: 30px;
    display: flex;
    justify-content: center;
    letter-spacing:1px;
    text-transform:uppercase;
-   letter-spacing:1px;
+   text-align: center;
+   border-bottom:1px solid $color-main-purple;
+   font-size:$font-headline-sm;
 
-
-    @media (min-width: $screen-md) {
+     @media (min-width: $screen-md) {
       margin-left:50px;
       border-bottom:1px solid $color-main-purple;
-      width:50px;
+      width:200px;
+      font-size:$font-headline-md;
     }
+
   }
 
   &_description{
+    margin-top: 10px;
     font-family:$font-futura-book;
     display: flex;
     justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:$font-normal-sm;
     @media (min-width: $screen-md) {
        width: 400px;
-    }
-    ul {
-      list-style: none;
-      padding:0px;
-
+       padding-right:100px;
+       font-size:$font-normal-md;
     }
   }
 
@@ -39,8 +44,11 @@
     font-family:$font-futura-book;
     display: flex;
     justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
     @media (min-width: $screen-md) {
-
+      width: 400px;
+      padding-right:100px;
     }
     ul{
       list-style:none;
@@ -48,24 +56,41 @@
     }
   }
 
+  &_grid-mobile ul{
+    padding: 0;
+    list-style-type: none;
+
+    @media (max-width: $screen-md) {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    li{
+      text-align:center;
+    }
+
+  }
   &_image1{
-    margin:10px;
-    position:absolute;
-    right:100px;
+    display:none;
     img{
-     width: 100px;
      @media (min-width: $screen-md) {
+        display:block;
         width: 400px;
+        top: 20px;
+        position: absolute;
+
      }
     }
   }
 
   &_image2{
-    margin:10px;
-    position:absolute;
-    right:100px;
     img{
-     width: 100px;
+     width: 250px;
+     position:center;
+     @media (min-width: $screen-sm) {
+        width: 350px;
+    }
      @media (min-width: $screen-md) {
         width: 400px;
      }
@@ -73,11 +98,12 @@
   }
 
   &_image3{
-    margin:10px;
-    position:absolute;
-    right:100px;
     img{
-     width: 100px;
+     width: 250px;
+     @media (min-width: $screen-sm) {
+        width: 350px;
+
+    }
      @media (min-width: $screen-md) {
         width: 400px;
      }

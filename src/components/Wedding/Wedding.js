@@ -8,14 +8,10 @@ export default function Wedding() {
   return (
     <div>
       <div className="wedding_title">
-        <Translate string={"services.wheader1"} />
+        <Translate string={"services.wheader"} />
       </div>
         <div className="wedding_description">
-          <ul>
-            <li><Translate string={"services.wdescription1"}/></li>
-            <li><Translate string={"services.wdescription2"}/></li>
-            <li><Translate string={"services.wdescription3"}/></li>
-          </ul>
+          <Translate string={"services.wdescription"}/>
         </div>
 
         <div className="wedding_options">
@@ -27,15 +23,24 @@ export default function Wedding() {
             <li><Translate string={"services.woption5"} /></li>
           </ul>
        </div>
-
-       <div className="wedding_image1">
-         <img src={Imageone}  alt="Imageone" />
-       </div>
-       <div className="wedding_image2">
-         <img src={Imagetwo}  alt="Imagetwo" />
-       </div>
-       <div className="wedding_image3">
-         <img src={Imagethree}  alt="Imagethree" />
+       <div className="wedding_grid-mobile">
+         <ul>
+              <li>
+                    <div className="wedding_image1">
+                      <img src={Imageone}  alt="Imageone" />
+                    </div>
+              </li>
+              <li>
+                   <div className="wedding_image2">
+                      <img src={Imagetwo}  alt="Imagetwo" />
+                   </div>
+               </li>
+              <li>
+                    <div className="wedding_image3">
+                       <img src={Imagethree}  alt="Imagethree" />
+                    </div>
+              </li>
+         </ul>
        </div>
     </div>
 
