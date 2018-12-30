@@ -1,19 +1,17 @@
 import React from "react";
 import Translate from "../../translations/Translate";
+import Imagesfour from "../../assets/images/services/Wfour.png";
+import Imagesfive from "../../assets/images/services/Wfive.png";
+//import Imageeight from "../../assets/images/services/Weight.png";
 
 export default function Bouquets() {
   return (
     <div>
       <div className="bouquets_title">
-        <Translate string={"services.bheader1"} />
+        <Translate string={"services.bheader"} />
       </div>
         <div className="bouquets_description">
-          <ul>
-            <li><Translate string={"services.bdescription1"}/></li>
-            <li><Translate string={"services.bdescription2"}/></li>
-            <li><Translate string={"services.bdescription3"}/></li>
-            <li><Translate string={"services.bdescription4"}/></li>
-          </ul>
+         <Translate string={"services.bdescription"}/>
         </div>
         <div className="bouquets_options">
           <ul>
@@ -24,6 +22,26 @@ export default function Bouquets() {
             <li><Translate string={"services.boption5"} /></li>
           </ul>
        </div>
+       <div className="bouquets_grid-mobile">
+         <ul>
+              <li>
+                    <div className="bouquets_image4">
+                      <img src={Imagesfour}  alt="Imagesix" />
+                    </div>
+              </li>
+              <li>
+                   <div className="bouquets_image5">
+                      <img src={Imagesfive}  alt="Imageseven" />
+                   </div>
+               </li>
+        {/*       <li>
+                     <div className="bouquets_image6">
+                       <img src={Imagesix}  alt="Imagesix" />
+                     </div>
+               </li>  */}
+         </ul>
+       </div>
+
     </div>
 
   );

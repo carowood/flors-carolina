@@ -6,9 +6,8 @@ export default function BtnWedding() {
     <div>
         <div className="btn">
           <ul>
-            <li><Translate string={"services.wbtn1"}/></li>
-            <li><Translate string={"services.wbtn2"}/></li>
-            <li><button><Translate string={"services.wbtn3"}/></button></li>
+            <li><Translate string={"services.wbtn"}/></li>
+            <li><button><Translate string={"services.wbtncontact"}/></button></li>
           </ul>
         </div>
     </div>

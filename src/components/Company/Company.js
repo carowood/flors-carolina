@@ -5,12 +5,10 @@ export default function Company() {
   return (
     <div>
       <div className="company_title">
-        <Translate string={"services.cheader1"} />
+        <Translate string={"services.cheader"} />
       </div>
         <div className="company_description">
-          <ul>
-            <li><Translate string={"services.cdescription1"}/></li>
-          </ul>
+          <Translate string={"services.cdescription"}/>
         </div>
     </div>
 
