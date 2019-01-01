@@ -17,10 +17,6 @@ export default class Press extends React.Component {
         </Heading>
         <Video />
         <PressGrid />
-
-        {/* <p>
-          <Translate string={"press.description"} />
-        </p> */}
       </div>
     );
   }
