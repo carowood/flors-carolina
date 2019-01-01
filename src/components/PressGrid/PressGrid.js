@@ -7,29 +7,40 @@ export default class PressGrid extends React.Component {
     return (
       <div className="press-grid-container">
         <PressGridItem
-          title={<Translate string={"press.title1"} />}
-          bodytext={<Translate string={"press.bodytext1"} />}
-          url={<Translate string={"press.url1"} />}
-          readMoreLink={<Translate string={"press.readmore1"} />}
-        />
+          url={
+            "https://www.elperiodico.com/es/barcelona/20130608/la-florista-irreductible-2412148"
+          }
+        >
+          <Translate string={"press.title1"} />
+          <Translate string={"press.bodytext1"} />
+          <Translate string={"press.linktext1"} />
+        </PressGridItem>
+
         <PressGridItem
-          title={<Translate string={"press.title2"} />}
-          bodytext={<Translate string={"press.bodytext2"} />}
-          url={<Translate string={"press.url2"} />}
-          readMoreLink={<Translate string={"press.readmore2"} />}
-        />
+          url={
+            "http://infomercats.somdemercat.cat/portem-quatre-generacions-de-carolines-de-la-familia-a-la-rambla/"
+          }
+        >
+          <Translate string={"press.title2"} />
+          <Translate string={"press.bodytext2"} />
+          <Translate string={"press.linktext2"} />
+        </PressGridItem>
+
         <PressGridItem
-          title={<Translate string={"press.title3"} />}
-          bodytext={<Translate string={"press.bodytext3"} />}
-          url={<Translate string={"press.url3"} />}
-          readMoreLink={<Translate string={"press.readmore3"} />}
-        />
-        <PressGridItem
-          title={<Translate string={"press.title4"} />}
-          bodytext={<Translate string={"press.bodytext4"} />}
-          url={<Translate string={"press.url4"} />}
-          readMoreLink={<Translate string={"press.readmore4"} />}
-        />
+          url={
+            "https://www.pressreader.com/spain/la-vanguardia/20160331/282273844502595"
+          }
+        >
+          <Translate string={"press.title3"} />
+          <Translate string={"press.bodytext3"} />
+          <Translate string={"press.linktext3"} />
+        </PressGridItem>
+
+        <PressGridItem url={"https://www.youtube.com/watch?v=4OLoKl1KwtQ"}>
+          <Translate string={"press.title4"} />
+          <Translate string={"press.bodytext4"} />
+          <Translate string={"press.linktext4"} />
+        </PressGridItem>
       </div>
     );
   }
