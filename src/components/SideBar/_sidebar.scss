@@ -52,45 +52,59 @@
     }
   }
 
-  @media (max-width: 769px) {
-    .sidebar {
-      div.languagepicker {
-        ul.languagepicker__list {
-          li {
-            background-color: $color-white;
-          }
-          li.selected {
-            background-color: $color-main-purple;
-            color: $color-white;
-            a {
-              color: $color-white;
-            }
-            a {
-              text-decoration: none;
-              font-size: 1.2rem;
-              font-family: $font-playfair;
-              text-transform: uppercase;
-              letter-spacing: 0.2em;
-            }
-            a:hover,
-            a:active {
-              color: $color-white;
-              width: auto;
-              background-color: red;
-              padding: 0 10px;
-            }
-          }
-        }
-        li.languagepicker__list-item:hover {
-          color: $color-white;
-        }
-      }
-    }
-  }
+  // @media (max-width: 769px) {
+  //   .sidebar {
+  //     .languagepicker {
+  //       &__list {
+  //         &__list-item {
+  //           background-color: $color-white;
+  //         }
+  //         &__list-item--selected {
+  //           background-color: $color-main-purple;
+  //           color: $color-white;
+  //           text-decoration: none;
+  //           font-size: 1.2rem;
+  //           font-family: $font-playfair;
+  //           text-transform: uppercase;
+  //           letter-spacing: 0.2em;
+  //           span {
+  //             color: $color-white;
+  //           }
+  //           span {
+  //             text-decoration: none;
+  //             font-size: 1.2rem;
+  //             font-family: $font-playfair;
+  //             text-transform: uppercase;
+  //             letter-spacing: 0.2em;
+  //           }
+  //           span.selected {
+  //             background-color: red;
+  //           }
+  //           span:hover,
+  //           span:active {
+  //             color: $color-white;
+  //             width: auto;
+  //             background-color: red;
+  //             padding: 0 10px;
+  //           }
+  //         }
+  //       }
+  //       li.languagepicker__list-item:hover {
+  //         color: $color-white;
+  //       }
+  //     }
+  //   }
+  // }
 
   .sidebar.open {
     transform: translateX(0);
   }
+  // span.languagepicker__list-item--selected {
+  //   background: #f44336;
+  //   padding: 5px 9px;
+  //   color: white;
+  //   border-radius: 3px;
+  // }
 }
 
 @media (min-width: 769px) {
