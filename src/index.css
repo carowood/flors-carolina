@@ -24,5 +24,7 @@ body.home {
 @media (max-width: 768px) {
   body {
     border: none;
+    width: 100%;
+    margin: 0;
   }
 }
