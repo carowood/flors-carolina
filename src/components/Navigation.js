@@ -6,33 +6,33 @@ class Navigation extends React.Component {
   render() {
     console.log("props", this.props);
     return (
-      <ul className="">
+      <ul className="menu">
         {/*<li className="">
           <Link to="/">
             <Translate string={"navigation.home"} />
           </Link>
         </li> */}
-        <li className="">
+        <li className="menu__item">
           <Link to="/ourstory" onClick={this.props.click}>
             <Translate string={"navigation.ourstory"} />
           </Link>
         </li>
-        <li className="">
+        <li className="menu__item">
           <Link to="/services" onClick={this.props.click}>
             <Translate string={"navigation.services"} />
           </Link>
         </li>
-        <li className="">
+        <li className="menu__item">
           <Link to="/gallery" onClick={this.props.click}>
             <Translate string={"navigation.gallery"} />
           </Link>
         </li>
-        <li className="">
+        <li className="menu__item">
           <Link to="/contact" onClick={this.props.click}>
             <Translate string={"navigation.contact"} />
           </Link>
         </li>
-        <li className="">
+        <li className="menu__item">
           <Link to="/press" onClick={this.props.click}>
             <Translate string={"navigation.press"} />
           </Link>
