@@ -6,4 +6,7 @@
 
 .page-container {
   margin: 15rem 0 0 0px;
+  @media (max-width: $screen-md) {
+    margin-top: 8.5rem;
+  }
 }
