@@ -17,7 +17,42 @@ class App extends Component {
   state = {
     menuSideBarOpen: false,
     preferredLocale: "en",
-    navTheme: "light"
+    navTheme: "light",
+    navOpacity: 0
+  };
+
+  componentDidMount = () => {
+    window.addEventListener("scroll", this.updateNavOpacity);
+  };
+
+  componentWillUnmount = () => {
+    window.removeEventListener("scroll", this.updateNavOpacity);
+  };
+
+  updateNavOpacity = () => {
+    const navbarHeight = 50;
+    const bottomBorderWidth = 2;
+    const headerHeight = 200;
+    const fadeInDistance = 40;
+    const endFade = headerHeight - navbarHeight - bottomBorderWidth;
+    const startFade = endFade - fadeInDistance;
+    const scrollY = window.scrollY;
+
+    if (scrollY < startFade) {
+      if (this.state.opacity === 0) return;
+      this.setState({ navOpacity: 0 });
+      return;
+    }
+
+    if (scrollY > endFade) {
+      if (this.state.opacity === 1) return;
+      this.setState({ navOpacity: 1 });
+      return;
+    }
+
+    const pxPastStartFade = scrollY - startFade;
+    const navOpacity = pxPastStartFade / (endFade - startFade);
+    this.setState({ navOpacity });
   };
 
   menuSidebarToggleClickHandler = () => {
@@ -54,6 +89,7 @@ class App extends Component {
       <div className="App">
         <LocaleContext.Provider value={this.state.preferredLocale}>
           <Navbar
+            opacity={this.state.navOpacity}
             theme={this.state.navTheme}
             path={this.props}
             changeLanguage={this.changeLanguage}

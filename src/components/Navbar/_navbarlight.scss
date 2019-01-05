@@ -1,7 +1,12 @@
 .light {
+  background-image: linear-gradient(to bottom, purple, rgba(255, 255, 255, 0));
+  .navbar__navigation {
+    //background: purple;
+    margin: 0px;
+  }
   .navbar__logo a img {
     width: 100px;
-    margin-top: 60px;
+    //margin-top: 60px;
     @media (min-width: $screen-md) {
       width: 150px;
       height: 150px;
