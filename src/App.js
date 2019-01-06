@@ -81,6 +81,7 @@ class App extends Component {
     this.setState({
       preferredLocale: id
     });
+    this.menuBackdropClickHandler();
   };
 
   changeTheme = theme => {
