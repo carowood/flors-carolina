@@ -12,7 +12,7 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <div className="page-container">
+      <div className="contact-container">
         <Heading>
           <Translate string={"contact.heading"} />
         </Heading>

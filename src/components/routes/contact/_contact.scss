@@ -1,8 +1,5 @@
-.page-container {
-  .heading-h1 {
-    margin-top: -70px;
-  }
-  margin: 15rem 0 0 0px;
+.contact-container {
+  margin: 190px 0 0 0px;
   //padding: 2em;
   .contact-flex-container {
     height: auto;
@@ -18,16 +15,18 @@
 }
 
 @media (max-width: $screen-md) {
-  .page-container {
+  .contact-container {
     margin-top: 8.5rem;
     .contact-flex-container {
       height: auto;
       display: block;
       .form-container {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
       }
       .address-map-container {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         height: auto;
         margin-top: 2em;
       }
