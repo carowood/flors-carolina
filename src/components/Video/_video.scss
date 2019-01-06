@@ -1,16 +1,19 @@
-.player-wrapper {
-  // background-color: black;
-  // border: 1px solid rgba(0, 0, 0, 0.3);
-  // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-  // padding: 30px 0;
-  // width: 100%;
+/* ================================================================= */
 
+/* 
+    Styling PLAYER WRAPPER RATIO at 100% example:
+
+    padding-top: 56.25%;    <==  N.B Player ratio: 100 / (1280 / 720) 
+    height: 100%;
+    width: 100%;
+
+*/
+
+/* ================================================================= */
+
+.player-wrapper {
   margin: 0 auto;
   position: relative;
-  // padding-top: 28.12%;
-  // height: 50%;
-  // width: 50%;
-
   padding-top: 36.56%;
   height: 65%;
   width: 65%;
@@ -24,8 +27,8 @@
 
 @media (max-width: $screen-md) {
   .player-wrapper {
-    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
-    height: 100%;
-    width: 100%;
+    padding-top: 50.62%;
+    height: 90%;
+    width: 90%;
   }
 }
