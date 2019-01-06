@@ -15,7 +15,7 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div className="page-container">
+      <div className="home-container">
         <ImageContainerLarge />
       </div>
     );
