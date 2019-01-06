@@ -11,7 +11,7 @@ export default class Press extends React.Component {
 
   render() {
     return (
-      <div className="page-container">
+      <div className="press-container">
         <Heading>
           <Translate string={"press.header"} />
         </Heading>
