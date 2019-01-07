@@ -1,5 +1,17 @@
 .btn{
+  width: 20%;
+  position: absolute;
+  margin-left: 60%;
+  justify-content: center;
+  text-align: left;
+  margin-top: -300px;
   ul{
   list-style:none;
+
+  button{
+    background-color:$color-main-purple;
+    color:$color-white;
+    justify-content: center;
+  }
  }
 }

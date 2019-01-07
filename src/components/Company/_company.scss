@@ -3,16 +3,35 @@
   padding:0px;
 
   &_title{
+    padding:5px;
     font-family:$font-playfair;
-    font-size:30px;
-    text-transform:uppercase;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
     letter-spacing:1px;
+    text-transform:uppercase;
+    text-align: center;
+    border-bottom:1px solid $color-main-purple;
+
+
+      @media (min-width: $screen-md) {
+       border-bottom:1px solid $color-main-purple;
+       width:400px;
+       font-size:$font-headline-md;
+     }
   }
   &_description{
-    margin:10px;
+    margin-top: 10px;
     font-family:$font-futura-book;
-    ul {
-      list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+
+    @media (min-width: $screen-md) {
+       width: 400px;
+       padding-right:100px;
+       font-size:$font-normal-sm;
     }
   }
 }

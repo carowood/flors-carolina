@@ -51,8 +51,8 @@
   "services.pheader": "Coronas & Almohadas",
   "services.pdescription": "Creamos coronas de otoño, invierno, primavera y verano. También realizamos coronas y almohadas personalizadas para funerales.",
 
-  "services.cheader1": "Servicios a empresas",
-  "services.cdescription1": "Ofrecemos servicios semanales y mensuales personalizados a hoteles, restaurantes y empresas privadas.",
+  "services.cheader": "Servicios a empresas",
+  "services.cdescription": "Ofrecemos servicios semanales y mensuales personalizados a hoteles, restaurantes y empresas privadas.",
 
   "services.cbtn": "Contactanos, danos tu presupuesto y preferencias, nos aseguramos de que quedes satisfecho con tu producto",
   "services.cbtncontact": "Contacto",

@@ -6,7 +6,7 @@ $font-headline-md:5vh;
 $font-headline-lg:8vh;
 
 $font-normal-xs:40px;
-$font-normal-sm:2.5vh;
+$font-normal-sm:20px;
 $font-normal-md:3vh;
 $font-normal-lg:40px;
 
@@ -17,7 +17,7 @@ $screen-xs: 360px; //small mobile
 $screen-sm: 425px; //large mobile
 $screen-md: 768px; //tablet
 $screen-lg: 1024px; //desktop
-$screen-xl: 1440px; //desktop large
+$screen-xl: 1440px; //desktop large (Add margins)
 
 $breakpoints: (
   xs: $screen-xs,
