@@ -1,23 +1,21 @@
-div.languagepicker-light {
-  ul.languagepicker__list {
+.languagepickerlight {
+  &__list {
     display: flex;
     justify-content: flex-end;
-    li.languagepicker__list-item {
+    &__item {
       font-size: 0.8rem;
+      letter-spacing: 0.1em;
       margin: 20px 0;
       color: $color-white;
-    }
-    @media (max-width: 768px) {
-      li.languagepicker__list-item {
-        color: $color-white;
+      &__a:hover {
+        color: $color-red;
       }
-    }
-    li.languagepicker__list-item:hover {
-      color: #fe7e6a;
-    }
-    li.selected {
-      color: $color-main-purple;
-      background: $color-white;
+      &__a--selected {
+        color: $color-main-purple;
+        background: $color-white;
+        padding: 2px 4px;
+        border-radius: 2px;
+      }
     }
   }
 }

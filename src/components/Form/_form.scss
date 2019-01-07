@@ -4,6 +4,7 @@
   form.form-group {
     // padding: 0 2em 0 0;
     margin-top: 4em;
+    margin-top: 0;
     padding: 0em 2em 4em 2em;
     width: 100%;
     border-right: 1px solid $color-light-grey;
@@ -17,9 +18,11 @@
       width: 100%;
       border: none;
       border-bottom: 1px solid $color-light-grey;
-      height: 4em;
-      margin: 2em 0;
+      height: 2em;
+      margin: 1em 0;
       font-family: $font-futura-book;
+      color: #6363fc;
+      font-size: 1.4em;
     }
     #message-field {
       height: auto;
@@ -36,5 +39,14 @@
     padding: 1.5em;
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+
+    .form-field {
+      border-radius: 0px;
+      height: 2em;
+      margin: 1em 0;
+    }
+    #message-field {
+      height: 5em;
+    }
   }
 }

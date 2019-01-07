@@ -1,21 +1,52 @@
 .press-grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border: 1px solid rgba(147, 39, 143, 0.9);
+  box-shadow: rgba(147, 39, 143, 0.3);
+  border-radius: 5px;
   width: 48%;
   height: auto;
   margin: 1%;
-  padding: 0.9em;
-  &__title {
-    font-family: $font-playfair;
+  background-color: #fafafa;
+  @media (max-width: $screen-md) {
+    width: 100%;
+    margin-bottom: 2em;
   }
-  &__bodytext {
-    font-family: $font-futura-book;
+  &__textcontainer {
+    width: 100%;
+    padding: 0.9em;
+    margin-bottom: 5em;
+    border-radius: 5px 5px 0 0;
+
+    &__title {
+      font-family: $font-futura-book;
+      color: $color-main-purple;
+      font-size: 1.7em;
+    }
+    &__bodytext {
+      font-family: $font-futura-book;
+      color: $color-main-purple;
+    }
   }
-  &__url {
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 5px 10px;
-    border-radius: 20px;
-    text-decoration: none;
-    cursor: pointer;
+  &__urlcontainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(147, 39, 143, 0.9);
+    height: 5em;
+    margin: 0 auto;
+    &__url {
+      background-color: $color-main-purple;
+      border: 1px solid $color-white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      text-decoration: none;
+      cursor: pointer;
+      color: $color-white;
+      float: right;
+      margin-right: 2em;
+      margin-top: 1.6em;
+      margin-bottom: 1.6em;
+    }
   }
 }

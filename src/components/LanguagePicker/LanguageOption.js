@@ -21,16 +21,17 @@ export default class LanguageOption extends React.Component {
 
     let classNameString =
       selectedLanguage === language
-        ? "languagepicker__list-item selected"
-        : "languagepicker__list-item";
+        ? "languagepicker" + this.props.theme + "__list__item__a--selected "
+        : "languagepicker" + this.props.theme + "__list__item__a";
 
+    console.log("THEME", this.props.theme);
     return (
       <li
         id={language}
-        className={classNameString}
+        className={"languagepicker" + this.props.theme + "__list__item "}
         onClick={this.props.changeLanguage}
       >
-        {language.toUpperCase()}
+        <span className={classNameString}>{language.toUpperCase()}</span>
       </li>
     );
   }

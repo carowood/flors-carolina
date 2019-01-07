@@ -20,10 +20,14 @@ body {
 
 body.home {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
   body {
     border: none;
+    width: 100%;
+    margin: 0;
   }
 }

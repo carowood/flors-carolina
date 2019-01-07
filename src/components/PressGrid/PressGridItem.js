@@ -2,19 +2,28 @@ import React from "react";
 
 export default class PressGridItem extends React.Component {
   render() {
-    console.log("presspage", this.props.url);
+    let url = this.props.url;
+    let item = this.props.children;
+    let title = item[0];
+    let bodyText = item[1];
+    let linkText = item[2];
+
     return (
       <div className="press-grid-item">
-        <h1 className="press-grid-item__title">{this.props.title}</h1>
-        <p className="press-grid-item__bodytext">{this.props.bodytext}</p>
-        <a
-          href={this.props.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="press-grid-item__url"
-        >
-          {this.props.readMoreLink}
-        </a>
+        <div className="press-grid-item__textcontainer">
+          <h1 className="press-grid-item__textcontainer__title">{title}</h1>
+          <p className="press-grid-item__textcontainer__bodytext">{bodyText}</p>
+        </div>
+        <div className="press-grid-item__urlcontainer">
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="press-grid-item__urlcontainer__url"
+          >
+            {linkText}
+          </a>
+        </div>
       </div>
     );
   }
