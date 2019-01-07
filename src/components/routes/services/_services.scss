@@ -1,4 +1,8 @@
 .services {
+  margin-top: 15rem;
+  @media (max-width: $screen-md) {
+    margin-top: 8.5rem;
+  }
   /*
   @media (min-width: $screen-md) {
     border: 2px solid $color-main-purple;
@@ -11,9 +15,5 @@
     }
     @media (max-width: $screen-md) {
     } */
-  margin: 7rem 0 0 0px;
-}
-
-.page-container {
-  margin: 7rem 0 0 0px;
+  //margin: 7rem 0 0 0px;
 }

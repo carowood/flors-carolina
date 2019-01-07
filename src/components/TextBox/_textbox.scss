@@ -1,12 +1,63 @@
 .home-textbox {
-  font-family: $font-playfair;
-  color: $color-white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border: 1px $color-white solid;
-  padding: 3em;
-  width: 60%;
+  background-color: rgba(104, 0, 113, 0.6);
   top: 50%;
   left: 50%;
-  margin: 0 auto;
+  margin: 35vh 25vw;
+  @media (max-width: $screen-md) {
+    margin: 28vh 15vw;
+  }
+  @media (max-width: $screen-sm) {
+    margin: 30vh 10vw;
+  }
+  .text-box-container {
+    font-family: $font-playfair;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px $color-white solid;
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+    .para {
+      padding: 3em;
+    }
+    .image-border-left {
+      position: absolute;
+      bottom: -4vw;
+      left: -4vw;
+      width: 12vw;
+      min-width: 120px;
+      @media (min-width: $screen-xl) {
+        width: 10vw;
+      }
+      @media (max-width: $screen-sm) {
+        bottom: -10vw;
+        left: -5vw;
+      }
+      @media (max-width: $screen-xs) {
+        bottom: -14vw;
+        left: -8vw;
+      }
+    }
+    .image-border-right {
+      position: absolute;
+      top: -4vw;
+      right: -4vw;
+      width: 13vw;
+      min-width: 120px;
+      @media (min-width: $screen-xl) {
+        width: 11vw;
+        top: -4vw;
+      }
+      @media (max-width: $screen-sm) {
+        top: -10vw;
+        right: -6vw;
+      }
+      @media (max-width: $screen-xs) {
+        top: -12vw;
+        right: -7vw;
+      }
+    }
+  }
 }

@@ -6,14 +6,14 @@
   grid-auto-flow: dense;
 }
 
-@media (max-width: $screen-sm) {
+@media (max-width: $screen-md) {
   .story-grid__container {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     margin: 0 10px;
   }
 }
 
-@media (min-width: $screen-md) {
+@media (min-width: 769px) {
   .story-grid__container {
     display: block;
   }

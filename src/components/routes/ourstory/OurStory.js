@@ -1,6 +1,8 @@
 import React from "react";
 import StoryGridContainer from "../../StoryGrid/StoryGridContainer";
 import StoryContainer from "../../StoryContainer/StoryContainer";
+import Translate from "../../../translations/Translate";
+import Heading from "../../Headings/H1/H1";
 
 export default class OurStory extends React.Component {
   componentDidMount() {
@@ -8,7 +10,10 @@ export default class OurStory extends React.Component {
   }
   render() {
     return (
-      <div className="page-container">
+      <div className="ourstory-container">
+        <Heading>
+          <Translate string={"ourstory.header"} />
+        </Heading>
         <StoryGridContainer />
         <StoryContainer />
       </div>

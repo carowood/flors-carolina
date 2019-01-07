@@ -6,8 +6,8 @@ export default class MapContainer extends React.Component {
   constructor() {
     super();
     this.state = {
-      lat: 41.382367,
-      lng: 2.172289,
+      lat: 41.382327,
+      lng: 2.172215,
       zoom: 17
     };
   }

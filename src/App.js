@@ -18,7 +18,53 @@ class App extends Component {
     menuSideBarOpen: false,
     preferredLocale: "en",
     navTheme: "light"
+    // navOpacity: 0 //related to commented out code below, don't delete!
   };
+
+  // ================================================================================== //
+  // ================================================================================== //
+
+  // NAV BAR OPACITY FUNCTION COMMENTED OUT FOR NOW - MAYBE WE CAN USE THIS WITH STATE
+  // IN ORDER TO MAKE NAV VISIBLE UPON SCROLL ON HOMEPAGE.
+  // FOR NOW, USING CSS ONLY, BUT WILL KEEP THIS CODE IN PLACE IN CASE WE DECIDE
+  // TO USE IT.
+
+  // componentDidMount = () => {
+  //   window.addEventListener("scroll", this.updateNavOpacity);
+  // };
+
+  // componentWillUnmount = () => {
+  //   window.removeEventListener("scroll", this.updateNavOpacity);
+  // };
+
+  // updateNavOpacity = () => {
+  //   const navbarHeight = 50;
+  //   const bottomBorderWidth = 2;
+  //   const headerHeight = 200;
+  //   const fadeInDistance = 40;
+  //   const endFade = headerHeight - navbarHeight - bottomBorderWidth;
+  //   const startFade = endFade - fadeInDistance;
+  //   const scrollY = window.scrollY;
+
+  //   if (scrollY < startFade) {
+  //     if (this.state.opacity === 0) return;
+  //     this.setState({ navOpacity: 0 });
+  //     return;
+  //   }
+
+  //   if (scrollY > endFade) {
+  //     if (this.state.opacity === 1) return;
+  //     this.setState({ navOpacity: 1 });
+  //     return;
+  //   }
+
+  //   const pxPastStartFade = scrollY - startFade;
+  //   const navOpacity = pxPastStartFade / (endFade - startFade);
+  //   this.setState({ navOpacity });
+  // };
+
+  // ================================================================================== //
+  // ================================================================================== //
 
   menuSidebarToggleClickHandler = () => {
     this.setState(prevState => {
@@ -35,6 +81,7 @@ class App extends Component {
     this.setState({
       preferredLocale: id
     });
+    this.menuBackdropClickHandler();
   };
 
   changeTheme = theme => {
@@ -54,6 +101,7 @@ class App extends Component {
       <div className="App">
         <LocaleContext.Provider value={this.state.preferredLocale}>
           <Navbar
+            // opacity={this.state.navOpacity} //related to commented out code above, don't delete!
             theme={this.state.navTheme}
             path={this.props}
             changeLanguage={this.changeLanguage}

@@ -1,24 +1,50 @@
-div.languagepicker {
-  ul.languagepicker__list {
+.languagepicker {
+  &__list {
     display: flex;
     justify-content: flex-end;
-    li.languagepicker__list-item {
-      color: white;
+    &__item {
       font-size: 0.8rem;
+      letter-spacing: 0.1em;
       margin: 20px 0;
-      color: $color-main-purple;
-    }
-    @media (max-width: 768px) {
-      li.languagepicker__list-item {
+      cursor: pointer;
+      &__a {
         color: $color-main-purple;
       }
+      &__a:hover {
+        color: $color-red;
+      }
+      &__a--selected {
+        color: $color-white;
+        background: $color-main-purple;
+        padding: 2px 4px;
+        border-radius: 2px;
+      }
     }
-    li.languagepicker__list-item:hover {
-      color: $color-white;
-    }
-    li.selected {
-      color: white;
-      background: $color-main-purple;
+
+    @media (max-width: $screen-md) {
+      &__item {
+        &__a {
+          color: $color-main-purple;
+        }
+        &__a {
+          text-decoration: none;
+          font-family: $font-futura-book;
+          text-transform: uppercase;
+          color: $color-main-purple;
+        }
+        &__a--selected {
+          background-color: $color-red;
+          color: $color-white;
+          border-radius: 2px;
+          padding: 1px 2px;
+        }
+        &__a:hover,
+        &__a:active {
+          color: $color-red;
+          width: auto;
+          padding: 0;
+        }
+      }
     }
   }
 }

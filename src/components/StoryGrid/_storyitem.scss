@@ -68,7 +68,7 @@
 
 /* ========== DESKTOP ========== */
 
-@media only screen and (min-width: $screen-md) {
+@media only screen and (min-width: 769px) {
   div.story-grid__container {
     box-sizing: border-box;
     border: solid $color-main-purple 0.5px;
