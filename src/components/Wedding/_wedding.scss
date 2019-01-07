@@ -60,15 +60,8 @@
 
     @media (min-width: 769px) {
      width:40%;
-
-
     }
-    @media (min-width: $screen-lg) {
 
-   }
-    @media (min-width: $screen-xl) {
-
-   }
   }
 
   &_options{
@@ -85,12 +78,6 @@
       list-style:none;
       padding:0px;
     }
-    @media (min-width: $screen-lg) {
-
-   }
-    @media (min-width: $screen-xl) {
-
-   }
   }
 
   &_grid-mobile ul{
@@ -148,7 +135,7 @@
        z-index: 0;
 
     }
-    }
+   }
   }
 
   &_image2{

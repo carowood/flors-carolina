@@ -14,13 +14,21 @@
     text-transform:uppercase;
     text-align: center;
     border-bottom:1px solid $color-main-purple;
-    font-size:$font-headline-sm;
 
-      @media (min-width: $screen-md) {
-        border-bottom:1px solid $color-main-purple;
-        width:400px;
-        font-size:$font-headline-md;
+
+     @media (min-width: 769px) {
+       border-bottom:1px solid $color-main-purple;
+       width:40%;
      }
+     @media (min-width: $screen-lg) {
+       border-bottom:1px solid $color-main-purple;
+       width:40%;
+
+    }
+     @media (min-width: $screen-xl) {
+       border-bottom:1px solid $color-main-purple;
+       font-size:$font-headline-md;
+    }
 
   }
 
@@ -33,9 +41,7 @@
     text-justify: inter-word;
 
     @media (min-width: $screen-md) {
-       width: 400px;
-       padding-right:100px;
-       font-size:$font-normal-sm;
+     width:40%;
     }
   }
 
@@ -45,9 +51,9 @@
     justify-content: center;
     text-align: justify;
     text-justify: inter-word;
-    @media (min-width: $screen-md) {
-      width: 400px;
-      padding-right:100px;
+    @media (min-width: 769px) {
+      width:40%;
+
     }
     ul{
       list-style:none;
@@ -68,17 +74,21 @@
     li{
       text-align:center;
     }
-
   }
+
   &_image4{
     img{
       width: 250px;
       position:center;
+
      @media (min-width: $screen-md) {
-        width: 400px;
-        top: 20px;
+        width:50%;
+        top: 190px;
+        right: 70px;
+        z-index: 0;
+
      }
-    }
+   }
   }
 
   &_image5{
@@ -87,12 +97,46 @@
      position:center;
      @media (min-width: $screen-sm) {
         width: 350px;
-    }
-     @media (min-width: $screen-md) {
-        width: 400px;
      }
+     @media (min-width: 769px) {
+       width: 50%;
+       right: 25%;
+       top: -80px;
+       position: relative;
+       z-index: 1;
+       border: 5px solid white;
+       margin-top:2.5%;
+
+     }
+     @media (min-width: $screen-lg) {
+
+    }
+     @media (min-width: $screen-xl) {
+
+    }
    }
   }
+
+  &_image3{
+    img{
+     width: 250px;
+     @media (min-width: $screen-sm) {
+        width: 350px;
+
+    }
+     @media (min-width: 769px) {
+       width: 65%;
+       right: 150px;
+       top: -90px;
+       position: relative;
+       z-index: 1;
+       border: 5px solid white;
+       margin-left:5%;
+     }
+    }
+
+  }
+
 /*  &_image8{
     img{
      width: 250px;

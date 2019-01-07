@@ -1,17 +1,44 @@
 .btn{
-  width: 20%;
-  position: absolute;
-  margin-left: 60%;
-  justify-content: center;
-  text-align: left;
-  margin-top: -300px;
-  ul{
-  list-style:none;
 
-  button{
+  text-align:center;
+  justify-content: center;
+
+   @media (min-width: $screen-md) {
+     width: 20%;
+     margin-left: 60%;
+     margin-top: -350px;
+     position: absolute;
+     text-align:center;
+     justify-content: center;
+  }
+
+  @media (min-width: $screen-lg){
+    margin-left:65%;
+  }
+
+  @media (min-width: $screen-xl){
+    margin-left:70%;
+  }
+
+  ul{
+    padding: 0;
+    list-style-type: none;
+
+  }
+
+  li button{
     background-color:$color-main-purple;
     color:$color-white;
-    justify-content: center;
+    padding:2%;
+    margin:1.5%;
+    border-radius:5%;
+
+    @media (min-width: $screen-md) {
+     padding:4%;
+     margin:5%;
+    }
+
+
   }
- }
+
 }
