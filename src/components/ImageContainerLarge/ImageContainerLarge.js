@@ -33,7 +33,7 @@ export default class ImageContainerLarge extends React.Component {
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum.
             </p>
-            <a href="" className="container__middle__border__link">
+            <a href="#" className="container__middle__border__link">
               Read more
             </a>
           </div>
@@ -55,7 +55,7 @@ export default class ImageContainerLarge extends React.Component {
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum.
             </p>
-            <a href="" className="container__middle__border__link">
+            <a href="#" className="container__middle__border__link">
               Read more
             </a>
           </div>
