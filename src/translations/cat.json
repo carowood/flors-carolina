@@ -102,5 +102,19 @@
   "press.title4": "Som de Mercat! Carolina Pallés",
   "press.bodytext4": "Carolina Pallés, de família de floristes amb llarga tradició, explica la relació de la seva parada de flors amb el món de la cultura de Barcelona",
   "press.url4": "https://www.youtube.com/watch?v=4OLoKl1KwtQ",
-  "press.linktext4": "Llegeix més"
+  "press.linktext4": "Llegeix més",
+
+  "home-top-section-bodytext": "“FLes flors es regalen des del moment que neixes, fins al moment que faltes. Moments molt feliços i moments molt tristos. Però entre aquest període, que és la vida, la flor sempre ens acompanya”",
+
+  "home-mid-section.title": "La nostra història",
+  "home-mid-section.alt-tag": "Carolina, Flors Carolina",
+  "home-mid-section.alt-tag": "flowers",
+  "home-mid-section.bodytext": "“Som quatre generacions de floristes a la meva família que hem estat al mateix lloc de les Rambles, sempre amb una Carolina al capdavant: la meva besàvia, la meva àvia, la mare i jo”",
+  "home-mid-section.buttontext": "Llegeix mes",
+
+  "home-last-section.title": "Els nostres serveis",
+  "home-last-section.alt-tag": "Bouquets",
+  "home-last-section.alt-tag": "Table decorations",
+  "home-last-section.bodytext": "“Middle: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.”",
+  "home-last-section.buttontext": "Llegeix mes"
 }

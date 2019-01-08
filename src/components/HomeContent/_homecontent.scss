@@ -1,0 +1,48 @@
+.container__middle,
+.container__bottom {
+  width: 100%;
+  height: auto;
+  left: 0;
+  background: white;
+  margin: 0;
+  padding: 0;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+  &__border {
+    border: 2px solid purple;
+    @media (max-width: 768px) {
+      border: none;
+    }
+    box-sizing: border-box;
+    background: white;
+    margin: 10px;
+    padding: 30px;
+    &__title {
+      font-family: $font-playfair;
+      color: $color-main-purple;
+    }
+    &__img-one {
+    }
+    &__img-two {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    &__bodytext {
+      font-family: $font-playfair;
+      color: $color-main-purple;
+    }
+    &__link {
+      background-color: $color-main-purple;
+      color: $color-white;
+      padding: 10px 20px;
+      border-radius: 2px;
+    }
+  }
+}
+.container__bottom {
+  &__border {
+    margin-top: 0;
+  }
+}
