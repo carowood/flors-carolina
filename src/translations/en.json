@@ -64,8 +64,8 @@
   "services.pheader": "Wreaths & Pillows",
   "services.pdescription": "We create beautiful wreaths for every special occasion, such as in autumn, Christmas, spring and summer. We as well provide thoughtful personalized funeral wreaths & pillows.",
 
-  "services.cheader1": "Company Services",
-  "services.cdescription1": "We provide weekley & monthly personalized services to hotels, restaurants and private companies.",
+  "services.cheader": "Company Services",
+  "services.cdescription": "We provide weekley & monthly personalized services to hotels, restaurants and private companies.",
 
   "services.cbtn": "Contact us, tell us your budget, preferences and we will make sure you are happy with your product!",
   "services.cbtncontact": "Contact",

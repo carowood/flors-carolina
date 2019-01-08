@@ -17,10 +17,9 @@
    font-size:$font-headline-sm;
 
      @media (min-width: $screen-md) {
-      margin-left:50px;
-      border-bottom:1px solid $color-main-purple;
-      width:200px;
-      font-size:$font-headline-md;
+       border-bottom:1px solid $color-main-purple;
+       width:400px;
+       font-size:$font-headline-md;
     }
 
   }
@@ -32,11 +31,11 @@
     justify-content: center;
     text-align: justify;
     text-justify: inter-word;
-    font-size:$font-normal-sm;
+
     @media (min-width: $screen-md) {
        width: 400px;
        padding-right:100px;
-       font-size:$font-normal-md;
+       font-size:$font-normal-sm;
     }
   }
 

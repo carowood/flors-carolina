@@ -7,13 +7,13 @@ import Imagetwo from "../../assets/images/services/Wtwo.png";
 export default function Wedding() {
   return (
     <div>
-      <div className="wedding_title">
-        <Translate string={"services.wheader"} />
-      </div>
+    <div className="wedding_wrapp">
+        <div className="wedding_title">
+          <Translate string={"services.wheader"} />
+        </div>
         <div className="wedding_description">
           <Translate string={"services.wdescription"}/>
         </div>
-
         <div className="wedding_options">
           <ul>
             <li><Translate string={"services.woption1"} /></li>
@@ -23,6 +23,7 @@ export default function Wedding() {
             <li><Translate string={"services.woption5"} /></li>
           </ul>
        </div>
+      </div>
        <div className="wedding_grid-mobile">
          <ul>
               <li>
