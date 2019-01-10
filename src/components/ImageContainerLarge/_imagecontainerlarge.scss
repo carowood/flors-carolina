@@ -4,49 +4,14 @@
   &__top {
     min-height: 100%;
     height: 100vh;
-    background-attachment: fixed;
-    background-image: url("../assets/images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-attachment: fixed;
+    // background-image: url("../assets/images/background.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
     @media (max-width: $screen-sm) {
       height: 150vh;
     }
     &__background {
     }
   }
-  // &__middle,
-  // &__bottom {
-  //   width: 100%;
-  //   height: 100%;
-  //   left: 0;
-  //   background: white;
-  //   margin: 0;
-  //   padding: 0;
-
-  //   &__border {
-  //     border: 2px solid purple;
-  //     box-sizing: border-box;
-  //     background: white;
-  //     margin: 10px;
-  //     padding: 30px;
-  //     &__title {
-  //       font-family: $font-playfair;
-  //       color: $color-main-purple;
-  //     }
-  //     &__img-one {
-  //     }
-  //     &__img-two {
-  //     }
-  //     &__bodytext {
-  //       font-family: $font-playfair;
-  //       color: $color-main-purple;
-  //     }
-  //     &__link {
-  //       background-color: $color-main-purple;
-  //       color: $color-white;
-  //       padding: 10px 20px;
-  //       border-radius: 2px;
-  //     }
-  //   }
-  // }
 }
