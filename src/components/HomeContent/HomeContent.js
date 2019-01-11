@@ -31,7 +31,10 @@ export default class ImageContainerLarge extends React.Component {
             {bodyText}
           </p>
           <button
-            className={"container__" + this.props.class + "__border__link"}
+            onClick={this.props.click}
+            className={
+              "container__" + this.props.class + "__border__buttonlink"
+            }
           >
             {buttonText}
           </button>
