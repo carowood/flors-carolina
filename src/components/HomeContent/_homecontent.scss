@@ -33,11 +33,20 @@
       font-family: $font-playfair;
       color: $color-main-purple;
     }
-    &__link {
+    &__buttonlink {
       background-color: $color-main-purple;
       color: $color-white;
       padding: 10px 20px;
       border-radius: 2px;
+      text-decoration: none;
+    }
+    &__buttonlink a {
+      color: white;
+      text-decoration: none;
+    }
+    &__buttonlink a:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
 }
