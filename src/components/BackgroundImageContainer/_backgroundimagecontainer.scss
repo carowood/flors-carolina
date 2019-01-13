@@ -4,45 +4,52 @@
   -o-background-size: cover;
   background-size: cover;
   position: absolute;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  background-attachment: fixed;
+  z-index: 0;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 0;
+  // @media (min-width: $screen-lg) {
+  //   left: 50%;
+  //   margin-left: -512px;
+  // }
 }
 
 #back1 {
-  background: url("../assets/images/home/background-image-4.jpg") no-repeat
-    center fixed;
-  background-size: cover;
-  z-index: 0;
+  background-image: url("../assets/images/home/background-images/background-image-4.jpg");
+  background-attachment: fixed;
 }
 
 #back2 {
-  background: url("../assets/images/home/background-image-3.jpg") no-repeat
-    center fixed;
-  background-size: cover;
-  z-index: 0;
+  // background: url("../assets/images/home/background-images/background-image-3.jpg")
+  background-image: url("../assets/images/home/background-images/background-image-3.jpg");
+  background-attachment: fixed;
 }
 
 #back3 {
-  background: url("../assets/images/home/background-image-7.jpg") no-repeat
-    center fixed;
-  background-size: cover;
-  z-index: 0;
+  background-image: url("../assets/images/home/background-images/background-image-7.jpg");
+  background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 #back4 {
-  background: url("../assets/images/home/background-image-5.jpg") no-repeat
-    center fixed;
-  background-size: cover;
-  z-index: 0;
+  background-image: url("../assets/images/home/background-images/background-image-5.jpg");
+  background-attachment: fixed;
 }
 
 #back5 {
-  background: url("../assets/images/home/background-image-6.jpg") no-repeat
-    center fixed;
-  background-size: cover;
-  z-index: 0;
+  background-image: url("../assets/images/home/background-images/background-image-6.jpg");
+  background-attachment: fixed;
 }
 
 @keyframes backgroundchangeFadeInOut {
