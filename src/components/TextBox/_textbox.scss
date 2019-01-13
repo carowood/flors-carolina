@@ -1,10 +1,7 @@
 .home-textbox {
   //background-color: rgba(104, 0, 113, 0.6);
   background-color: rgba(0, 0, 0, 0.6);
-  top: 50%;
-  left: 50%;
   margin: 35vh 25vw;
-  // z-index: 10;
   @media (max-width: $screen-md) {
     margin: 28vh 15vw;
   }
@@ -20,10 +17,22 @@
     position: relative;
     margin: 0;
     padding: 0;
-    text-align: justify;
+    text-align: center;
     background-color: rgba(53, 53, 53, 0.6);
+    @media (max-width: $screen-sm) {
+      padding: 10px;
+    }
     .para {
       padding: 3em 3em 0 3em;
+      @media (max-width: $screen-md) {
+        padding: 2em;
+        font-size: 0.7em;
+        margin-bottom: 0;
+      }
+      @media (max-width: $screen-sm) {
+        padding: 1em;
+        font-size: 0.7em;
+      }
     }
     .image-border-left {
       position: absolute;

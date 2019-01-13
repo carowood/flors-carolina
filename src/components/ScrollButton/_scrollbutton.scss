@@ -1,12 +1,10 @@
 .scroll-down-button {
-  margin: 0 auto;
+  margin: 0 0 2em 0;
   padding: 0;
-  margin-bottom: 4%;
-  margin-left: 50%;
   background: transparent;
   border: none;
   cursor: pointer;
-  img {
+  img.scroll-down-icon {
     width: 1.2em;
     height: auto;
     margin: 0 auto;

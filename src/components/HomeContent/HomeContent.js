@@ -12,32 +12,65 @@ export default class ImageContainerLarge extends React.Component {
     return (
       <div className={"container__" + this.props.class}>
         <div className={"container__" + this.props.class + "__border"}>
-          <h1 className={"container__" + this.props.class + "__border__title"}>
-            {title}
-          </h1>
-          <img
-            src={this.props.image1}
-            alt=""
-            className={"container__" + this.props.class + "__border__img-one"}
-          />
-          <img
-            src={this.props.image1}
-            alt=""
-            className={"container__" + this.props.class + "__border__img-two"}
-          />
-          <p
-            className={"container__" + this.props.class + "__border__bodytext"}
-          >
-            {bodyText}
-          </p>
-          <button
-            onClick={this.props.click}
+          <div
             className={
-              "container__" + this.props.class + "__border__buttonlink"
+              "container__" + this.props.class + "__border__textcontainer"
             }
           >
-            {buttonText}
-          </button>
+            <h1
+              className={
+                "container__" +
+                this.props.class +
+                "__border__textcontainer__title"
+              }
+            >
+              {title}
+            </h1>
+            <p
+              className={
+                "container__" +
+                this.props.class +
+                "__border__textcontainer__bodytext"
+              }
+            >
+              {bodyText}
+            </p>
+            <button
+              onClick={this.props.click}
+              className={
+                "container__" +
+                this.props.class +
+                "__border__textcontainer__buttonlink"
+              }
+            >
+              {buttonText}
+            </button>
+          </div>
+
+          <div
+            className={
+              "container__" + this.props.class + "__border__imagecontainer"
+            }
+          >
+            <img
+              src={this.props.image1}
+              alt=""
+              className={
+                "container__" +
+                this.props.class +
+                "__border__imagecontainer__img-one"
+              }
+            />
+            <img
+              src={this.props.image2}
+              alt=""
+              className={
+                "container__" +
+                this.props.class +
+                "__border__imagecontainer__img-two"
+              }
+            />
+          </div>
         </div>
       </div>
     );
