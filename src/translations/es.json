@@ -107,14 +107,16 @@
   "home-top-section-bodytext": "“Las flores son regaladas desde el momento en que naces hasta que desapareces. Momentos muy felices y también tristes. Pero solo durante este periodo, que es la vida, la flor siempre nos acompaña”",
 
   "home-mid-section.title": "Nuestra historia",
-  "home-mid-section.alt-tag": "Carolina, Flors Carolina",
-  "home-mid-section.alt-tag": "flowers",
+  "home-mid-section.alt-tag1": "Carolina, Flors Carolina",
+  "home-mid-section.alt-tag2": "flowers",
   "home-mid-section.bodytext": "“Somos cuatro generaciones de floristas en mi familia donde siempre hemos estado en el mismo sitio en las Ramblas, con una Carolina en cabeza: mi bisabuela, mi abuela, mi madre y yo”",
   "home-mid-section.buttontext": "Leer mas",
 
   "home-last-section.title": "Nuestros servicios",
-  "home-last-section.alt-tag": "Bouquets",
-  "home-last-section.alt-tag": "Table decorations",
-  "home-last-section.bodytext": "“Middle: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.”",
-  "home-last-section.buttontext": "Leer mass"
+  "home-last-section.alt-tag1": "Bouquets",
+  "home-last-section.alt-tag2": "Table decorations",
+  "home-last-section.bodytext1": "“Middle: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.”",
+  "home-last-section.bodytext2": "“Middle: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.”",
+  "home-last-section.buttontext1": "Leer mass",
+  "home-last-section.buttontext2": "Leer mass"
 }

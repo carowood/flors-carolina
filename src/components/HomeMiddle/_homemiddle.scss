@@ -2,12 +2,10 @@
   width: 100%;
   height: auto;
   margin: 0;
-  //margin-top: 27em;
   padding: 0;
   @media (max-width: $screen-md) {
     margin-top: 2em;
   }
-
   &__border {
     border: 2px solid purple;
     box-sizing: border-box;
@@ -43,7 +41,6 @@
       @media screen and (min-width: 769px) and (max-width: 900px) {
         margin-left: 1em;
       }
-
       h1 {
         width: 100%;
         position: absolute;
@@ -104,8 +101,6 @@
       }
     }
     &__buttonlink {
-      //   margin-left: -11em;
-      //   margin-top: -7em;
       text-align: right;
       @media screen and (min-width: 769px) and (max-width: 900px) {
       }
@@ -119,7 +114,6 @@
         padding: 1em 0 0 0;
         text-align: center;
       }
-
       button {
         background-color: $color-main-purple;
         text-decoration: none;
@@ -133,7 +127,6 @@
         background-color: rgba(104, 0, 113, 0.9);
       }
     }
-
     &__buttonlink a {
       text-decoration: none;
       color: $color-white;
@@ -157,10 +150,6 @@
       grid-column-end: span 2;
       text-align: right;
       margin-top: 5em;
-      //   @media screen and (min-width: 769px) and (max-width: 900px) {
-      //     margin-top: 5em;
-      //   }
-
       img {
         border: 3px solid white;
         min-width: 235px;
@@ -176,33 +165,3 @@
     }
   }
 }
-
-// <div className="container__middle">
-//         <div className="container__middle__border">
-//           <div className="container__middle__border__title">
-//             <h1>{title}</h1>
-//           </div>
-//           <div className="container__middle__border__bodytext">
-//             <p>{bodyText}</p>
-//           </div>
-
-//           <div className="container__middle__border__buttonlink">
-//             <button onClick={this.props.click}>{buttonText}</button>
-//           </div>
-//           <div className="container__middle__border__img-one">
-//             <img
-//               src={this.props.image1}
-//               alt=""
-//               className="container__middle__border__imagecontainer__img-one"
-//             />
-//           </div>
-
-//           <div className="container__middle__border__img-two">
-//             <img
-//               src={this.props.image2}
-//               alt=""
-//               className="container__middle__border__imagecontainer__img-two"
-//             />
-//           </div>
-//         </div>
-//       </div>
