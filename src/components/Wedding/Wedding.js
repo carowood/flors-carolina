@@ -23,7 +23,7 @@ export default function Wedding() {
             <li><Translate string={"services.woption5"} /></li>
           </ul>
        </div>
-      </div>
+    </div>
        <div className="wedding_grid-mobile">
          <ul>
               <li>
