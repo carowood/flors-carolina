@@ -8,6 +8,8 @@ import HomeMiddle from "../../HomeMiddle/HomeMiddle";
 import HomeBottom from "../../HomeBottom/HomeBottom";
 import MidsectionImage1 from "../../../assets/images/home/mid-section/home-mid-section-3.png";
 import MidsectionImage2 from "../../../assets/images/home/mid-section/home-mid-section-1.jpg";
+import BottomsectionImage1 from "../../../assets/images/services/Wthree.png";
+import BottomsectionImage2 from "../../../assets/images/services/Weight.png";
 
 export default class Home extends React.Component {
   componentDidMount() {
@@ -27,21 +29,25 @@ export default class Home extends React.Component {
 
         <HomeMiddle image1={MidsectionImage1} image2={MidsectionImage2}>
           <Translate string={"home-mid-section.title"} />
-          <Translate string={"home-mid-section.alt-tag"} />
-          <Translate string={"home-mid-section.alt-tag"} />
+          <Translate string={"home-mid-section.alt-tag1"} />
+          <Translate string={"home-mid-section.alt-tag2"} />
           <Translate string={"home-mid-section.bodytext"} />
           <Link to="/ourstory" onClick={this.props.click}>
             <Translate string={"home-mid-section.buttontext"} />
           </Link>
         </HomeMiddle>
 
-        <HomeBottom class={"bottom"} image1={""} image2={""}>
+        <HomeBottom image1={BottomsectionImage1} image2={BottomsectionImage2}>
           <Translate string={"home-last-section.title"} />
-          <Translate string={"home-last-section.alt-tag"} />
-          <Translate string={"home-last-section.alt-tag"} />
-          <Translate string={"home-last-section.bodytext"} />
+          <Translate string={"home-last-section.alt-tag1"} />
+          <Translate string={"home-last-section.alt-tag2"} />
+          <Translate string={"home-last-section.bodytext1"} />
+          <Translate string={"home-last-section.bodytext2"} />
           <Link to="/services" onClick={this.props.click}>
-            <Translate string={"home-last-section.buttontext"} />
+            <Translate string={"home-last-section.buttontext1"} />
+          </Link>
+          <Link to="/services" onClick={this.props.click}>
+            <Translate string={"home-last-section.buttontext2"} />
           </Link>
         </HomeBottom>
       </div>

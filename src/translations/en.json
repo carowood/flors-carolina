@@ -101,14 +101,16 @@
   "home-top-section-bodytext": "“Flowers are gifted from the moment that we are born until we leave. Happy moments but as well sad moments. But only through this period, that is life, flowers always accompany us”",
 
   "home-mid-section.title": "Our Story",
-  "home-mid-section.alt-tag": "Carolina, Flors Carolina",
-  "home-mid-section.alt-tag": "flowers",
+  "home-mid-section.alt-tag1": "Carolina, Flors Carolina",
+  "home-mid-section.alt-tag2": "flowers",
   "home-mid-section.bodytext": "“Floristry has been our family’s business for over four generations. We have always worked in the heart of Barcelona, Las Ramlas, and there has always been a Carolina at the helm; first my great-grandmother, followed by my grandmother, my mother, and now me.”",
   "home-mid-section.buttontext": "Read more",
 
   "home-last-section.title": "Our Services",
-  "home-last-section.alt-tag": "Bouquets",
-  "home-last-section.alt-tag": "Table decorations",
-  "home-last-section.bodytext": "“Middle: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.”",
-  "home-last-section.buttontext": "Read more"
+  "home-last-section.alt-tag1": "Bouquets",
+  "home-last-section.alt-tag2": "Table decorations",
+  "home-last-section.bodytext1": "“Middle: Lorem Ipsum is simply dummy text”",
+  "home-last-section.bodytext2": "“Middle: Lorem Ipsum is simply dummy text”",
+  "home-last-section.buttontext1": "Read more",
+  "home-last-section.buttontext2": "Read more"
 }
