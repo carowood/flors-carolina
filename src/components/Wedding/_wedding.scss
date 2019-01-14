@@ -9,17 +9,12 @@
     @media (min-width: $screen-md) {
       position: relative;
       top: -60px;
+      padding-right: 5%;
     }
     @media (min-width: 900px) {
       position: relative;
       top: -60px;
     }
-    @media (min-width: $screen-lg) {
-
-   }
-    @media (min-width: $screen-xl) {
-
-   }
 
   }
   &_title{
@@ -109,14 +104,7 @@
         z-index: 0;
 
      }
-     @media (min-width: 900px) {
-        display:block;
-        top: 190px;
-        right: 70px;
-        position: absolute;
-        z-index: 0;
-
-     }
+     
      @media (min-width: $screen-lg) {
        display:block;
        width:50%;

@@ -2,26 +2,29 @@ import React from "react";
 import Translate from "../../translations/Translate";
 import Imagesfour from "../../assets/images/services/Wfour.png";
 import Imagesfive from "../../assets/images/services/Wfive.png";
-//import Imageeight from "../../assets/images/services/Weight.png";
+import Imageseight from "../../assets/images/services/Weight.png";
 
 export default function Bouquets() {
   return (
     <div>
-      <div className="bouquets_title">
-        <Translate string={"services.bheader"} />
-      </div>
-        <div className="bouquets_description">
-         <Translate string={"services.bdescription"}/>
+    <div className="bouquets_wrapp">
+        <div className="bouquets_title">
+          <Translate string={"services.bheader"} />
         </div>
-        <div className="bouquets_options">
-          <ul>
-            <li><Translate string={"services.boption1"} /></li>
-            <li><Translate string={"services.boption2"} /></li>
-            <li><Translate string={"services.boption3"} /></li>
-            <li><Translate string={"services.boption4"} /></li>
-            <li><Translate string={"services.boption5"} /></li>
-          </ul>
-       </div>
+          <div className="bouquets_description">
+           <Translate string={"services.bdescription"}/>
+          </div>
+          <div className="bouquets_options">
+            <ul>
+              <li><Translate string={"services.boption1"} /></li>
+              <li><Translate string={"services.boption2"} /></li>
+              <li><Translate string={"services.boption3"} /></li>
+              <li><Translate string={"services.boption4"} /></li>
+              <li><Translate string={"services.boption5"} /></li>
+            </ul>
+         </div>
+      </div>
+
        <div className="bouquets_grid-mobile">
          <ul>
               <li>
@@ -31,7 +34,12 @@ export default function Bouquets() {
               </li>
               <li>
                    <div className="bouquets_image5">
-                      <img src={Imagesfive}  alt="Imageseven" />
+                      <img src={Imagesfive}  alt="Imageseight" />
+                   </div>
+               </li>
+              <li>
+                   <div className="bouquets_image8">
+                      <img src={Imageseight}  alt="Imageseven" />
                    </div>
                </li>
         {/*       <li>
