@@ -4,6 +4,19 @@
   @media (min-width: $screen-md) {
     margin:40px;
   }
+
+  &_wrapp{
+    @media (min-width: $screen-md) {
+      position: relative;
+      top: -60px;
+      padding-right: 5%;
+    }
+    @media (min-width: 900px) {
+      position: relative;
+      
+    }
+  }
+
   &_title{
     padding:5px;
     font-family:$font-playfair;
@@ -18,11 +31,11 @@
 
      @media (min-width: 769px) {
        border-bottom:1px solid $color-main-purple;
-       width:40%;
+       width:60%;
      }
      @media (min-width: $screen-lg) {
        border-bottom:1px solid $color-main-purple;
-       width:40%;
+
 
     }
      @media (min-width: $screen-xl) {
@@ -42,6 +55,8 @@
 
     @media (min-width: $screen-md) {
      width:40%;
+     margin-left: 3%;
+     margin-top: 2%;
     }
   }
 
@@ -53,6 +68,7 @@
     text-justify: inter-word;
     @media (min-width: 769px) {
       width:40%;
+      margin-left: 3%;
 
     }
     ul{
@@ -80,20 +96,85 @@
     img{
       width: 250px;
       position:center;
+      @media (min-width: $screen-sm) {
+         width: 350px;
+      }
 
-     @media (min-width: $screen-md) {
-        width:50%;
-        top: 190px;
-        right: 70px;
-        z-index: 0;
+      @media (min-width: $screen-md) {
+        width: 50%;
+        left: 25%;
+        margin-top: -27.5%;
+        position: relative;
+        z-index: 1;
+      }
+      @media (min-width: $screen-lg) {
 
+
+      }
+
+    }
+  }
+
+  &_image5{
+    img{
+      width: 250px;
+      position:center;
+
+      @media (min-width: $screen-sm) {
+         width: 350px;
+      }
+      width: 50%;
+      right: 25%;
+      top: -80px;
+      position: relative;
+      z-index: 1;
+      border: 5px solid white;
+      margin-top:2.5%;
+
+
+    }
+  }
+
+  &_image8{
+    img{
+      width: 250px;
+      position:center;
+      @media (min-width: $screen-sm) {
+         width: 350px;
+      }
+    }
+  }
+/*
+  &_image4{
+    img{
+      width: 350px;
+      position:center;
+
+     @media (min-width:$screen-md) {
+       width: 50%;
+       left: 23%;
+       position: relative;
+       z-index: 0;
+       top: -270px;
+     }
+     @media (min-width: 782px) {
+       top: -255px;
+     }
+     @media (min-width: 900px) {
+       top: -235px;
+     }
+     @media (min-width: $screen-lg) {
+       top: -235px;
+     }
+     @media (min-width: $screen-xl){
+       top: -200px;
      }
    }
   }
 
   &_image5{
     img{
-     width: 250px;
+     width: 350px;
      position:center;
      @media (min-width: $screen-sm) {
         width: 350px;
@@ -101,7 +182,7 @@
      @media (min-width: 769px) {
        width: 50%;
        right: 25%;
-       top: -80px;
+       top: -500px;
        position: relative;
        z-index: 1;
        border: 5px solid white;
@@ -117,9 +198,9 @@
    }
   }
 
-  &_image3{
+  &_image8{
     img{
-     width: 250px;
+     width: 350px;
      @media (min-width: $screen-sm) {
         width: 350px;
 
@@ -148,4 +229,5 @@
         width: 400px;
      }
    } */
+
 }
