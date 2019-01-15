@@ -15,6 +15,13 @@ export default class Home extends React.Component {
   componentDidMount() {
     this.props.changeTheme("light");
     document.body.classList.add("home");
+    this.scrollTarget = document.getElementsByClassName("container__middle")[0];
+    this.scrollButton = document.getElementsByClassName(
+      "scroll-down-button"
+    )[0];
+    this.scrollButton.addEventListener("click", () =>
+      this.scrollTarget.scrollIntoView({ block: "center", behavior: "smooth" })
+    );
   }
 
   componentWillUnmount() {
