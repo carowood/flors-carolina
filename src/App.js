@@ -10,6 +10,7 @@ import { LocaleContext } from "./translations/LocaleContext";
 import Navbar from "./components/Navbar/Navbar";
 import SideBar from "./components/SideBar/Sidebar";
 import Backdrop from "./components/Backdrop/Backdrop";
+import Footer from "./components/Footer/Footer";
 import "./scss/App.scss";
 
 class App extends Component {
@@ -152,6 +153,7 @@ class App extends Component {
               <Press {...routeProps} changeTheme={this.changeTheme} />
             )}
           />
+          <Footer />
         </LocaleContext.Provider>
       </div>
     );

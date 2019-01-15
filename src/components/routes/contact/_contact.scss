@@ -1,6 +1,6 @@
 .contact-container {
   margin: 190px 0 0 0px;
-  //padding: 2em;
+  padding: 2em;
   .contact-flex-container {
     height: auto;
     display: flex;
@@ -13,7 +13,6 @@
     }
   }
 }
-
 @media (max-width: $screen-md) {
   .contact-container {
     margin: 130px 0 0 0px;
