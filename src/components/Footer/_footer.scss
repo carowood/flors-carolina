@@ -1,0 +1,30 @@
+.footer {
+  background-color: #717171;
+  background-color: $color-main-purple;
+  height: auto;
+  margin: 3px;
+  margin-top: 3em;
+  padding: 1.2em;
+  text-align: center;
+  &__facebook,
+  &__instagram {
+    display: inline-block;
+    margin: 20px 8px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    img {
+      width: 125%;
+    }
+  }
+  &__facebook:hover,
+  &__instagram:hover {
+    transform: scale(1.1);
+  }
+  p {
+    text-align: center;
+    font-family: $font-futura-book;
+    font-size: 0.9em;
+    color: $color-white;
+    line-height: 0.9em;
+  }
+}

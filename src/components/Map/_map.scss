@@ -4,10 +4,13 @@
   margin: 0 auto;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   z-index: 1;
-}
+  border-radius: 5px;
 
-@media (max-width: $screen-md) {
-  .map-container {
+  @media (max-width: $screen-lg) {
+    margin: 2.5em 0 0 2em;
+    width: 95%;
+  }
+  @media (max-width: $screen-md) {
     margin: 0;
     width: 100%;
   }

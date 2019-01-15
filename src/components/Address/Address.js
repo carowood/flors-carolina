@@ -11,6 +11,7 @@ export default class Form extends React.Component {
         <p className="address-line">La Rambla, 93</p>
         <p className="address-line">08002 Barcelona</p>
         <p className="address-line">Spain</p>
+        <br />
         <h2 className="address-title">
           <Translate string={"contact.telephone"} />
         </h2>

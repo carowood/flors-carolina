@@ -2,12 +2,20 @@
   box-sizing: border-box;
 
   form.form-group {
-    // padding: 0 2em 0 0;
-    margin-top: 4em;
-    margin-top: 0;
-    padding: 0em 2em 4em 2em;
-    width: 100%;
-    border-right: 1px solid $color-light-grey;
+    background-color: rgba(230, 230, 230, 0.3);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    margin-left: 2em;
+    padding: 2em 2em 2em 2em;
+    border-radius: 5px;
+    width: 95%;
+    @media (max-width: $screen-md) {
+      margin-left: 0;
+      width: 100%;
+    }
+    @media (max-width: $screen-lg) {
+      margin-left: 0;
+      width: 100%;
+    }
     label {
       color: $color-grey;
       font-family: $font-futura-book;
@@ -17,7 +25,8 @@
     .form-field {
       width: 100%;
       border: none;
-      border-bottom: 1px solid $color-light-grey;
+      border: 1px solid #e3e3e3;
+      border-radius: 3px;
       height: 2em;
       margin: 1em 0;
       font-family: $font-futura-book;
@@ -29,7 +38,7 @@
     }
     .button {
       text-align: center;
-      margin-top: 4em;
+      margin-top: 1.2em;
     }
   }
 }
@@ -37,9 +46,7 @@
 @media (max-width: $screen-md) {
   form.form-group {
     padding: 1.5em;
-    border: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-
     .form-field {
       border-radius: 0px;
       height: 2em;
