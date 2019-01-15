@@ -1,6 +1,7 @@
 .bouquets {
   margin:10px;
   padding:0px;
+
   @media (min-width: $screen-md) {
     margin:40px;
   }
@@ -13,7 +14,7 @@
     }
     @media (min-width: 900px) {
       position: relative;
-      
+
     }
   }
 
@@ -80,6 +81,9 @@
   &_grid-mobile ul{
     padding: 0;
     list-style-type: none;
+  /*  grid-template-rows: 1fr 2fr;
+      grid-template-columns: 1fr 1fr 2fr;
+      grid-template-areas: "topleft title title" " bottomleft bottommid text";*/
 
     @media (max-width: $screen-md) {
       display:flex;
@@ -99,6 +103,16 @@
       @media (min-width: $screen-sm) {
          width: 350px;
       }
+      @media (min-width:$screen-md){
+        display: grid;
+        grid-area: header;
+        width:50%;
+
+      }
+      /*
+      @media (min-width: $screen-sm) {
+         width: 350px;
+      }
 
       @media (min-width: $screen-md) {
         width: 50%;
@@ -111,7 +125,7 @@
 
 
       }
-
+  */
     }
   }
 
@@ -123,14 +137,9 @@
       @media (min-width: $screen-sm) {
          width: 350px;
       }
-      width: 50%;
-      right: 25%;
-      top: -80px;
-      position: relative;
-      z-index: 1;
-      border: 5px solid white;
-      margin-top:2.5%;
-
+      @media (max-width: $screen-md) {
+       grid-area: main;
+      }
 
     }
   }
@@ -141,6 +150,9 @@
       position:center;
       @media (min-width: $screen-sm) {
          width: 350px;
+      }
+      @media (min-width: $screen-md){
+        grid-area: footer;
       }
     }
   }
