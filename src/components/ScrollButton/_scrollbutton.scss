@@ -9,9 +9,11 @@
     height: auto;
     margin: 0 auto;
   }
-  .scroll-down-icon:hover {
+  img.scroll-down-icon:hover {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
+    -ms-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
   }
 }
