@@ -19,9 +19,14 @@ export default class Home extends React.Component {
     this.scrollButton = document.getElementsByClassName(
       "scroll-down-button"
     )[0];
-    this.scrollButton.addEventListener("click", () =>
-      this.scrollTarget.scrollIntoView({ block: "center", behavior: "smooth" })
-    );
+    if (this.scrollTarget && this.scrollButton) {
+      this.scrollButton.addEventListener("click", () =>
+        this.scrollTarget.scrollIntoView({
+          block: "center",
+          behavior: "smooth"
+        })
+      );
+    }
   }
 
   componentWillUnmount() {
