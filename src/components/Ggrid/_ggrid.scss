@@ -1,0 +1,22 @@
+.ggrid{
+
+  &_wrapper{
+    display:grid;
+    background-color:magenta;
+    width:900px;
+    width:100%;
+    margin:10%;
+    margin: 30px auto;
+    grid-gap:5px;
+    box-sizing: border-box;
+
+    &_{
+
+    }
+  }
+
+
+
+
+
+}
