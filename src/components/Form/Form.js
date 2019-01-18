@@ -3,37 +3,104 @@ import Translate from "../../translations/Translate";
 import BtnSend from "../Btn-send/BtnSend";
 
 export default class Form extends React.Component {
+  state = {
+    form_name: "",
+    form_email: "",
+    form_tel: "",
+    form_msg: ""
+  };
+
+  handleChange = e => {
+    e.preventDefault();
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  submitForm = e => {
+    e.preventDefault(); // Prevents page to reload when click on send button
+
+    let data = {
+      form_name: this.state.form_name,
+      form_email: this.state.form_email,
+      form_msg: this.state.form_msg,
+      form_tel: this.state.form_tel
+    };
+    return fetch("https://beta.florscarolina.com/mailer.php", {
+      method: "POST",
+      mode: "no-cors",
+      body: JSON.stringify(data),
+
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "text/plain"
+      }
+    })
+      .then(response => {
+        this.setState({
+          confirmationMessage: "Message sent!" + response
+        });
+        console.log("response", response);
+      })
+      .catch(error => {
+        this.setState({
+          confirmationMessage: "Something went wrong, try again!"
+        });
+      });
+  };
+
   render() {
     return (
-      <form className="form-group">
+      <form
+        className="form-group"
+        method="POST"
+        action="http://beta.florscarolina.com/mailer.php"
+      >
+        <p>{this.state.confirmationMessage}</p>
         <label htmlFor="name">
           <Translate string={"contact.name"} />
           <span className="required">*</span>
         </label>
-        <input className="form-field" name="name" type="text" />
+        <input
+          onChange={this.handleChange}
+          className="form-field"
+          name="form_name"
+          type="text"
+        />
         <label htmlFor="email">
           <Translate string={"contact.email"} />
           <span className="required">*</span>
         </label>
-        <input className="form-field" name="email" type="text" />
+        <input
+          onChange={this.handleChange}
+          className="form-field"
+          name="form_email"
+          type="text"
+        />
         <label htmlFor="telephone">
           <Translate string={"contact.telephone"} />
           <span className="required">*</span>
         </label>
-        <input className="form-field" name="telephone" type="number" />
+        <input
+          onChange={this.handleChange}
+          className="form-field"
+          name="form_tel"
+          type="number"
+        />
         <label htmlFor="message">
           <Translate string={"contact.message"} />{" "}
           <span className="required">*</span>
         </label>
         <textarea
+          onChange={this.handleChange}
           className="form-field"
-          name="message"
+          name="form_msg"
           id="message-field"
           cols="30"
           rows="10"
         />
         <div className="button">
-          <BtnSend>
+          <BtnSend onClick={this.submitForm}>
             <Translate string={"contact.formsendbtn"} />
           </BtnSend>
         </div>
