@@ -26,14 +26,12 @@ export default class Form extends React.Component {
       form_msg: this.state.form_msg,
       form_tel: this.state.form_tel
     };
-    return fetch("https://beta.florscarolina.com/mailer.php", {
+    return fetch("/mailer.php", {
       method: "POST",
       mode: "no-cors",
       body: JSON.stringify(data),
-
       headers: {
-        Accept: "application/json",
-        "Content-Type": "text/plain"
+        "Content-Type": "application/json"
       }
     })
       .then(response => {
@@ -51,11 +49,7 @@ export default class Form extends React.Component {
 
   render() {
     return (
-      <form
-        className="form-group"
-        method="POST"
-        action="http://beta.florscarolina.com/mailer.php"
-      >
+      <form className="form-group" method="POST" action="/mailer.php">
         <p>{this.state.confirmationMessage}</p>
         <label htmlFor="name">
           <Translate string={"contact.name"} />
@@ -66,6 +60,7 @@ export default class Form extends React.Component {
           className="form-field"
           name="form_name"
           type="text"
+          value={this.state.form_name}
         />
         <label htmlFor="email">
           <Translate string={"contact.email"} />
@@ -76,6 +71,7 @@ export default class Form extends React.Component {
           className="form-field"
           name="form_email"
           type="text"
+          value={this.state.form_email}
         />
         <label htmlFor="telephone">
           <Translate string={"contact.telephone"} />
@@ -86,6 +82,7 @@ export default class Form extends React.Component {
           className="form-field"
           name="form_tel"
           type="number"
+          value={this.state.form_tel}
         />
         <label htmlFor="message">
           <Translate string={"contact.message"} />{" "}
@@ -98,7 +95,10 @@ export default class Form extends React.Component {
           id="message-field"
           cols="30"
           rows="10"
-        />
+        >
+          {this.state.form_msg}
+        </textarea>
+
         <div className="button">
           <BtnSend onClick={this.submitForm}>
             <Translate string={"contact.formsendbtn"} />
