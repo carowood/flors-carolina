@@ -113,8 +113,9 @@ export default class Form extends React.Component {
           id="message-field"
           cols="30"
           rows="10"
+          value={this.state.form_msg}
         >
-          {this.state.form_msg}
+          {/* {this.state.form_msg} */}
         </textarea>
 
         <div className="checkbox">
