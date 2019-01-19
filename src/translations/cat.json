@@ -83,6 +83,11 @@
   "contact.telephone": "Telèfon",
   "contact.message": "Missatge",
   "contact.address": "La nostra adreça",
+  "contact.formcheckbox": "Accepteu els termes del servei.",
+  "contact.nameRequired": "Afegiu el vostre nom",
+  "contact.emailRequired": "Añade tu dirección de correo electrónico",
+  "contact.msgRequired": "Afegiu el vostre missatge",
+  "contact.emailInvalid": "L'adreça de correu electrònic no és vàlida",
 
   "press.title1": "La florista irreductible",
   "press.bodytext1": "Carolina Pallés es la única de las 16 vendedoras de flores de la Rambla que no ha sucumbido a los omnipresentes suvenires de dudoso gusto.",

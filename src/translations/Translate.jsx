@@ -21,7 +21,10 @@ export default class Translate extends PureComponent {
     // in this case the language and corresponding string.
     return (
       <LocaleContext.Consumer>
-        {value => langs[value][string]}
+        {value =>
+          langs[value][string] ||
+          "!! Untranslated: " + string + "(" + value + ") !!"
+        }
       </LocaleContext.Consumer>
     );
   }
