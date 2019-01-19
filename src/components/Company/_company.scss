@@ -3,35 +3,27 @@
   padding:0px;
 
   &_title{
-    padding:5px;
     font-family:$font-playfair;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    text-align: center;
-    border-bottom:1px solid $color-main-purple;
-
-
-      @media (min-width: $screen-md) {
-       border-bottom:1px solid $color-main-purple;
-       width:400px;
-       font-size:$font-headline-md;
-     }
+      padding:5px;
+      margin:1%;
+      font-size: 4vh;
+      display: flex;
+      justify-content: center;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      text-align: center;
+      border-bottom:1px solid $color-main-purple;
   }
   &_description{
-    margin-top: 10px;
-    font-family:$font-futura-book;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    text-justify: inter-word;
-
-    @media (min-width: $screen-md) {
-       width: 400px;
-       padding-right:100px;
-       font-size:$font-normal-sm;
-    }
+     text-align: justify;
+      text-justify: inter-word;
+      font-family:$font-futura-book;
+      display:flex;
+      justify-content: center;
+    
+        @media (min-width: $screen-md) {
+        padding:10%;
+        margin:6% 0 0 10%;
+      }
   }
 }

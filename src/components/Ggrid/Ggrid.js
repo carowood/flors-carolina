@@ -2,7 +2,7 @@ import React from "react";
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 
-class Ggrid extends React.Component {
+export default class Ggrid extends React.Component {
   renderThumbs = () =>
     <ul>
       {
