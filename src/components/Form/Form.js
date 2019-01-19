@@ -7,7 +7,8 @@ export default class Form extends React.Component {
     form_name: "",
     form_email: "",
     form_tel: "",
-    form_msg: ""
+    form_msg: "",
+    gdpr: false
   };
 
   handleChange = e => {
@@ -15,11 +16,28 @@ export default class Form extends React.Component {
     this.setState({
       [e.target.name]: e.target.value
     });
+    console.log(this.state);
+  };
+
+  handleCheckbox = e => {
+    //e.preventDefault();
+    console.log("etarget form", e.target.checked);
+    this.setState({
+      gdpr: e.target.checked
+    });
+    console.log(this.state);
   };
 
   submitForm = e => {
     e.preventDefault(); // Prevents page to reload when click on send button
-
+    console.log("gdpr", this.state.gdpr);
+    if (this.state.gdpr !== true) {
+      this.setState({
+        confirmationMessage:
+          "Please check the box in order to send your message!"
+      });
+      return;
+    }
     let data = {
       form_name: this.state.form_name,
       form_email: this.state.form_email,
@@ -98,6 +116,18 @@ export default class Form extends React.Component {
         >
           {this.state.form_msg}
         </textarea>
+
+        <div className="checkbox">
+          <input
+            onChange={this.handleCheckbox}
+            type="checkbox"
+            name="gdpr"
+            value="acknowledged"
+            required
+          />
+          {/* //Add translation HERE */}
+          <p>Agree to the terms of service.</p>
+        </div>
 
         <div className="button">
           <BtnSend onClick={this.submitForm}>
