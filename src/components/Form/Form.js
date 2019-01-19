@@ -29,8 +29,9 @@ export default class Form extends React.Component {
     console.log("etarget form", e.target.checked);
     this.setState({
       gdpr: e.target.checked,
-      errorMessageClass: "errorMessage-hide",
-      errorMessage: ""
+      errorMessageClass: "error-message-hide",
+      errorMessage: "",
+      displayErrorMessage: false
     });
     console.log(this.state);
   };
@@ -47,14 +48,14 @@ export default class Form extends React.Component {
 
     if (this.state.gdpr !== true) {
       this.setState({
-        errorMessage: "Please check the box in order to send your message!",
-        errorMessageClass: "errorMessage-display"
+        errorMessage: <Translate string={"contact.errormessage-checkbox"} />,
+        displayErrorMessage: true
       });
       return;
     }
     if (this.state.gdpr === true) {
       this.setState({
-        errorMessageClass: "errorMessage-hide"
+        displayErrorMessage: false
       });
     }
 
@@ -98,22 +99,22 @@ export default class Form extends React.Component {
     })
       .then(response => {
         console.log(response.status);
-        // if (response.status !== 200) {
-        //   this.setState({
-        //     errorMessage: "Something went wrong, try again!",
-        //     displayErrorMessage: true
-        //   });
-        // } else {
-        this.setState({
-          confirmationMessage: "Message sent!",
-          displayConfirmationMessage: true,
-          displayCustomerInformation: true
-        });
-        //}
+        if (response.status !== 200) {
+          this.setState({
+            errorMessage: <Translate string={"contact.errormessage-general"} />,
+            displayErrorMessage: true
+          });
+        } else {
+          this.setState({
+            confirmationMessage: <Translate string={"contact.message-sent"} />,
+            displayConfirmationMessage: true,
+            displayCustomerInformation: true
+          });
+        }
       })
       .catch(error => {
         this.setState({
-          errorMessage: "Something went wrong, try again!",
+          errorMessage: <Translate string={"contact.errormessage-general"} />,
           displayErrorMessage: true
         });
       });
@@ -130,7 +131,7 @@ export default class Form extends React.Component {
           }
         >
           <p>{this.state.confirmationMessage}</p>
-          <img className="icon" src={Icon} alt="Message sent!s" />
+          <img className="icon" src={Icon} alt="Message sent!" />
         </div>
 
         <div
@@ -141,19 +142,27 @@ export default class Form extends React.Component {
           }
         >
           <div className="customer-info">
-            <p className="info-label">Name:</p>
+            <p className="info-label">
+              <Translate string={"contact.name"} />
+            </p>
             <p className="info-data">{this.state.form_name}</p>
           </div>
           <div className="customer-info">
-            <p className="info-label">Email:</p>
+            <p className="info-label">
+              <Translate string={"contact.email"} />
+            </p>
             <p className="info-data">{this.state.form_email}</p>
           </div>
           <div className="customer-info">
-            <p className="info-label">Telephone:</p>
+            <p className="info-label">
+              <Translate string={"contact.telephone"} />
+            </p>
             <p className="info-data">{this.state.form_tel}</p>
           </div>
           <div className="customer-info">
-            <p className="info-label">Message:</p>
+            <p className="info-label">
+              <Translate string={"contact.message"} />
+            </p>
             <p className="info-data">{this.state.form_msg}</p>
           </div>
         </div>

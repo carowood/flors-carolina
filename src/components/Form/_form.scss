@@ -6,10 +6,11 @@ div.form-box-container {
     color: $color-white;
     padding: 5px;
     text-align: center;
-    border-radius: 3px;
-    font-size: 1.5em;
+    border-radius: 5px 5px 0 0;
+    font-size: 1em;
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
     img.icon {
-      width: 10%;
+      width: 5%;
       margin: 0 0 1em 0;
     }
   }
@@ -21,23 +22,39 @@ div.form-box-container {
   }
   div.user-information-display {
     background-color: rgba(230, 230, 230, 0.3);
-    padding: 50px 100px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 50px 20px;
+    min-height: 380px;
+    @media (max-width: $screen-md) {
+      min-height: 400px;
+    }
     div.customer-info {
+      margin: 20px 0;
       p.info-label {
-        width: 100%;
+        width: 25%;
         font-family: $font-futura-book;
-        color: $color-grey;
-        font-weight: bold;
-        padding: 10px 0px;
-        border-bottom: 1px solid lightgrey;
+        font-size: 1em;
+        color: $color-light-grey;
+        margin: 0;
+        padding: 0px 15px;
         display: inline-block;
+        @media (max-width: $screen-sm) {
+          display: block;
+        }
       }
       p.info-data {
         font-family: $font-futura-book;
-        margin: 20px auto 20px auto;
+        font-size: 1em;
         color: $color-grey;
-        text-transform: uppercase;
+        margin: 0;
+        padding: 2px 15px;
         display: inline-block;
+        white-space: pre-wrap;
+        @media (max-width: $screen-sm) {
+          display: block;
+        }
       }
     }
   }
@@ -48,7 +65,7 @@ div.form-box-container {
     background-color: rgba(230, 230, 230, 0.3);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     margin-left: 2em;
-    padding: 2em 2em 2em 2em;
+    padding: 3em 2em 2em 2em;
     border-radius: 5px;
     width: 95%;
     height: auto;
@@ -58,6 +75,7 @@ div.form-box-container {
       padding: 5px;
       text-align: center;
       border-radius: 3px;
+      margin-bottom: 10px;
     }
     div.error-message-hide {
       display: none;
@@ -74,7 +92,8 @@ div.form-box-container {
       color: $color-grey;
       font-family: $font-futura-book;
       font-size: 0.8em;
-
+      width: 100%;
+      display: block;
       span.requiredMessage,
       span.invalidEmail {
         color: $color-red;
@@ -108,9 +127,7 @@ div.form-box-container {
         margin-left: 10px;
         padding: 0;
         margin: 0;
-
         padding: 0 5px;
-        font-weight: bold;
         font-size: 0.8em;
       }
     }
