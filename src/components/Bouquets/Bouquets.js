@@ -10,22 +10,24 @@ export default function Bouquets() {
       <div className="container_bouquets">
 
           <div className="container_title">
-            <h1>
+            <h2>
             <Translate string={"services.bheader"} />
-            </h1>
+            </h2>
           </div>
 
           <div className="container_description1">
             <p>
             <Translate string={"services.bdescription"}/>
             </p>
-            <ul>
-              <li><Translate string={"services.boption1"} /></li>
-              <li><Translate string={"services.boption2"} /></li>
-              <li><Translate string={"services.boption3"} /></li>
-              <li><Translate string={"services.boption4"} /></li>
-              <li><Translate string={"services.boption5"} /></li>
-            </ul>
+             <p>
+              <ul>
+                <li><Translate string={"services.boption1"} /></li>
+                <li><Translate string={"services.boption2"} /></li>
+                <li><Translate string={"services.boption3"} /></li>
+                <li><Translate string={"services.boption4"} /></li>
+                <li><Translate string={"services.boption5"} /></li>
+              </ul>
+            </p>
           </div>
 
           <div className="container_imgfour">

@@ -1,35 +1,39 @@
 import React from "react";
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css'
 
+class Ggrid extends React.Component {
+  renderThumbs = () =>
+    <ul>
+      {
+        [1,2,3,4,5].map((item, i) =>
+          <li key={i} onClick={() => this.Carousel._onDotClick(i)}>Thumb {item}</li>)
+      }
+    </ul>;
 
-export default class Ggrid extends React.Component{
-
-  render(){
-    return(
-      <div className="ggrid_wrapper">
-          <div className="grid_wrapper_box-one">1</div>
-          <div className="box two">2</div>
-          <div className="box three">3</div>
-          <div className="box four">4</div>
-          <div className="box five">5</div>
-          <div className="box six">6</div>
-          <div className="box seven">7</div>
-          <div className="box eight">8</div>
-          <div className="box nine">9</div>
-          <div className="box ten">10</div>
+  render() {
+    return (
+      <div>
+        <h3>Navigation</h3>
+        { this.renderThumbs() }
+        <button onClick={() => this.Carousel._slidePrev()}>Prev button</button>
+        <button onClick={() => this.Carousel._slideNext()}>Next button</button>
+        <h3>React Alice Carousel</h3>
+        <AliceCarousel
+          dotsDisabled={true}
+          buttonsDisabled={true}
+          ref={ el => this.Carousel = el }
+        >
+          <div className="yours-custom-class">
+          <h2>1</h2>
+          
+          </div>
+          <div className="yours-custom-class"><h2>2</h2></div>
+          <div className="yours-custom-class"><h2>3</h2></div>
+          <div className="yours-custom-class"><h2>4</h2></div>
+          <div className="yours-custom-class"><h2>5</h2></div>
+        </AliceCarousel>
       </div>
-
-
-
-
-
-
-    )
-
-
-
+    );
   }
-
-
-
-
 }

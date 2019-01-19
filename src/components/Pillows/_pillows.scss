@@ -1,9 +1,8 @@
-.pillows {
-  margin:10px;
-  padding:0px;
-  @media (min-width: $screen-md) {
-    margin:40px;
-  }
+.cp {
+
+  &_pillows{
+
+}
   &_title{
    padding:5px;
    font-family:$font-playfair;
