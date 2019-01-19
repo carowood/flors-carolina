@@ -25,19 +25,19 @@ div.form-box-container {
     div.customer-info {
       p.info-label {
         width: 100%;
-        //background-color: grey;
         font-family: $font-futura-book;
-        //margin: 20px auto 20px auto;
         color: $color-grey;
         font-weight: bold;
         padding: 10px 0px;
         border-bottom: 1px solid lightgrey;
+        display: inline-block;
       }
       p.info-data {
         font-family: $font-futura-book;
         margin: 20px auto 20px auto;
         color: $color-grey;
         text-transform: uppercase;
+        display: inline-block;
       }
     }
   }
@@ -51,6 +51,7 @@ div.form-box-container {
     padding: 2em 2em 2em 2em;
     border-radius: 5px;
     width: 95%;
+    height: auto;
     div.error-message-display {
       background: $color_red;
       color: $color-white;
@@ -72,6 +73,7 @@ div.form-box-container {
     label {
       color: $color-grey;
       font-family: $font-futura-book;
+      font-size: 0.8em;
 
       span.requiredMessage,
       span.invalidEmail {
@@ -84,11 +86,11 @@ div.form-box-container {
       border: none;
       border: 1px solid #e3e3e3;
       border-radius: 3px;
-      height: 2em;
-      margin: 1em 0;
+      height: 1.8em;
+      margin: 0.5em 0 1em 0;
       font-family: $font-futura-book;
       color: #6363fc;
-      font-size: 1.4em;
+      font-size: 1em;
     }
     #message-field {
       height: auto;
@@ -97,13 +99,19 @@ div.form-box-container {
       width: 100%;
       input.checkbox {
         display: inline-block;
+        margin: 0;
       }
       p.checkbox-description {
         display: inline-block;
         font-family: $font-futura-book;
         color: #6363fc;
         margin-left: 10px;
+        padding: 0;
+        margin: 0;
+
+        padding: 0 5px;
         font-weight: bold;
+        font-size: 0.8em;
       }
     }
     .button {

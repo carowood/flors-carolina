@@ -227,7 +227,7 @@ export default class Form extends React.Component {
             name="form_msg"
             id="message-field"
             cols="30"
-            rows="10"
+            rows="3"
             value={this.state.form_msg}
             required
           />
