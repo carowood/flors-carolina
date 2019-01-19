@@ -6,28 +6,26 @@ import Imageseven from "../../assets/images/services/Wseven.png";
 
 export default function Pillows() {
   return (
-    <div>
-      <div className="pillows_title">
-        <Translate string={"services.pheader"} />
+    <>
+      <div className="cp_pillows">
+          <div className="cp_title">
+            <h2>
+              <Translate string={"services.pheader"} />
+            </h2>
+          </div>
+          <div className="cp_description">
+            <p>
+              <Translate string={"services.pdescription"}/>
+            </p>
+          </div>
+          <div className="cp_image6">
+              <img src={Imagesix}  alt="Imagesix" />
+          </div>
+          <div className="cp_image7">
+              <img src={Imageseven}  alt="Imageseven" />
+          </div>
       </div>
-      <div className="pillows_description">
-        <Translate string={"services.pdescription"}/>
-      </div>
-      <div className="pillows_grid-mobile">
-        <ul>
-             <li>
-                   <div className="pillows_image6">
-                     <img src={Imagesix}  alt="Imagesix" />
-                   </div>
-             </li>
-             <li>
-                  <div className="pillows_image7">
-                     <img src={Imageseven}  alt="Imageseven" />
-                  </div>
-              </li>
-        </ul>
-      </div>
-    </div>
+    </>
 
   );
 }
