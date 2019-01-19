@@ -1,13 +1,85 @@
-* {
-  box-sizing: border-box;
-
+div.form-box-container {
+  height: 100%;
+  div.confirmation-message-display {
+    display: block;
+    background: #049f04;
+    color: $color-white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    font-size: 1em;
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
+    img.icon {
+      width: 5%;
+      margin: 0 0 1em 0;
+    }
+  }
+  div.confirmation-message-hide {
+    display: none;
+  }
+  div.user-information-hide {
+    display: none;
+  }
+  div.user-information-display {
+    background-color: rgba(230, 230, 230, 0.3);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 50px 20px;
+    min-height: 380px;
+    @media (max-width: $screen-md) {
+      min-height: 400px;
+    }
+    div.customer-info {
+      margin: 20px 0;
+      p.info-label {
+        width: 25%;
+        font-family: $font-futura-book;
+        font-size: 1em;
+        color: $color-light-grey;
+        margin: 0;
+        padding: 0px 15px;
+        display: inline-block;
+        @media (max-width: $screen-sm) {
+          display: block;
+        }
+      }
+      p.info-data {
+        font-family: $font-futura-book;
+        font-size: 1em;
+        color: $color-grey;
+        margin: 0;
+        padding: 2px 15px;
+        display: inline-block;
+        white-space: pre-wrap;
+        @media (max-width: $screen-sm) {
+          display: block;
+        }
+      }
+    }
+  }
+  form.form-group-hide {
+    display: none;
+  }
   form.form-group {
     background-color: rgba(230, 230, 230, 0.3);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     margin-left: 2em;
-    padding: 2em 2em 2em 2em;
+    padding: 3em 2em 2em 2em;
     border-radius: 5px;
     width: 95%;
+    height: auto;
+    div.error-message-display {
+      background: $color_red;
+      color: $color-white;
+      padding: 5px;
+      text-align: center;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+    div.error-message-hide {
+      display: none;
+    }
     @media (max-width: $screen-md) {
       margin-left: 0;
       width: 100%;
@@ -19,7 +91,13 @@
     label {
       color: $color-grey;
       font-family: $font-futura-book;
-      span.required {
+      font-size: 0.8em;
+      width: 100%;
+      display: block;
+      span.requiredMessage,
+      span.invalidEmail {
+        color: $color-red;
+        font-style: italic;
       }
     }
     .form-field {
@@ -27,14 +105,31 @@
       border: none;
       border: 1px solid #e3e3e3;
       border-radius: 3px;
-      height: 2em;
-      margin: 1em 0;
+      height: 1.8em;
+      margin: 0.5em 0 1em 0;
       font-family: $font-futura-book;
       color: #6363fc;
-      font-size: 1.4em;
+      font-size: 1em;
     }
     #message-field {
       height: auto;
+    }
+    .checkbox-container {
+      width: 100%;
+      input.checkbox {
+        display: inline-block;
+        margin: 0;
+      }
+      p.checkbox-description {
+        display: inline-block;
+        font-family: $font-futura-book;
+        color: #6363fc;
+        margin-left: 10px;
+        padding: 0;
+        margin: 0;
+        padding: 0 5px;
+        font-size: 0.8em;
+      }
     }
     .button {
       text-align: center;

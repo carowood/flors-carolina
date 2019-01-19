@@ -1,6 +1,7 @@
 import React from "react";
 import Translate from "../../translations/Translate";
 import BtnSend from "../Btn-send/BtnSend";
+import Icon from "../../assets/icons/icon-circle-tick.svg";
 
 export default class Form extends React.Component {
   state = {
@@ -8,7 +9,12 @@ export default class Form extends React.Component {
     form_email: "",
     form_tel: "",
     form_msg: "",
-    gdpr: false
+    gdpr: false,
+    errorMessage: "",
+    emailInvalid: "",
+    displayCustomerInformation: false,
+    displayErrorMessage: false,
+    displayConfirmationMessage: false
   };
 
   handleChange = e => {
@@ -20,24 +26,63 @@ export default class Form extends React.Component {
   };
 
   handleCheckbox = e => {
-    //e.preventDefault();
     console.log("etarget form", e.target.checked);
     this.setState({
-      gdpr: e.target.checked
+      gdpr: e.target.checked,
+      errorMessageClass: "error-message-hide",
+      errorMessage: "",
+      displayErrorMessage: false
     });
     console.log(this.state);
   };
 
   submitForm = e => {
-    e.preventDefault(); // Prevents page to reload when click on send button
-    console.log("gdpr", this.state.gdpr);
+    e.preventDefault();
+    this.setState({
+      confirmationMessage: "",
+      nameRequired: "",
+      emailRequired: "",
+      msgRequired: "",
+      emailInvalid: ""
+    });
+
     if (this.state.gdpr !== true) {
       this.setState({
-        confirmationMessage:
-          "Please check the box in order to send your message!"
+        errorMessage: <Translate string={"contact.errormessage-checkbox"} />,
+        displayErrorMessage: true
       });
       return;
     }
+    if (this.state.gdpr === true) {
+      this.setState({
+        displayErrorMessage: false
+      });
+    }
+
+    if (!this.state.form_name) {
+      this.setState({
+        nameRequired: <Translate string={"contact.nameRequired"} />
+      });
+    }
+    if (!this.state.form_email) {
+      this.setState({
+        emailRequired: <Translate string={"contact.emailRequired"} />
+      });
+    }
+
+    if (!this.state.form_msg) {
+      this.setState({
+        msgRequired: <Translate string={"contact.msgRequired"} />
+      });
+    }
+    if (
+      !this.state.form_email ||
+      !this.state.form_name ||
+      !this.state.form_msg
+    ) {
+      return;
+    }
+
     let data = {
       form_name: this.state.form_name,
       form_email: this.state.form_email,
@@ -53,89 +98,168 @@ export default class Form extends React.Component {
       }
     })
       .then(response => {
-        this.setState({
-          confirmationMessage: "Message sent!" + response
-        });
-        console.log("response", response);
+        console.log(response.status);
+        if (response.status !== 200) {
+          this.setState({
+            errorMessage: <Translate string={"contact.errormessage-general"} />,
+            displayErrorMessage: true
+          });
+        } else {
+          this.setState({
+            confirmationMessage: <Translate string={"contact.message-sent"} />,
+            displayConfirmationMessage: true,
+            displayCustomerInformation: true
+          });
+        }
       })
       .catch(error => {
         this.setState({
-          confirmationMessage: "Something went wrong, try again!"
+          errorMessage: <Translate string={"contact.errormessage-general"} />,
+          displayErrorMessage: true
         });
       });
   };
 
   render() {
     return (
-      <form className="form-group" method="POST" action="/mailer.php">
-        <p>{this.state.confirmationMessage}</p>
-        <label htmlFor="name">
-          <Translate string={"contact.name"} />
-          <span className="required">*</span>
-        </label>
-        <input
-          onChange={this.handleChange}
-          className="form-field"
-          name="form_name"
-          type="text"
-          value={this.state.form_name}
-        />
-        <label htmlFor="email">
-          <Translate string={"contact.email"} />
-          <span className="required">*</span>
-        </label>
-        <input
-          onChange={this.handleChange}
-          className="form-field"
-          name="form_email"
-          type="text"
-          value={this.state.form_email}
-        />
-        <label htmlFor="telephone">
-          <Translate string={"contact.telephone"} />
-          <span className="required">*</span>
-        </label>
-        <input
-          onChange={this.handleChange}
-          className="form-field"
-          name="form_tel"
-          type="number"
-          value={this.state.form_tel}
-        />
-        <label htmlFor="message">
-          <Translate string={"contact.message"} />{" "}
-          <span className="required">*</span>
-        </label>
-        <textarea
-          onChange={this.handleChange}
-          className="form-field"
-          name="form_msg"
-          id="message-field"
-          cols="30"
-          rows="10"
-          value={this.state.form_msg}
+      <div className="form-box-container">
+        <div
+          className={
+            this.state.displayConfirmationMessage
+              ? "confirmation-message-display"
+              : "confirmation-message-hide"
+          }
         >
-          {/* {this.state.form_msg} */}
-        </textarea>
+          <p>{this.state.confirmationMessage}</p>
+          <img className="icon" src={Icon} alt="Message sent!" />
+        </div>
 
-        <div className="checkbox">
+        <div
+          className={
+            this.state.displayCustomerInformation
+              ? "user-information-display"
+              : "user-information-hide"
+          }
+        >
+          <div className="customer-info">
+            <p className="info-label">
+              <Translate string={"contact.name"} />
+            </p>
+            <p className="info-data">{this.state.form_name}</p>
+          </div>
+          <div className="customer-info">
+            <p className="info-label">
+              <Translate string={"contact.email"} />
+            </p>
+            <p className="info-data">{this.state.form_email}</p>
+          </div>
+          <div className="customer-info">
+            <p className="info-label">
+              <Translate string={"contact.telephone"} />
+            </p>
+            <p className="info-data">{this.state.form_tel}</p>
+          </div>
+          <div className="customer-info">
+            <p className="info-label">
+              <Translate string={"contact.message"} />
+            </p>
+            <p className="info-data">{this.state.form_msg}</p>
+          </div>
+        </div>
+        <form
+          onSubmit={this.submitForm}
+          className={
+            this.state.displayCustomerInformation
+              ? "form-group-hide"
+              : "form-group"
+          }
+          method="POST"
+          action="/mailer.php"
+        >
+          <div
+            className={
+              this.state.displayErrorMessage
+                ? "error-message-display"
+                : "error-message-hide"
+            }
+          >
+            {this.state.errorMessage}
+          </div>
+
+          <label htmlFor="name">
+            <Translate string={"contact.name"} />
+            <span className="required">* </span>
+            <span className="requiredMessage">{this.state.nameRequired}</span>
+          </label>
+
           <input
-            onChange={this.handleCheckbox}
-            type="checkbox"
-            name="gdpr"
-            value="acknowledged"
+            onChange={this.handleChange}
+            className="form-field"
+            name="form_name"
+            type="text"
+            value={this.state.form_name}
             required
           />
-          {/* //Add translation HERE */}
-          <p>Agree to the terms of service.</p>
-        </div>
 
-        <div className="button">
-          <BtnSend onClick={this.submitForm}>
-            <Translate string={"contact.formsendbtn"} />
-          </BtnSend>
-        </div>
-      </form>
+          <label htmlFor="email">
+            <Translate string={"contact.email"} />
+            <span className="required">*</span>
+            <span className="requiredMessage">{this.state.emailRequired}</span>
+            <span className="invalidEmail">{this.state.emailInvalid}</span>
+          </label>
+          <input
+            onChange={this.handleChange}
+            className="form-field"
+            name="form_email"
+            type="email"
+            value={this.state.form_email}
+            required
+          />
+          <label htmlFor="telephone">
+            <Translate string={"contact.telephone"} />
+          </label>
+          <input
+            onChange={this.handleChange}
+            className="form-field"
+            name="form_tel"
+            type="text"
+            value={this.state.form_tel}
+          />
+          <label htmlFor="message">
+            <Translate string={"contact.message"} />{" "}
+            <span className="required">*</span>
+            <span className="requiredMessage">{this.state.msgRequired}</span>
+          </label>
+          <textarea
+            onChange={this.handleChange}
+            className="form-field"
+            name="form_msg"
+            id="message-field"
+            cols="30"
+            rows="3"
+            value={this.state.form_msg}
+            required
+          />
+          <div className="checkbox-container">
+            <input
+              className="checkbox"
+              onChange={this.handleCheckbox}
+              type="checkbox"
+              name="gdpr"
+              value="acknowledged"
+              required
+            />
+            <p className="checkbox-description">
+              <Translate string={"contact.formcheckbox"} />
+            </p>
+          </div>
+          <div className="button">
+            <BtnSend>
+              <Translate string={"contact.formsendbtn"} />
+            </BtnSend>
+          </div>
+        </form>
+      </div>
     );
   }
 }

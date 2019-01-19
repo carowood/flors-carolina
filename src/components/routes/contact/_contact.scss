@@ -1,6 +1,7 @@
 .contact-container {
   margin: 190px 0 0 0px;
-  padding: 2em;
+  padding: 0 2em;
+
   .contact-flex-container {
     height: auto;
     display: flex;
@@ -13,9 +14,22 @@
     }
   }
 }
+@media (max-width: $screen-sm) {
+  .contact-container {
+    padding: 0;
+    .contact-flex-container {
+      .form-container {
+        width: 100%;
+      }
+      .address-map-container {
+        width: 100%;
+      }
+    }
+  }
+}
 @media (max-width: $screen-md) {
   .contact-container {
-    margin: 130px 0 0 0px;
+    margin: 130px 0 0 0;
     .contact-flex-container {
       height: auto;
       display: block;
@@ -30,5 +44,16 @@
         margin-top: 2em;
       }
     }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .contact-container {
+    padding: 0 5em;
+  }
+}
+@media (min-width: $screen-xl) {
+  .contact-container {
+    padding: 0 15em;
   }
 }

@@ -4,10 +4,11 @@
     background-color: rgba(230, 230, 230, 0.3);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     width: 90%;
-    padding: 4em 0;
-    margin: 2em auto;
+    padding: 1.5em 0;
+    margin: 1em auto;
     margin-top: 0;
     border-radius: 5px;
+    margin-bottom: 0.8em;
 
     @media (max-width: $screen-lg) {
       width: 95%;
@@ -25,11 +26,14 @@
       font-family: $font-futura-book;
       color: $color-grey;
       margin: 0;
+      font-size: 1.1em;
     }
     p.address-line {
       text-align: center;
       font-family: $font-futura-book;
       color: $color-grey;
+      font-size: 0.8em;
+      margin-bottom: 0;
     }
   }
 }
