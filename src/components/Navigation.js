@@ -1,9 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Translate from "../translations/Translate";
 
 class Navigation extends React.Component {
   render() {
+    let style = {
+      color: "#93278f",
+      borderBottom: "1px solid #93278f",
+      paddingBottom: "2px"
+    };
     console.log("props", this.props);
     return (
       <ul className="menu">
@@ -13,29 +18,37 @@ class Navigation extends React.Component {
           </Link>
         </li> */}
         <li className="menu__item">
-          <Link to="/ourstory" onClick={this.props.click}>
+          <NavLink
+            to="/ourstory"
+            activeStyle={style}
+            onClick={this.props.click}
+          >
             <Translate string={"navigation.ourstory"} />
-          </Link>
+          </NavLink>
         </li>
         <li className="menu__item">
-          <Link to="/services" onClick={this.props.click}>
+          <NavLink
+            to="/services"
+            activeStyle={style}
+            onClick={this.props.click}
+          >
             <Translate string={"navigation.services"} />
-          </Link>
+          </NavLink>
         </li>
         <li className="menu__item">
-          <Link to="/gallery" onClick={this.props.click}>
+          <NavLink to="/gallery" activeStyle={style} onClick={this.props.click}>
             <Translate string={"navigation.gallery"} />
-          </Link>
+          </NavLink>
         </li>
         <li className="menu__item">
-          <Link to="/contact" onClick={this.props.click}>
+          <NavLink to="/contact" activeStyle={style} onClick={this.props.click}>
             <Translate string={"navigation.contact"} />
-          </Link>
+          </NavLink>
         </li>
         <li className="menu__item">
-          <Link to="/press" onClick={this.props.click}>
+          <NavLink to="/press" activeStyle={style} onClick={this.props.click}>
             <Translate string={"navigation.press"} />
-          </Link>
+          </NavLink>
         </li>
       </ul>
     );
