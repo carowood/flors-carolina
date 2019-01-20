@@ -153,6 +153,9 @@ class App extends Component {
               <Press {...routeProps} changeTheme={this.changeTheme} />
             )}
           />
+          {/* If the routh page of the url is typed incorrectly, 
+              we redirect to the homepage */}
+          <Route path="*" render={() => <Redirect to="/home" />} />
           <Footer />
         </LocaleContext.Provider>
       </div>
