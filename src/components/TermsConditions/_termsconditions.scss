@@ -1,10 +1,18 @@
-li {
+li.terms-list {
   text-align: left;
+  white-space: pre-line;
+  list-style: none;
 }
 p {
-  text-align: justify;
+  text-align: left;
+  white-space: pre-line;
+  overflow-wrap: break-word;
 }
-p #effective-date {
+#effective-date {
   text-align: center;
   font-size: 0.6em;
+}
+
+#link {
+  text-align: center;
 }

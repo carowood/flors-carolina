@@ -6,17 +6,23 @@ export default function TermsConditions() {
       <h1>Privacy Policy</h1>
       <p id="effective-date">Effective date: January 19, 2019</p>
       <p>
-        Flors Carolina ("us", "we", or "our") operates the
-        <a href="http://www.florscarolina.com">http://www.florscarolina.com </a>
-        website and the Flors Carolina mobile application (hereinafter referred
-        to as the "Service").
+        Flors Carolina ("us", "we", or "our") operates following website and the
+        Flors Carolina mobile application (hereinafter referred to as the
+        "Service"):
       </p>
+
+      <p id="link">
+        <a id="link" href="http://www.florscarolina.com">
+          http://www.florscarolina.com{" "}
+        </a>
+      </p>
+
       <p>
         This page informs you of our policies regarding the collection, use, and
         disclosure of personal data when you use our Service and the choices you
         have associated with that data. The Privacy Policy for Flors Carolina is
         based on the
-        <a href="https://termsfeed.com/blog/sample- privacy-policy-template/">
+        <a href="https://termsfeed.com/blog/sample-privacy-policy-template/">
           TermsFeed's Privacy Policy Template
         </a>
         .
@@ -64,10 +70,10 @@ export default function TermsConditions() {
         identify you ("Personal Data"). Personally identifiable information may
         include, but is not limited to:
       </p>
-      <li>Email address </li>
-      <li>First name and last name</li>
-      <li>Phone number</li>
-      <li>Cookies and Usage Data</li>
+      <li className="terms-list">Email address </li>
+      <li className="terms-list">First name and last name</li>
+      <li className="terms-list">Phone number</li>
+      <li className="terms-list">Cookies and Usage Data</li>
       <h4>Usage Data </h4>
       <p>
         We may also collect information that your browser sends whenever you
@@ -106,27 +112,33 @@ export default function TermsConditions() {
         not be able to use some portions of our Service.
       </p>
       <p>Examples of Cookies we use:</p>
-      <li>Session Cookies. We use Session Cookies to operate our Service.</li>
-      <li>
+      <li className="terms-list">
+        Session Cookies. We use Session Cookies to operate our Service.
+      </li>
+      <li className="terms-list">
         Preference Cookies. We use Preference Cookies to remember your
         preferences and various settings.
       </li>
-      <li>Security Cookies. We use Security Cookies for security purposes.</li>
+      <li className="terms-list">
+        Security Cookies. We use Security Cookies for security purposes.
+      </li>
       <h3>Use of Data </h3>
       <p>Flors Carolina uses the collected data for various purposes:</p>
-      <li>To provide and maintain the Service</li>
-      <li>To notify you about changes to our Service</li>
-      <li>
+      <li className="terms-list">To provide and maintain the Service</li>
+      <li className="terms-list">To notify you about changes to our Service</li>
+      <li className="terms-list">
         To allow you to participate in interactive features of our Service when
         you choose to do so
       </li>
-      <li>To provide customer care and support</li>
-      <li>
+      <li className="terms-list">To provide customer care and support</li>
+      <li className="terms-list">
         To provide analysis or valuable information so that we can improve the
         Service
       </li>
-      <li>To monitor the usage of the Service</li>
-      <li>To detect, prevent and address technical issues</li>
+      <li className="terms-list">To monitor the usage of the Service</li>
+      <li className="terms-list">
+        To detect, prevent and address technical issues
+      </li>
       <h3>Transfer Of Data </h3>
       <p>
         Your information, including Personal Data, may be transferred to - and
@@ -156,16 +168,18 @@ export default function TermsConditions() {
         Flors Carolina may disclose your Personal Data in the good faith belief
         that such action is necessary to:
       </p>
-      <li>To comply with a legal obligation</li>
-      <li>To protect and defend the rights or property of Flors Carolina</li>
-      <li>
+      <li className="terms-list">To comply with a legal obligation</li>
+      <li className="terms-list">
+        To protect and defend the rights or property of Flors Carolina
+      </li>
+      <li className="terms-list">
         To prevent or investigate possible wrongdoing in connection with the
         Service
       </li>
-      <li>
+      <li className="terms-list">
         To protect the personal safety of users of the Service or the public
       </li>
-      <li>To protect against legal liability</li>
+      <li className="terms-list">To protect against legal liability</li>
       <p>
         As a European citizen, under GDPR, you have certain individual rights.
         You can learn more about these guides in the
@@ -235,6 +249,8 @@ export default function TermsConditions() {
       <p>
         If you have any questions about this Privacy Policy, please contact us,
         by visiting this page on our website:
+      </p>
+      <p id="link">
         <a href="http://www.florscarolina.com/contact">
           http://www.florscarolina.com/contact
         </a>
