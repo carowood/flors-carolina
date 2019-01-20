@@ -14,58 +14,13 @@ import Footer from "./components/Footer/Footer";
 import "./scss/App.scss";
 
 class App extends Component {
-  // CHANGE THE DEFAULT LANG TO CAT or ES ?
   state = {
     menuSideBarOpen: false,
-    preferredLocale: "en",
+    preferredLocale: localStorage.getItem("preferredLocale")
+      ? localStorage.getItem("preferredLocale")
+      : "cat",
     navTheme: "light"
-    // navOpacity: 0 //related to commented out code below, don't delete!
   };
-
-  // ================================================================================== //
-  // ================================================================================== //
-
-  // NAV BAR OPACITY FUNCTION COMMENTED OUT FOR NOW - MAYBE WE CAN USE THIS WITH STATE
-  // IN ORDER TO MAKE NAV VISIBLE UPON SCROLL ON HOMEPAGE.
-  // FOR NOW, USING CSS ONLY, BUT WILL KEEP THIS CODE IN PLACE IN CASE WE DECIDE
-  // TO USE IT.
-
-  // componentDidMount = () => {
-  //   window.addEventListener("scroll", this.updateNavOpacity);
-  // };
-
-  // componentWillUnmount = () => {
-  //   window.removeEventListener("scroll", this.updateNavOpacity);
-  // };
-
-  // updateNavOpacity = () => {
-  //   const navbarHeight = 50;
-  //   const bottomBorderWidth = 2;
-  //   const headerHeight = 200;
-  //   const fadeInDistance = 40;
-  //   const endFade = headerHeight - navbarHeight - bottomBorderWidth;
-  //   const startFade = endFade - fadeInDistance;
-  //   const scrollY = window.scrollY;
-
-  //   if (scrollY < startFade) {
-  //     if (this.state.opacity === 0) return;
-  //     this.setState({ navOpacity: 0 });
-  //     return;
-  //   }
-
-  //   if (scrollY > endFade) {
-  //     if (this.state.opacity === 1) return;
-  //     this.setState({ navOpacity: 1 });
-  //     return;
-  //   }
-
-  //   const pxPastStartFade = scrollY - startFade;
-  //   const navOpacity = pxPastStartFade / (endFade - startFade);
-  //   this.setState({ navOpacity });
-  // };
-
-  // ================================================================================== //
-  // ================================================================================== //
 
   menuSidebarToggleClickHandler = () => {
     this.setState(prevState => {
@@ -82,6 +37,8 @@ class App extends Component {
     this.setState({
       preferredLocale: id
     });
+    localStorage.setItem("preferredLocale", id);
+
     this.menuBackdropClickHandler();
   };
 
@@ -102,7 +59,6 @@ class App extends Component {
       <div className="App">
         <LocaleContext.Provider value={this.state.preferredLocale}>
           <Navbar
-            // opacity={this.state.navOpacity} //related to commented out code above, don't delete!
             theme={this.state.navTheme}
             path={this.props}
             changeLanguage={this.changeLanguage}
@@ -153,7 +109,7 @@ class App extends Component {
               <Press {...routeProps} changeTheme={this.changeTheme} />
             )}
           />
-          {/* If the routh page of the url is typed incorrectly, 
+          {/* If the route page of the url is typed incorrectly, 
               we redirect to the homepage */}
           <Route path="*" render={() => <Redirect to="/home" />} />
           <Footer />
