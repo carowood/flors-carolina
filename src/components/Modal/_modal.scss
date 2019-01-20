@@ -1,0 +1,51 @@
+.modal {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #ebebeb;
+  padding: 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 5px solid $color-grey;
+  height: 600px; // what ever you like
+  overflow: auto;
+  &__closeicon {
+    background-image: url("../assets/icons/close-icon-black.svg");
+    background-repeat: no-repeat;
+    background-size: 15px, 15px;
+    height: 15px;
+    width: 15px;
+    border: none;
+    position: fixed;
+    align-self: flex-end;
+    margin: 10px 0 0 -10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  &__closeicon:hover {
+    transform: scale(1.1);
+  }
+  &__closebutton {
+    padding: 14px 20px 25px 20px;
+    background: #717171;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Futura-Book-Regular", Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    width: 20%;
+    margin: 15px auto 40px auto;
+    cursor: pointer;
+  }
+  &__content {
+    margin: 50px 50px 0 50px;
+  }
+}
