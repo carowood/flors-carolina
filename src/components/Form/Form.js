@@ -2,6 +2,8 @@ import React from "react";
 import Translate from "../../translations/Translate";
 import BtnSend from "../Btn-send/BtnSend";
 import Icon from "../../assets/icons/icon-circle-tick.svg";
+import Modal from "../Modal/Modal";
+import TermsConditions from "../TermsConditions/TermsConditions";
 
 export default class Form extends React.Component {
   state = {
@@ -14,7 +16,8 @@ export default class Form extends React.Component {
     emailInvalid: "",
     displayCustomerInformation: false,
     displayErrorMessage: false,
-    displayConfirmationMessage: false
+    displayConfirmationMessage: false,
+    showModal: false
   };
 
   handleChange = e => {
@@ -122,144 +125,160 @@ export default class Form extends React.Component {
 
   render() {
     return (
-      <div className="form-box-container">
-        <div
-          className={
-            this.state.displayConfirmationMessage
-              ? "confirmation-message-display"
-              : "confirmation-message-hide"
-          }
+      <React.Fragment>
+        <Modal
+          showModal={this.state.showModal}
+          hideModal={e => this.setState({ showModal: false })}
         >
-          <p>{this.state.confirmationMessage}</p>
-          <img className="icon" src={Icon} alt="Message sent!" />
-        </div>
-
-        <div
-          className={
-            this.state.displayCustomerInformation
-              ? "user-information-display"
-              : "user-information-hide"
-          }
-        >
-          <div className="customer-info">
-            <p className="info-label">
-              <Translate string={"contact.name"} />
-            </p>
-            <p className="info-data">{this.state.form_name}</p>
-          </div>
-          <div className="customer-info">
-            <p className="info-label">
-              <Translate string={"contact.email"} />
-            </p>
-            <p className="info-data">{this.state.form_email}</p>
-          </div>
-          <div className="customer-info">
-            <p className="info-label">
-              <Translate string={"contact.telephone"} />
-            </p>
-            <p className="info-data">{this.state.form_tel}</p>
-          </div>
-          <div className="customer-info">
-            <p className="info-label">
-              <Translate string={"contact.message"} />
-            </p>
-            <p className="info-data">{this.state.form_msg}</p>
-          </div>
-        </div>
-        <form
-          onSubmit={this.submitForm}
-          className={
-            this.state.displayCustomerInformation
-              ? "form-group-hide"
-              : "form-group"
-          }
-          method="POST"
-          action="/mailer.php"
-        >
+          <TermsConditions />
+        </Modal>
+        <div className="form-box-container">
           <div
             className={
-              this.state.displayErrorMessage
-                ? "error-message-display"
-                : "error-message-hide"
+              this.state.displayConfirmationMessage
+                ? "confirmation-message-display"
+                : "confirmation-message-hide"
             }
           >
-            {this.state.errorMessage}
+            <p>{this.state.confirmationMessage}</p>
+            <img className="icon" src={Icon} alt="Message sent!" />
           </div>
 
-          <label htmlFor="name">
-            <Translate string={"contact.name"} />
-            <span className="required">* </span>
-            <span className="requiredMessage">{this.state.nameRequired}</span>
-          </label>
+          <div
+            className={
+              this.state.displayCustomerInformation
+                ? "user-information-display"
+                : "user-information-hide"
+            }
+          >
+            <div className="customer-info">
+              <p className="info-label">
+                <Translate string={"contact.name"} />
+              </p>
+              <p className="info-data">{this.state.form_name}</p>
+            </div>
+            <div className="customer-info">
+              <p className="info-label">
+                <Translate string={"contact.email"} />
+              </p>
+              <p className="info-data">{this.state.form_email}</p>
+            </div>
+            <div className="customer-info">
+              <p className="info-label">
+                <Translate string={"contact.telephone"} />
+              </p>
+              <p className="info-data">{this.state.form_tel}</p>
+            </div>
+            <div className="customer-info">
+              <p className="info-label">
+                <Translate string={"contact.message"} />
+              </p>
+              <p className="info-data">{this.state.form_msg}</p>
+            </div>
+          </div>
+          <form
+            onSubmit={this.submitForm}
+            className={
+              this.state.displayCustomerInformation
+                ? "form-group-hide"
+                : "form-group"
+            }
+            method="POST"
+            action="/mailer.php"
+          >
+            <div
+              className={
+                this.state.displayErrorMessage
+                  ? "error-message-display"
+                  : "error-message-hide"
+              }
+            >
+              {this.state.errorMessage}
+            </div>
 
-          <input
-            onChange={this.handleChange}
-            className="form-field"
-            name="form_name"
-            type="text"
-            value={this.state.form_name}
-            required
-          />
+            <label htmlFor="name">
+              <Translate string={"contact.name"} />
+              <span className="required">* </span>
+              <span className="requiredMessage">{this.state.nameRequired}</span>
+            </label>
 
-          <label htmlFor="email">
-            <Translate string={"contact.email"} />
-            <span className="required">*</span>
-            <span className="requiredMessage">{this.state.emailRequired}</span>
-            <span className="invalidEmail">{this.state.emailInvalid}</span>
-          </label>
-          <input
-            onChange={this.handleChange}
-            className="form-field"
-            name="form_email"
-            type="email"
-            value={this.state.form_email}
-            required
-          />
-          <label htmlFor="telephone">
-            <Translate string={"contact.telephone"} />
-          </label>
-          <input
-            onChange={this.handleChange}
-            className="form-field"
-            name="form_tel"
-            type="text"
-            value={this.state.form_tel}
-          />
-          <label htmlFor="message">
-            <Translate string={"contact.message"} />{" "}
-            <span className="required">*</span>
-            <span className="requiredMessage">{this.state.msgRequired}</span>
-          </label>
-          <textarea
-            onChange={this.handleChange}
-            className="form-field"
-            name="form_msg"
-            id="message-field"
-            cols="30"
-            rows="3"
-            value={this.state.form_msg}
-            required
-          />
-          <div className="checkbox-container">
             <input
-              className="checkbox"
-              onChange={this.handleCheckbox}
-              type="checkbox"
-              name="gdpr"
-              value="acknowledged"
+              onChange={this.handleChange}
+              className="form-field"
+              name="form_name"
+              type="text"
+              value={this.state.form_name}
               required
             />
-            <p className="checkbox-description">
-              <Translate string={"contact.formcheckbox"} />
-            </p>
-          </div>
-          <div className="button">
-            <BtnSend>
-              <Translate string={"contact.formsendbtn"} />
-            </BtnSend>
-          </div>
-        </form>
-      </div>
+
+            <label htmlFor="email">
+              <Translate string={"contact.email"} />
+              <span className="required">*</span>
+              <span className="requiredMessage">
+                {this.state.emailRequired}
+              </span>
+              <span className="invalidEmail">{this.state.emailInvalid}</span>
+            </label>
+            <input
+              onChange={this.handleChange}
+              className="form-field"
+              name="form_email"
+              type="email"
+              value={this.state.form_email}
+              required
+            />
+            <label htmlFor="telephone">
+              <Translate string={"contact.telephone"} />
+            </label>
+            <input
+              onChange={this.handleChange}
+              className="form-field"
+              name="form_tel"
+              type="text"
+              value={this.state.form_tel}
+            />
+            <label htmlFor="message">
+              <Translate string={"contact.message"} />{" "}
+              <span className="required">*</span>
+              <span className="requiredMessage">{this.state.msgRequired}</span>
+            </label>
+            <textarea
+              onChange={this.handleChange}
+              className="form-field"
+              name="form_msg"
+              id="message-field"
+              cols="30"
+              rows="3"
+              value={this.state.form_msg}
+              required
+            />
+            <div className="checkbox-container">
+              <input
+                className="checkbox"
+                onChange={this.handleCheckbox}
+                type="checkbox"
+                name="gdpr"
+                value="acknowledged"
+                required
+              />
+              <div
+                onClick={e => this.setState({ showModal: true })}
+                className="checkbox-description"
+              >
+                <Translate string={"contact.formcheckbox-agree"} />
+                <span className="terms-of-service">
+                  <Translate string={"contact.formcheckbox-termsofservice"} />
+                </span>
+              </div>
+            </div>
+            <div className="button">
+              <BtnSend>
+                <Translate string={"contact.formsendbtn"} />
+              </BtnSend>
+            </div>
+          </form>
+        </div>
+      </React.Fragment>
     );
   }
 }
