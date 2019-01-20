@@ -3,16 +3,16 @@
   padding:0px;
 
   &_title{
-    font-family:$font-playfair;
-      padding:5px;
-      margin:1%;
-      font-size: 4vh;
-      display: flex;
-      justify-content: center;
-      letter-spacing:1px;
-      text-transform:uppercase;
-      text-align: center;
-      border-bottom:1px solid $color-main-purple;
+    font-family: "PlayfairDisplay-Regular", Helvetica, Arial, sans-serif;
+    padding: 5px;
+    margin: 1%;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #680071;
   }
   &_description{
      text-align: justify;
@@ -20,10 +20,13 @@
       font-family:$font-futura-book;
       display:flex;
       justify-content: center;
+      margin:6%;
+        @media (min-width:$screen-sm){
+          margin:6%;
+        }
     
         @media (min-width: $screen-md) {
-        padding:10%;
-        margin:6% 0 0 10%;
+        margin:3% 5% 5% 5%;
       }
   }
 }

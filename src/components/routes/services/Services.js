@@ -5,7 +5,6 @@ import Bouquets from "../../Bouquets/Bouquets.js";
 import Pillows from "../../Pillows/Pillows.js";
 import BtnWedding from "../../Btn-wedding/BtnWedding.js";
 import Company from "../../Company/Company.js";
-import BtnCompany from "../../Btn-company/BtnCompany.js";
 
 export default class Services extends React.Component {
   componentDidMount() {
@@ -26,9 +25,6 @@ export default class Services extends React.Component {
         </div>
         <div className="company">
           <Company />
-        </div>
-        <div className="contact-btn">
-          <BtnCompany />
         </div>
       </div>
     );

@@ -4,10 +4,10 @@ import Translate from "../../translations/Translate";
 export default function BtnCompany() {
   return (
     <div>
-        <div className="btn">
+     <div className="btn_company">
           <ul>
             <li><Translate string={"services.cbtn"}/></li>
-            <li><button><Translate string={"services.cbtncontact"}/></button></li>
+            <li><a href="/Contact"><button><Translate string={"services.cbtncontact"}/></button></a></li>
           </ul>
         </div>
     </div>
