@@ -12,6 +12,7 @@ import SideBar from "./components/SideBar/Sidebar";
 import Backdrop from "./components/Backdrop/Backdrop";
 import Footer from "./components/Footer/Footer";
 import "./scss/App.scss";
+import ReactGA from "react-ga";
 
 class App extends Component {
   state = {
@@ -22,6 +23,9 @@ class App extends Component {
     navTheme: "light"
   };
 
+  componentDidMount() {
+    ReactGA.initialize("UA-21204183-2"); // Here we should use our GA id
+  }
   menuSidebarToggleClickHandler = () => {
     this.setState(prevState => {
       return { menuSideBarOpen: !prevState.menuSideBarOpen };

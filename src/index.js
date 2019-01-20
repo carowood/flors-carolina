@@ -3,15 +3,23 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter } from "react-router-dom";
+import { Router } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import { createBrowserHistory } from "history";
+import { ga } from "react-ga";
+
+const history = createBrowserHistory();
+history.listen(location => {
+  console.log("tracking", location.pathname);
+  ga("send", "pageview", location.pathname);
+});
 
 ReactDOM.render(
-  <BrowserRouter>
+  <Router history={history}>
     <ScrollToTop>
       <App />
     </ScrollToTop>
-  </BrowserRouter>,
+  </Router>,
   document.getElementById("root")
 );
 
