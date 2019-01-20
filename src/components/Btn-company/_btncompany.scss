@@ -1,5 +1,25 @@
-.btn{
+.btn_company{
+  border:1px solid $color-line-purple;
+  margin:0px 20%;
+  padding:10px;
   ul{
   list-style:none;
+  padding:0px;
+  align-items:center;
+
+  
+ }
+ li{
+  margin: 0 5%;
+  text-align: center;
+ }
+  
+ button{
+  background-color: #93278f;
+  color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  outline: none;
+  padding: 9px;
  }
 }

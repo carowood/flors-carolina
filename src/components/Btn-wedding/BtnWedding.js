@@ -4,14 +4,14 @@ import Translate from "../../translations/Translate";
 export default function BtnWedding() {
   return (
     <div>
-      <a href="/Contact">
+      
         <div className="btn">
           <ul>
             <li><Translate string={"services.wbtn"}/></li>
-            <li><button><Translate string={"services.wbtncontact"}/></button></li>
+            <li><a href="/Contact"><button><Translate string={"services.wbtncontact"}/></button></a></li>
           </ul>
         </div>
-      </a>
+    
     </div>
 
   );
