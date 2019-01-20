@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Redirect } from "react-router-dom";
+import { Route, Redirect, Switch } from "react-router-dom";
 import Home from "./components/routes/home/Home";
 import OurStory from "./components/routes/ourstory/OurStory";
 import Contact from "./components/routes/contact/Contact";
@@ -71,47 +71,49 @@ class App extends Component {
             close={this.menuBackdropClickHandler}
           />
           {menuBackdrop}
-          <Route
-            exact
-            path="/home"
-            render={routeProps => (
-              <Home {...routeProps} changeTheme={this.changeTheme} />
-            )}
-          />
-          <Route exact path="/" render={() => <Redirect to="/home" />} />
-          <Route
-            path="/ourstory"
-            render={routeProps => (
-              <OurStory {...routeProps} changeTheme={this.changeTheme} />
-            )}
-          />
-          <Route
-            path="/services"
-            render={routeProps => (
-              <Services {...routeProps} changeTheme={this.changeTheme} />
-            )}
-          />
-          <Route
-            path="/gallery"
-            render={routeProps => (
-              <Gallery {...routeProps} changeTheme={this.changeTheme} />
-            )}
-          />
-          <Route
-            path="/contact"
-            render={routeProps => (
-              <Contact {...routeProps} changeTheme={this.changeTheme} />
-            )}
-          />
-          <Route
-            path="/press"
-            render={routeProps => (
-              <Press {...routeProps} changeTheme={this.changeTheme} />
-            )}
-          />
-          {/* If the route page of the url is typed incorrectly, 
+          <Switch>
+            <Route
+              exact
+              path="/home"
+              render={routeProps => (
+                <Home {...routeProps} changeTheme={this.changeTheme} />
+              )}
+            />
+            <Route exact path="/" render={() => <Redirect to="/home" />} />
+            <Route
+              path="/ourstory"
+              render={routeProps => (
+                <OurStory {...routeProps} changeTheme={this.changeTheme} />
+              )}
+            />
+            <Route
+              path="/services"
+              render={routeProps => (
+                <Services {...routeProps} changeTheme={this.changeTheme} />
+              )}
+            />
+            <Route
+              path="/gallery"
+              render={routeProps => (
+                <Gallery {...routeProps} changeTheme={this.changeTheme} />
+              )}
+            />
+            <Route
+              path="/contact"
+              render={routeProps => (
+                <Contact {...routeProps} changeTheme={this.changeTheme} />
+              )}
+            />
+            <Route
+              path="/press"
+              render={routeProps => (
+                <Press {...routeProps} changeTheme={this.changeTheme} />
+              )}
+            />
+            {/* If the route page of the url is typed incorrectly, 
               we redirect to the homepage */}
-          <Route path="*" render={() => <Redirect to="/home" />} />
+            <Route path="*" render={() => <Redirect to="/home" />} />
+          </Switch>
           <Footer />
         </LocaleContext.Provider>
       </div>
