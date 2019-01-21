@@ -1,11 +1,9 @@
 .wedding {
-  margin:10px;
+  margin:30px;
   padding:0px;
-  @media (min-width: $screen-md) {
-    margin:40px;
-  }
+  
   &_wrapp{
-
+/* 
     @media (min-width: $screen-md) {
       position: relative;
       top: -60px;
@@ -15,7 +13,7 @@
       position: relative;
       top: -60px;
     }
-
+ */ 
   }
   &_title{
    padding:5px;
@@ -27,7 +25,6 @@
    text-transform:uppercase;
    text-align: center;
    border-bottom:1px solid $color-main-purple;
-
 
     @media (min-width: 769px) {
       border-bottom:1px solid $color-main-purple;
@@ -42,7 +39,6 @@
       border-bottom:1px solid $color-main-purple;
       font-size:$font-headline-md;
    }
-
   }
 
   &_description{
@@ -136,7 +132,7 @@
      @media (min-width: 769px) {
        width: 50%;
        right: 25%;
-       top: -80px;
+       top: -50px;
        position: relative;
        z-index: 1;
        border: 5px solid white;

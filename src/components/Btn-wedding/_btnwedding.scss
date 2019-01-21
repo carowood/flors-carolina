@@ -4,10 +4,10 @@
   justify-content: center;
   color:black;
 
-   @media (min-width: $screen-md) {
+   @media (min-width:769px) {
      width: 20%;
      margin-left: 60%;
-     margin-top: -350px;
+     margin-top: -320px;
      position: absolute;
      text-align:center;
      justify-content: center;
@@ -24,6 +24,7 @@
   ul{
     padding: 0;
     list-style-type: none;
+    justify-content: center;
 
   }
 
@@ -35,7 +36,7 @@
     outline: none;
     padding: 9px;
   
-    @media (min-width: $screen-md) {
+    @media (min-width: 769px) {
      padding:4%;
      margin:5%;
     }
