@@ -1,6 +1,15 @@
 .page-container {
-  margin: 15rem 0 0 0px;
+  margin: 12rem 0 0 0px;
+  padding: 50px;
+
   @media (max-width: $screen-md) {
-    margin-top: 8.5rem;
+    margin-top: 4rem;
+  }
+
+  &_header {
+    font-family: $font-playfair;
+    color: $color-main-purple;
+    text-transform: uppercase;
+    text-align: center;
   }
 }
