@@ -1,6 +1,4 @@
-
-// import AliceCarousel from "react-alice-carousel"
-import React, { Component } from "react";
+import React from "react";
 import GalleryGrid from "react-photo-gallery";
 
 export default class Sample extends React.Component {
