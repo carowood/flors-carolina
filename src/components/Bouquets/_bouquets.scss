@@ -67,6 +67,33 @@
 
   }
 
+  &_description2{
+    grid-row-start:2;
+    grid-column-start:1;
+    ul {
+      padding:0px;
+      text-align: center;
+      font-family:$font-futura-book;
+      list-style:none;
+      @media (min-width: 768px) {
+        margin-top:40%;
+      }
+    }
+    li{
+      display:flex;
+      text-align: center;
+      margin-left: 20%;
+    @media (min-width: $screen-sm) {
+      margin-left: 30%;
+    }
+      
+    @media (min-width: 768px) {
+      text-justify: inter-word;
+      margin-left:30%;
+     }
+    }
+  }
+
   &_imgfour{
     grid-row-start:2;
     grid-column-start:2;
@@ -119,8 +146,8 @@
 
     img{
     width: 80%;
-
     z-index: 0;
+    
     @media (max-width: $screen-md) {
         padding: 0 10% 10% 10%;
     }

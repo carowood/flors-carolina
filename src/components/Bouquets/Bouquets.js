@@ -20,7 +20,7 @@ export default function Bouquets() {
             <Translate string={"services.bdescription"}/>
             </p>
           </div>
-          <div className="container_description1">
+          <div className="container_description2">
               <ul>
                 <li><Translate string={"services.boption1"} /></li>
                 <li><Translate string={"services.boption2"} /></li>
