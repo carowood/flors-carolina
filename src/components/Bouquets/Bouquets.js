@@ -19,7 +19,8 @@ export default function Bouquets() {
             <p>
             <Translate string={"services.bdescription"}/>
             </p>
-             <p>
+          </div>
+          <div className="container_description1">
               <ul>
                 <li><Translate string={"services.boption1"} /></li>
                 <li><Translate string={"services.boption2"} /></li>
@@ -27,7 +28,6 @@ export default function Bouquets() {
                 <li><Translate string={"services.boption4"} /></li>
                 <li><Translate string={"services.boption5"} /></li>
               </ul>
-            </p>
           </div>
 
           <div className="container_imgfour">
