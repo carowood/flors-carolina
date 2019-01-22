@@ -7,7 +7,7 @@ import HomeTop from "../../HomeTop/HomeTop";
 import HomeMiddle from "../../HomeMiddle/HomeMiddle";
 import HomeBottom from "../../HomeBottom/HomeBottom";
 import MidsectionImage1 from "../../../assets/images/home/mid-section/home-mid-section-3.png";
-import MidsectionImage2 from "../../../assets/images/home/mid-section/home-mid-section-1.jpg";
+import MidsectionImage2 from "../../../assets/images/home/mid-section/home-mid-section-1.png";
 import BottomsectionImage1 from "../../../assets/images/services/Wthree.png";
 import BottomsectionImage2 from "../../../assets/images/services/Weight.png";
 

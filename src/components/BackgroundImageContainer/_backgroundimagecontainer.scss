@@ -12,15 +12,6 @@
   -moz-background-position: fixed;
   -o-background-position: fixed;
   background-position: center;
-  // background-attachment: fixed;
-  // -webkit-background-attachment: fixed;
-  // -moz-background-attachment: fixed;
-  // -o-background-attachment: fixed;
-  // background-attachment: fixed;
-  // top: 0;
-  // left: 0;
-  // height: 100%;
-  // width: 100%;
   z-index: 0;
 
   min-height: 100vh;
@@ -38,29 +29,23 @@
 }
 
 #back1 {
-  background-image: url("../assets/images/home/background-images/background-image-4.jpg");
-  //background-attachment: fixed;
+  background-image: url("../assets/images/home/background-images/background-image-4.png");
 }
 
 #back2 {
-  // background: url("../assets/images/home/background-images/background-image-3.jpg")
-  background-image: url("../assets/images/home/background-images/background-image-3.jpg");
-  //background-attachment: fixed;
+  background-image: url("../assets/images/home/background-images/background-image-3.png");
 }
 
 #back3 {
-  background-image: url("../assets/images/home/background-images/background-image-7.jpg");
-  //background-attachment: fixed;
+  background-image: url("../assets/images/home/background-images/background-image-7.png");
 }
 
 #back4 {
-  background-image: url("../assets/images/home/background-images/background-image-5.jpg");
-  //background-attachment: fixed;
+  background-image: url("../assets/images/home/background-images/background-image-5.png");
 }
 
 #back5 {
-  background-image: url("../assets/images/home/background-images/background-image-6.jpg");
-  //background-attachment: fixed;
+  background-image: url("../assets/images/home/background-images/background-image-6.png");
 }
 
 @keyframes backgroundchangeFadeInOut {
