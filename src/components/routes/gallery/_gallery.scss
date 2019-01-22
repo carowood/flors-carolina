@@ -7,10 +7,15 @@
   }
 
   &_header {
+    display:none;
+    @media (max-width: $screen-md) {
+    display:block;
+    margin-top: 4rem;
     font-family: $font-playfair;
     color: $color-main-purple;
     text-transform: uppercase;
     text-align: center;
+    }
     h1{
       border-bottom: 1px solid #680071;
     }
