@@ -1,9 +1,47 @@
 import React from "react";
 import GalleryGrid from "react-photo-gallery";
+import Lightbox from "react-images";
 
 export default class Sample extends React.Component {
+  state = { currentImage: 0 };
+
+  showLightbox = (event, obj) => {
+    this.setState({
+      currentImage: obj.index,
+      lightboxIsOpen: true
+    });
+  };
+
+  closeLightbox = () => {
+    this.setState({
+      currentImage: 0,
+      lightboxIsOpen: false
+    });
+  };
+  gotoPrevious = () => {
+    this.setState({
+      currentImage: this.state.currentImage - 1
+    });
+  };
+  gotoNext = () => {
+    this.setState({
+      currentImage: this.state.currentImage + 1
+    });
+  };
   render() {
-    return <GalleryGrid photos={PHOTO_SET} />;
+    return (
+      <div>
+        <GalleryGrid photos={PHOTO_SET} onClick={this.showLightbox} />;
+        <Lightbox
+          images={PHOTO_SET}
+          onClose={this.closeLightbox}
+          onClickPrev={this.gotoPrevious}
+          onClickNext={this.gotoNext}
+          currentImage={this.state.currentImage}
+          isOpen={this.state.lightboxIsOpen}
+        />
+      </div>
+    );
   }
 }
 const PHOTO_SET = [
