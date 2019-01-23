@@ -1,6 +1,6 @@
 import React from "react";
 import Translate from "../../../translations/Translate";
-import Heading from "../../Headings/H1/H1";
+import PageTitle from "../../PageTitle/PageTitle";
 import Form from "../../Form/Form";
 import Mapin from "../../Map/Map";
 import Address from "../../Address/Address";
@@ -13,9 +13,9 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div className="contact-container">
-        <Heading>
+        <PageTitle>
           <Translate string={"contact.heading"} />
-        </Heading>
+        </PageTitle>
         <div className="contact-flex-container">
           <div className="form-container">
             <Form />
