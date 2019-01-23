@@ -7,7 +7,7 @@ By Ariadna Villar & Caroline Wood
 A multilingual, responsive website for a small family business based in Barcelona, providing information about their products and services, business history, location and contact information.
 
 - Visit the website at https://www.florscarolina.com
-- Visit the repository on [Github](https://github.com/carowood/flors-carolina).
+- Visit the repository on [Github](https://github.com/carowood/flors-carolina)
 
 ### Features:
 
