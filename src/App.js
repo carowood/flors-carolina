@@ -24,7 +24,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    ReactGA.initialize("UA-132018054-1"); // Here we should use our GA id
+    ReactGA.initialize("UA-132018054-1"); // Add GA id here
   }
   menuSidebarToggleClickHandler = () => {
     this.setState(prevState => {

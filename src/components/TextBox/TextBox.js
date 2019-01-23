@@ -9,7 +9,6 @@ export default class TextBox extends React.Component {
       <div className="home-textbox">
         <div className="text-box-container">
           <img src={BorderLeft} alt="border" className="image-border-left" />
-          {/* <p className="para">{this.props.text}</p> */}
           <p className="para">{this.props.children}</p>
           <ScrollButton />
           <img src={BorderRight} alt="border" className="image-border-right" />

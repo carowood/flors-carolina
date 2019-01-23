@@ -1,7 +1,5 @@
 import React from "react";
 import Translate from "../../../translations/Translate";
-//import Logo from "../../logo/Logo.js";
-//import ImageContainerLarge from "../../ImageContainerLarge/ImageContainerLarge";
 import { Link } from "react-router-dom";
 import HomeTop from "../../HomeTop/HomeTop";
 import HomeMiddle from "../../HomeMiddle/HomeMiddle";
@@ -36,9 +34,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="home-container">
-        {/* <ImageContainerLarge /> */}
         <HomeTop />
-
         <HomeMiddle image1={MidsectionImage1} image2={MidsectionImage2}>
           <Translate string={"home-mid-section.title"} />
           <Translate string={"home-mid-section.alt-tag1"} />
@@ -48,7 +44,6 @@ export default class Home extends React.Component {
             <Translate string={"home-mid-section.buttontext"} />
           </Link>
         </HomeMiddle>
-
         <HomeBottom image1={BottomsectionImage1} image2={BottomsectionImage2}>
           <Translate string={"home-last-section.title"} />
           <Translate string={"home-last-section.alt-tag1"} />

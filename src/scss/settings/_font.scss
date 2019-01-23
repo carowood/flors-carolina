@@ -1,23 +1,16 @@
 @font-face {
-    font-family: 'Futura-Book-Regular';
-    src: url('../assets/fonts/Futura-Book-Regular.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  } 
+  font-family: "Futura-Book-Regular";
+  src: url("../assets/fonts/Futura-Book-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'PlayfairDisplay-Regular';
-    src: url('../assets/fonts/PlayfairDisplay-Regular.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  } 
-  
-$font-futura-book:'Futura-Book-Regular', Helvetica, Arial, sans-serif;
-$font-playfair: 'PlayfairDisplay-Regular',Helvetica, Arial, sans-serif;
+  font-family: "PlayfairDisplay-Regular";
+  src: url("../assets/fonts/PlayfairDisplay-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-//  @font-face {
-//   font-family: "PlayfairDisplay-Regular";
-//   src: url("./scss/settings/fonts/PlayfairDisplay-Regular.otf") format("opentype");
-//   font-family: "Futura-Book-Regular";
-//   src: url("./scss/settings/fonts/Futura-Book-Regular.otf") format("opentype");
-// }  
+$font-futura-book: "Futura-Book-Regular", Helvetica, Arial, sans-serif;
+$font-playfair: "PlayfairDisplay-Regular", Helvetica, Arial, sans-serif;
