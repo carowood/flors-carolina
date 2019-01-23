@@ -17,7 +17,7 @@ export default class Footer extends React.Component {
         </div>
         <div className="footer__facebook">
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/Flors-Carolina-330582217547133/"
             target="_blank"
             rel="noopener noreferrer"
           >

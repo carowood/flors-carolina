@@ -24,7 +24,6 @@ export default class LanguageOption extends React.Component {
         ? "languagepicker" + this.props.theme + "__list__item__a--selected "
         : "languagepicker" + this.props.theme + "__list__item__a";
 
-    console.log("THEME", this.props.theme);
     return (
       <li
         id={language}

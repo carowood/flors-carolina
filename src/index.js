@@ -10,7 +10,6 @@ import { ga } from "react-ga";
 
 const history = createBrowserHistory();
 history.listen(location => {
-  console.log("tracking", location.pathname);
   ga("send", "pageview", location.pathname);
 });
 
