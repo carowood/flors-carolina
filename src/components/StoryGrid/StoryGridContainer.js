@@ -1,6 +1,12 @@
 import React from "react";
 import Translate from "../../translations/Translate";
 import StoryItem from "./StoryItem";
+import Image1 from "../../assets/images/ourstory/ourstory-1.png";
+import Image2 from "../../assets/images/ourstory/ourstory-2.png";
+import Image3 from "../../assets/images/ourstory/ourstory-3.png";
+import Image4 from "../../assets/images/ourstory/ourstory-4.png";
+import Image5 from "../../assets/images/ourstory/ourstory-5.png";
+import Image6 from "../../assets/images/ourstory/ourstory-6.png";
 
 export default class StoryGridContainer extends React.Component {
   state = {
@@ -17,7 +23,7 @@ export default class StoryGridContainer extends React.Component {
       <div className="story-grid__container">
         <StoryItem
           sid="story-item-1"
-          image="/images/HP0019.jpg"
+          image={Image1}
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
@@ -26,7 +32,7 @@ export default class StoryGridContainer extends React.Component {
         </StoryItem>
         <StoryItem
           sid="story-item-2"
-          image="/images/HP0006.jpg"
+          image={Image2}
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
@@ -35,7 +41,7 @@ export default class StoryGridContainer extends React.Component {
         </StoryItem>
         <StoryItem
           sid="story-item-3"
-          image="/images/HP0007.jpg"
+          image={Image3}
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
@@ -44,7 +50,7 @@ export default class StoryGridContainer extends React.Component {
         </StoryItem>
         <StoryItem
           sid="story-item-4"
-          image="/images/HP0013.jpg"
+          image={Image4}
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
@@ -53,7 +59,7 @@ export default class StoryGridContainer extends React.Component {
         </StoryItem>
         <StoryItem
           sid="story-item-5"
-          image="/images/HP0018.jpg"
+          image={Image5}
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
@@ -62,7 +68,7 @@ export default class StoryGridContainer extends React.Component {
         </StoryItem>
         <StoryItem
           sid="story-item-6"
-          image="/images/shopfront.jpg"
+          image={Image6}
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
         >
