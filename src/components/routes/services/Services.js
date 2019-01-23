@@ -5,6 +5,7 @@ import Bouquets from "../../Bouquets/Bouquets.js";
 import Pillows from "../../Pillows/Pillows.js";
 import BtnWedding from "../../Btn-wedding/BtnWedding.js";
 import Company from "../../Company/Company.js";
+import PageTitle from "../../PageTitle/PageTitle";
 
 export default class Services extends React.Component {
   componentDidMount() {

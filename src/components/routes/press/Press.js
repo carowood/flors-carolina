@@ -1,6 +1,6 @@
 import React from "react";
 import Translate from "../../../translations/Translate";
-import Heading from "../../Headings/H1/H1";
+import PageTitle from "../../PageTitle/PageTitle";
 import Video from "../../Video/Video";
 import PressGrid from "../../PressGrid/PressGrid";
 
@@ -12,9 +12,9 @@ export default class Press extends React.Component {
   render() {
     return (
       <div className="press-container">
-        <Heading>
+        <PageTitle>
           <Translate string={"press.header"} />
-        </Heading>
+        </PageTitle>
         <Video />
         <PressGrid />
       </div>
