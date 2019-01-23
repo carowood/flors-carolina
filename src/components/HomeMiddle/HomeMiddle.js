@@ -2,8 +2,6 @@ import React from "react";
 
 export default class HomeMiddle extends React.Component {
   render() {
-    console.log("homeprops", this.props.children);
-
     let item = this.props.children;
     let title = item[0];
     let bodyText = item[3];

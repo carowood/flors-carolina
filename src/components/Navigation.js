@@ -9,14 +9,9 @@ class Navigation extends React.Component {
       borderBottom: "1px solid #93278f",
       paddingBottom: "2px"
     };
-    console.log("props", this.props);
+
     return (
       <ul className="menu">
-        {/*<li className="">
-          <Link to="/">
-            <Translate string={"navigation.home"} />
-          </Link>
-        </li> */}
         <li className="menu__item">
           <NavLink
             to="/ourstory"

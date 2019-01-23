@@ -25,18 +25,15 @@ export default class Form extends React.Component {
     this.setState({
       [e.target.name]: e.target.value
     });
-    console.log(this.state);
   };
 
   handleCheckbox = e => {
-    console.log("etarget form", e.target.checked);
     this.setState({
       gdpr: e.target.checked,
       errorMessageClass: "error-message-hide",
       errorMessage: "",
       displayErrorMessage: false
     });
-    console.log(this.state);
   };
 
   submitForm = e => {
@@ -101,7 +98,6 @@ export default class Form extends React.Component {
       }
     })
       .then(response => {
-        console.log(response.status);
         if (response.status !== 200) {
           this.setState({
             errorMessage: <Translate string={"contact.errormessage-general"} />,

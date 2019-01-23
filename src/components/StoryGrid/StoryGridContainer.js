@@ -8,7 +8,6 @@ export default class StoryGridContainer extends React.Component {
   };
 
   storyItemClickHandler = event => {
-    console.log(event.currentTarget);
     let gridItemID = event.currentTarget.id;
     this.setState({ selected: gridItemID });
   };

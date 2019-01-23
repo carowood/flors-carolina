@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function sideBarToggleButton(props) {
-  console.log("hello", props);
   return (
     <button
       className={"toggle-button toggle-button-" + props.theme}

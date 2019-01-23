@@ -4,7 +4,7 @@ import Translate from "../../translations/Translate";
 export default class StoryItem extends React.Component {
   render() {
     let image = this.props.image;
-    console.log(this.props.image);
+
     return (
       <div className="story-item-main__container">
         <div className="story-item-main__image-container">
