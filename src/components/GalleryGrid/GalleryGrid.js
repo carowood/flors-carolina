@@ -31,7 +31,7 @@ export default class Sample extends React.Component {
   render() {
     return (
       <div>
-        <GalleryGrid photos={PHOTO_SET} onClick={this.showLightbox} />;
+        <GalleryGrid photos={PHOTO_SET} onClick={this.showLightbox} />
         <Lightbox
           images={PHOTO_SET}
           onClose={this.closeLightbox}
