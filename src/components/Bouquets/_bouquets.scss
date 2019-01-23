@@ -45,37 +45,16 @@
       text-justify: inter-word;;
       font-family:$font-futura-book;
     }
-    ul {
-      padding:0px;
-      text-align: center;
-      font-family:$font-futura-book;
-      list-style:none;
-    }
-    li{
-      display:flex;
-      text-align: center;
-      margin-left: 20%;
-    @media (min-width: $screen-sm) {
-      margin-left: 30%;
-    }
-      
-    @media (min-width: 768px) {
-      text-justify: inter-word;
-      margin-left:30%;
-     }
-    }
-
   }
 
   &_description2{
     grid-row-start:2;
     grid-column-start:1;
     ul {
+      margin-left:5%;
       padding:0px;
-      text-align: center;
-      font-family:$font-futura-book;
       list-style:none;
-      margin-top:40%;
+      margin-top:30%;
       @media (max-width: $screen-md) {
         margin-top:0;
       }
@@ -108,7 +87,7 @@
       display:none;
     }
     @media (min-width:  768px) {
-      padding:3%;
+      padding: 3% 3% 0 0;
     }
     }
 
