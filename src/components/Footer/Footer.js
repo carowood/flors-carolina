@@ -4,23 +4,18 @@ import InstagramIcon from "../../assets/icons/socialmedia/instagram.svg";
 
 export default class Footer extends React.Component {
   render() {
+    let instagramUrl = "https://www.instagram.com/florscarolinabcn/";
+    let facebookUrl =
+      "https://www.facebook.com/Flors-Carolina-330582217547133/";
     return (
       <div className="footer">
         <div className="footer__instagram">
-          <a
-            href="https://www.instagram.com/florscarolinabcn/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
             <img src={InstagramIcon} alt="Instagram" />
           </a>
         </div>
         <div className="footer__facebook">
-          <a
-            href="https://www.facebook.com/Flors-Carolina-330582217547133/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
             <img src={FacebookIcon} alt="Facebook" />
           </a>
         </div>

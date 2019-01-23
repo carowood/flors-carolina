@@ -14,7 +14,6 @@ export default class StoryItem extends React.Component {
           <p className="story-item-main__title">
             <Translate string={"ourstory.title1"} />
           </p>
-
           <p className="story-item-main__bodytext">
             <Translate string={"ourstory.bodytext1-paragraph1"} />
           </p>

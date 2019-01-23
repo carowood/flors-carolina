@@ -1,9 +1,7 @@
 .home-textbox {
-  //background-color: rgba(104, 0, 113, 0.6);
   background-color: rgba(0, 0, 0, 0.6);
   margin: 35vh 25vw;
   @media (max-width: $screen-md) {
-    //margin: 28vh 15vw;
     margin: 40vh 15vw;
   }
   @media (max-width: $screen-sm) {

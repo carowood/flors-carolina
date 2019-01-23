@@ -14,9 +14,6 @@ export default class Gallery extends React.Component {
           <PageTitle>
             <Translate string={"gallery.header"} />
           </PageTitle>
-          {/* <h1>
-            <Translate string={"gallery.header"} />
-          </h1> */}
         </div>
         <GalleryGrid />
       </div>

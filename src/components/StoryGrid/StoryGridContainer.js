@@ -6,7 +6,7 @@ import Image2 from "../../assets/images/ourstory/ourstory-2.png";
 import Image3 from "../../assets/images/ourstory/ourstory-3.png";
 import Image4 from "../../assets/images/ourstory/ourstory-4.png";
 import Image5 from "../../assets/images/ourstory/ourstory-5.png";
-import Image6 from "../../assets/images/ourstory/ourstory-6.png";
+import Image6 from "../../assets/images/ourstory/ourstory-main.png";
 
 export default class StoryGridContainer extends React.Component {
   state = {
