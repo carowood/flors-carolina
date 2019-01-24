@@ -1,4 +1,4 @@
-div.story-item-main__container {
+.largestoryitemcontainer {
   background-color: $color-white;
   border-radius: 5px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
@@ -6,25 +6,27 @@ div.story-item-main__container {
   padding: 20px;
   width: 95%;
   box-sizing: border-box;
-  div.story-item-main__image-container {
+  @media (max-width: $screen-md) {
+    display: none;
+  }
+  &__imagecontainer {
     width: 50%;
     display: inline-block;
     box-sizing: border-box;
-
     height: 200px;
 
-    img.story-item-main__image {
+    &__image {
       width: 100%;
       height: auto;
       object-fit: cover;
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     }
   }
-  div.story-item-main__textcontent {
+  &__textcontent {
     width: 50%;
     float: left;
     box-sizing: border-box;
-    p.story-item-main__title {
+    &__title {
       background-color: none;
       font-family: $font-playfair;
       font-size: 2em;
@@ -32,15 +34,10 @@ div.story-item-main__container {
       color: $color-main-purple;
       margin: 0;
     }
-    p.story-item-main__bodytext {
+    &__bodytext {
       width: 95%;
       margin: 1.2em 0 0 0;
       font-size: 0.9em;
     }
-  }
-}
-@media (max-width: $screen-md) {
-  div.story-item-main__container {
-    display: none;
   }
 }

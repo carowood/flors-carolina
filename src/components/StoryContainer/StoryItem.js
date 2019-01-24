@@ -6,15 +6,19 @@ export default class StoryItem extends React.Component {
     let image = this.props.image;
 
     return (
-      <div className="story-item-main__container">
-        <div className="story-item-main__image-container">
-          <img className="story-item-main__image" src={image} alt="story" />
+      <div className="largestoryitemcontainer">
+        <div className="largestoryitemcontainer__imagecontainer">
+          <img
+            className="largestoryitemcontainer__imagecontainer__image"
+            src={image}
+            alt="story"
+          />
         </div>
-        <div className="story-item-main__textcontent">
-          <p className="story-item-main__title">
+        <div className="largestoryitemcontainer__textcontent">
+          <p className="largestoryitemcontainer__textcontent__title">
             <Translate string={"ourstory.title1"} />
           </p>
-          <p className="story-item-main__bodytext">
+          <p className="largestoryitemcontainer__textcontent__bodytext">
             <Translate string={"ourstory.bodytext1-paragraph1"} />
           </p>
         </div>
