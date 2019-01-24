@@ -68,7 +68,7 @@ class App extends Component {
 
   render() {
     let menuBackdrop;
-    // If menueSideBarOpen in state is true, assign the component
+    // If menuSideBarOpen in state is true, assign the component
     // value to the menuBackDrop variable, which is returned below.
     if (this.state.menuSideBarOpen) {
       menuBackdrop = <Backdrop click={this.menuBackdropClickHandler} />;
