@@ -15,6 +15,9 @@ import "./scss/App.scss";
 import ReactGA from "react-ga";
 
 class App extends Component {
+  // Using state to control the display of navBar theme, sidebar menu and langauge.
+  // preferredLocale is saved in state, either as the value present in localStorage
+  // (if there is one), else the default language is set to Catalan ("cat").
   state = {
     menuSideBarOpen: false,
     preferredLocale: localStorage.getItem("preferredLocale")
@@ -24,28 +27,39 @@ class App extends Component {
   };
 
   componentDidMount() {
-    ReactGA.initialize("UA-132018054-1"); // Add GA id here
+    // Add Google Analytics ID for page tracking.
+    ReactGA.initialize("UA-132018054-1");
   }
+  // Function for toggling the menu bar open and closed on mobile/tablet,
+  // setting the state to the opposite of what it as previously, using prevState reference.
   menuSidebarToggleClickHandler = () => {
     this.setState(prevState => {
       return { menuSideBarOpen: !prevState.menuSideBarOpen };
     });
   };
 
+  // Function for controlling the backdrop rendering on mobile when the side menu displays.
   menuBackdropClickHandler = () => {
     this.setState({ menuSideBarOpen: false });
   };
 
+  // Change Language gets the id of the element that the user clicks on and assigns
+  // the value to the variable 'id'.
+  // It then sets the preferredLocale in state to the value of 'id'.
+  // It saves the selected language to localStorage so that the user's choice
+  // is stored in their browser.
+  // Once the choice is made, the menuBackdropClickHander is called, so that
+  // the sidemenu on mobile/tablet slides out of view.
   changeLanguage = event => {
     let id = event.currentTarget.id;
     this.setState({
       preferredLocale: id
     });
     localStorage.setItem("preferredLocale", id);
-
     this.menuBackdropClickHandler();
   };
 
+  // Enables us to control which nav theme is displayed, either light or dark.
   changeTheme = theme => {
     this.setState({
       navTheme: theme
@@ -54,13 +68,20 @@ class App extends Component {
 
   render() {
     let menuBackdrop;
-
+    // If menueSideBarOpen in state is true, assign the component
+    // value to the menuBackDrop variable, which is returned below.
     if (this.state.menuSideBarOpen) {
       menuBackdrop = <Backdrop click={this.menuBackdropClickHandler} />;
     }
 
     return (
       <div className="App">
+        {/* 
+            LocaleContext.Provider allows consuming components to subscribe to context changes.
+            It accepts a value prop (in this case, the preferredLocale in state) and passes it to 
+            consuming components that are descendents of this provider. This means that all rendered 
+            translations will correspond to the language value of the prop.
+        */}
         <LocaleContext.Provider value={this.state.preferredLocale}>
           <Navbar
             theme={this.state.navTheme}

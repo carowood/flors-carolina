@@ -18,7 +18,9 @@ export default class Translate extends PureComponent {
     const string = this.props.string;
 
     // Context.Consumer renders output based on the context value,
-    // in this case the language and corresponding string.
+    // which, in this case, is the language and corresponding string.
+    // If there is no value or string found, we set a warning message
+    // to help us identify any missing translations easily during testing.
     return (
       <LocaleContext.Consumer>
         {value =>
