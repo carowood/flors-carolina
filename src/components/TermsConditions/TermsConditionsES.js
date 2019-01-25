@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function TermsConditions_ES() {
+export default function TermsConditionsES() {
   return (
     <div className="terms-container">
       <h1 className="terms-title">Política de privacidad</h1>
