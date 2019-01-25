@@ -12,7 +12,6 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  text-align: center;
   border: 5px solid $color-grey;
   height: 70%;
   @media (max-width: $screen-sm) {
@@ -42,6 +41,7 @@
     color: #ffffff;
     text-transform: uppercase;
     font-family: "Futura-Book-Regular", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
     border-radius: 4px;
     letter-spacing: 2px;
     margin: 15px auto 40px auto;

@@ -126,7 +126,11 @@ class App extends Component {
             <Route
               path="/contact"
               render={routeProps => (
-                <Contact {...routeProps} changeTheme={this.changeTheme} />
+                <Contact
+                  {...routeProps}
+                  changeTheme={this.changeTheme}
+                  lang={this.state.preferredLocale}
+                />
               )}
             />
             <Route
