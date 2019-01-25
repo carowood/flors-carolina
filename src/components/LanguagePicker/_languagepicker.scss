@@ -24,13 +24,15 @@
     @media (max-width: $screen-md) {
       &__item {
         &__a {
-          color: $color-main-purple;
+          //color: $color-main-purple;
+          color: black;
         }
         &__a {
           text-decoration: none;
           font-family: $font-futura-book;
           text-transform: uppercase;
           color: $color-main-purple;
+          color: $color-black;
         }
         &__a--selected {
           background-color: $color-red;

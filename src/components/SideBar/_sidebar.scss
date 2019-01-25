@@ -1,5 +1,17 @@
 @media (max-width: 769px) {
   .sidebar {
+    background: #e0eafc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to top,
+      #e0eafc,
+      #fff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to top,
+      #e0eafc,
+      #fff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     height: 100%;
     background-color: $color-white;
     box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
@@ -38,6 +50,7 @@
         margin: 0.5rem 0;
         a {
           color: $color-main-purple;
+          color: black;
           text-decoration: none;
           font-size: 1.2rem;
           font-family: $font-playfair;
@@ -46,14 +59,11 @@
         }
         a:hover,
         a:active {
-          color: $color-white;
           width: auto;
-          background-color: $color-main-purple;
-          padding: 0 10px;
         }
       }
       li.menu__item:last-child {
-        border-bottom: 1px solid lightgrey;
+        border-bottom: 1px solid $color-line-purple;
         padding-bottom: 40px;
       }
     }
