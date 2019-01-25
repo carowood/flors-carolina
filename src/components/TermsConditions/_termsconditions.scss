@@ -1,18 +1,26 @@
-li.terms-list {
+div.terms-container {
   text-align: left;
-  white-space: pre-line;
-  list-style-type: circle;
-}
-p.terms-body-text {
-  text-align: left;
-  white-space: pre-line;
-  overflow-wrap: break-word;
+  .terms-title {
+    text-align: center;
+  }
+  p.terms-body-text {
+    text-align: justify;
+    font-size: 0.8em;
+  }
+  ul.terms-list-container {
+    li.terms-list {
+      text-align: left;
+      white-space: pre-line;
+      list-style-position: outside;
+      list-style-type: circle;
+      font-size: 0.8em;
+    }
+  }
 }
 #effective-date {
   text-align: center;
   font-size: 0.6em;
 }
-
 #link {
   text-align: center;
 }

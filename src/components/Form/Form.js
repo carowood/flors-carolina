@@ -4,6 +4,7 @@ import BtnSend from "../Btn-send/BtnSend";
 import Icon from "../../assets/icons/icon-circle-tick.svg";
 import Modal from "../Modal/Modal";
 import TermsConditions from "../TermsConditions/TermsConditions";
+import TermsConditionsES from "../TermsConditions/TermsConditionsES";
 
 export default class Form extends React.Component {
   state = {
@@ -120,13 +121,16 @@ export default class Form extends React.Component {
   };
 
   render() {
+    let terms =
+      this.props.lang === "en" ? <TermsConditions /> : <TermsConditionsES />;
+
     return (
       <React.Fragment>
         <Modal
           showModal={this.state.showModal}
           hideModal={e => this.setState({ showModal: false })}
         >
-          <TermsConditions />
+          {terms}
         </Modal>
         <div className="form-box-container">
           <div

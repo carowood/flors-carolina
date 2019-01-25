@@ -1,4 +1,5 @@
 import React from "react";
+import Translate from "../../translations/Translate";
 
 export default class Modal extends React.Component {
   render() {
@@ -7,7 +8,7 @@ export default class Modal extends React.Component {
         <button className="modal__closeicon" onClick={this.props.hideModal} />
         <div className="modal__content">{this.props.children}</div>
         <button className="modal__closebutton" onClick={this.props.hideModal}>
-          Close
+          <Translate string={"modal.close"} />
         </button>
       </div>
     );

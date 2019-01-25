@@ -18,7 +18,7 @@ export default class Contact extends React.Component {
         </PageTitle>
         <div className="contact-flex-container">
           <div className="form-container">
-            <Form />
+            <Form lang={this.props.lang} />
           </div>
           <div className="address-map-container">
             <Address />
