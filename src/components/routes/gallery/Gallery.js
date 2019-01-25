@@ -1,6 +1,6 @@
 import React from "react";
 import Translate from "../../../translations/Translate";
-import GalleryGrid from "../../GalleryGrid/GalleryGrid.js";
+import GalleryGrid from "../../GalleryGrid/GalleryGrid";
 import PageTitle from "../../PageTitle/PageTitle";
 
 export default class Gallery extends React.Component {
