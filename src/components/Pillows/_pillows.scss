@@ -24,17 +24,13 @@
       font-family:$font-playfair;
       padding:5px;
       margin:1%;
-      font-size: 4vh;
+      font-size:3vh;
       display: flex;
       justify-content: center;
       letter-spacing:1px;
       text-transform:uppercase;
       text-align: center;
       border-bottom:1px solid $color-main-purple;
-  
-      @media (min-width: $screen-md) {
-  
-      }
     }
 
   }
@@ -56,7 +52,9 @@
         padding:0;
         margin: 6%;
       }
-      
+      @media (min-width: 769px) {
+        font-size: 1.2vw;
+       }
     }
   }
 
@@ -76,7 +74,6 @@
        width: 90%;
        margin-left: 0;
        padding:0;
-     
     }
 
     @media (max-width: $screen-md) {
