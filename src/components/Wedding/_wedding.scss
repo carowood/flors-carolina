@@ -2,19 +2,6 @@
   margin:30px;
   padding:0px;
   
-  &_wrapp{
-/* 
-    @media (min-width: $screen-md) {
-      position: relative;
-      top: -60px;
-      padding-right: 5%;
-    }
-    @media (min-width: 900px) {
-      position: relative;
-      top: -60px;
-    }
- */ 
-  }
   &_title{
    padding:5px;
    font-family:$font-playfair;
@@ -29,16 +16,8 @@
     @media (min-width: 769px) {
       border-bottom:1px solid $color-main-purple;
       width:40%;
+      font-size: 3vh;
     }
-    @media (min-width: $screen-lg) {
-      border-bottom:1px solid $color-main-purple;
-      width:40%;
-
-   }
-    @media (min-width: $screen-xl) {
-      border-bottom:1px solid $color-main-purple;
-      font-size:$font-headline-md;
-   }
   }
 
   &_description{
@@ -48,11 +27,10 @@
     justify-content: center;
     text-align: justify;
     text-justify: inter-word;
-
     @media (min-width: 769px) {
      width:40%;
+     font-size: 1.2vw;
     }
-
   }
 
   &_options{
@@ -63,7 +41,8 @@
     text-justify: inter-word;
     @media (min-width: 769px) {
       width:40%;
-
+      font-size: 1.2vw;
+      margin-bottom:20px;
     }
     ul{
       list-style:none;
@@ -100,25 +79,6 @@
         z-index: 0;
 
      }
-     
-     @media (min-width: $screen-lg) {
-       display:block;
-       width:50%;
-       top: 190px;
-       right: 70px;
-       position: absolute;
-       z-index: 0;
-
-    }
-     @media (min-width: $screen-xl) {
-       display:block;
-       width:50%;
-       top: 190px;
-       right: 70px;
-       position: absolute;
-       z-index: 0;
-
-    }
    }
   }
 
@@ -137,14 +97,7 @@
        z-index: 1;
        border: 5px solid white;
        margin-top:2.5%;
-
      }
-     @media (min-width: $screen-lg) {
-
-    }
-     @media (min-width: $screen-xl) {
-
-    }
    }
   }
 

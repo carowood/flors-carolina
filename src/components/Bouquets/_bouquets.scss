@@ -22,17 +22,13 @@
     font-family:$font-playfair;
     padding:5px;
     margin:1%;
-    font-size: 4vh;
+    font-size: 3vh;
     display: flex;
     justify-content: center;
     letter-spacing:1px;
     text-transform:uppercase;
     text-align: center;
     border-bottom:1px solid $color-main-purple;
-
-    @media (min-width: $screen-md) {
-
-    }
     }
   }
   &_description1{
@@ -44,6 +40,9 @@
       text-align: justify;
       text-justify: inter-word;;
       font-family:$font-futura-book;
+      @media (min-width: 769px) {
+      font-size: 1.2vw;
+       }
     }
   }
 
@@ -67,9 +66,10 @@
       margin-left: 30%;
     }
       
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       text-justify: inter-word;
       margin-left:30%;
+      font-size: 1.2vw;
      }
     }
   }
