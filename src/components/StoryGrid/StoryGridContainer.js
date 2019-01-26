@@ -26,7 +26,7 @@ export default class StoryGridContainer extends React.Component {
           image={Image1}
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
-        >
+        > 
           <Translate string={"ourstory.title2"} />
           <Translate string={"ourstory.bodytext2"} />
         </StoryItem>
