@@ -1,11 +1,11 @@
 import React from "react";
 import Translate from "../../translations/Translate";
 import StoryItem from "./StoryItem";
-import Image1 from "../../assets/images/ourstory2/ourstory-1.png";
-import Image2 from "../../assets/images/ourstory2/ourstory-2.png";
-import Image3 from "../../assets/images/ourstory2/ourstory-3.png";
-import Image4 from "../../assets/images/ourstory2/ourstory-4.png";
-import Image5 from "../../assets/images/ourstory2/ourstory-5.png";
+import Image1 from "../../assets/images/ourstory/ourstory-1.png";
+import Image2 from "../../assets/images/ourstory/ourstory-2.png";
+import Image3 from "../../assets/images/ourstory/ourstory-3.png";
+import Image4 from "../../assets/images/ourstory/ourstory-4.png";
+import Image5 from "../../assets/images/ourstory/ourstory-5.png";
 import Image6 from "../../assets/images/ourstory/ourstory-main.png";
 
 export default class StoryGridContainer extends React.Component {
