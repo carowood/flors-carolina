@@ -38,18 +38,21 @@ export default function Wedding() {
         <ul>
           <li>
             <div className="wedding_image1">
-              <img src={Imageone} alt="Imageone" />
+              <img
+                src={Imageone}
+                alt="Floral floor arrangement for a wedding"
+              />
             </div>
           </li>
           <li>
             <div className="wedding_image2">
-              <img src={Imagetwo} alt="Imagetwo" />
+              <img src={Imagetwo} alt="Boutonnière " />
             </div>
           </li>
 
           <li>
             <div className="wedding_image3">
-              <img src={Imagethree} alt="Imagethree" />
+              <img src={Imagethree} alt="Bridal bouquet" />
             </div>
           </li>
         </ul>
