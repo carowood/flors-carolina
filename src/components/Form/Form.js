@@ -203,6 +203,7 @@ export default class Form extends React.Component {
             </label>
 
             <input
+              id="name"
               onChange={this.handleChange}
               className="form-field"
               name="form_name"
@@ -220,6 +221,7 @@ export default class Form extends React.Component {
               <span className="invalidEmail">{this.state.emailInvalid}</span>
             </label>
             <input
+              id="email"
               onChange={this.handleChange}
               className="form-field"
               name="form_email"
@@ -231,13 +233,14 @@ export default class Form extends React.Component {
               <Translate string={"contact.telephone"} />
             </label>
             <input
+              id="telephone"
               onChange={this.handleChange}
               className="form-field"
               name="form_tel"
               type="text"
               value={this.state.form_tel}
             />
-            <label htmlFor="message">
+            <label htmlFor="message-field">
               <Translate string={"contact.message"} />{" "}
               <span className="required">*</span>
               <span className="requiredMessage">{this.state.msgRequired}</span>
@@ -254,6 +257,7 @@ export default class Form extends React.Component {
             />
             <div className="checkbox-container">
               <input
+                id="checkbox"
                 className="checkbox"
                 onChange={this.handleCheckbox}
                 type="checkbox"
@@ -265,10 +269,12 @@ export default class Form extends React.Component {
                 onClick={e => this.setState({ showModal: true })}
                 className="checkbox-description"
               >
-                <Translate string={"contact.formcheckbox-agree"} />
-                <span className="terms-of-service">
-                  <Translate string={"contact.formcheckbox-termsofservice"} />
-                </span>
+                <label htmlFor="checkbox">
+                  <Translate string={"contact.formcheckbox-agree"} />
+                  <span className="terms-of-service">
+                    <Translate string={"contact.formcheckbox-termsofservice"} />
+                  </span>
+                </label>
               </div>
             </div>
             <div className="button">
