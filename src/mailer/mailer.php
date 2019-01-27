@@ -9,7 +9,7 @@ $data = json_decode($formData, True);
 
 if(is_array($data)) {
 
-	$to = "carowood@gmail.com";
+	$to = "florscarolina@hotmail.com";
     $email =  $data['form_email']; 
     $name = $data['form_name'];
     $tel = $data['form_tel'];
