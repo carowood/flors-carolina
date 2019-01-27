@@ -17,6 +17,10 @@ body.home {
   padding: 0;
 }
 
+img:-moz-loading {
+  visibility: hidden;
+}
+
 @media (max-width: 768px) {
   body {
     border: none;
