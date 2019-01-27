@@ -1,124 +1,120 @@
 .wedding {
-  margin:30px;
-  padding:0px;
-  
-  &_title{
-   padding:5px;
-   font-family:$font-playfair;
-   font-size: 30px;
-   display: flex;
-   justify-content: center;
-   letter-spacing:1px;
-   text-transform:uppercase;
-   text-align: center;
-   border-bottom:1px solid $color-main-purple;
+  margin: 30px;
+  padding: 0px;
+
+  &_title {
+    padding: 5px;
+    font-family: $font-playfair;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid $color-main-purple;
 
     @media (min-width: 769px) {
-      border-bottom:1px solid $color-main-purple;
-      width:40%;
+      border-bottom: 1px solid $color-main-purple;
+      width: 40%;
       font-size: 3vh;
     }
   }
 
-  &_description{
+  &_description {
     margin-top: 10px;
-    font-family:$font-futura-book;
+    font-family: $font-futura-book;
     display: flex;
     justify-content: center;
     text-align: justify;
     text-justify: inter-word;
     @media (min-width: 769px) {
-     width:40%;
-     font-size: 1.2vw;
-    }
-  }
-
-  &_options{
-    font-family:$font-futura-book;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    text-justify: inter-word;
-    @media (min-width: 769px) {
-      width:40%;
+      width: 39%;
       font-size: 1.2vw;
-      margin-bottom:20px;
-    }
-    ul{
-      list-style:none;
-      padding:0px;
     }
   }
 
-  &_grid-mobile ul{
+  &_options {
+    font-family: $font-futura-book;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+    @media (min-width: 769px) {
+      width: 40%;
+      font-size: 1.2vw;
+      margin-bottom: 25px;
+    }
+    ul {
+      list-style: none;
+      padding: 0px;
+    }
+  }
+
+  &_grid-mobile ul {
     padding: 0;
     list-style-type: none;
 
     @media (max-width: $screen-md) {
-      display:flex;
+      display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    li{
-      text-align:center;
+    li {
+      text-align: center;
     }
   }
 
-  &_image1{
-    img{
-     @media (max-width: $screen-md) {
-       display:none;
-     }
-     @media (min-width: 769px) {
-        display:block;
-        width:50%;
+  &_image1 {
+    img {
+      @media (max-width: $screen-md) {
+        display: none;
+      }
+      @media (min-width: 769px) {
+        display: block;
+        width: 50%;
         top: 190px;
         right: 70px;
         position: absolute;
         z-index: 0;
-
-     }
-   }
-  }
-
-  &_image2{
-    img{
-     width: 250px;
-     position:center;
-     @media (min-width: $screen-sm) {
-        width: 350px;
-     }
-     @media (min-width: 769px) {
-       width: 50%;
-       right: 25%;
-       top: -50px;
-       position: relative;
-       z-index: 1;
-       border: 5px solid white;
-       margin-top:2.5%;
-     }
-   }
-  }
-
-  &_image3{
-    img{
-     width: 250px;
-     @media (min-width: $screen-sm) {
-        width: 350px;
-
+      }
     }
-     @media (min-width: 769px) {
-       width: 65%;
-       right: 150px;
-       top: -90px;
-       position: relative;
-       z-index: 1;
-       border: 5px solid white;
-       margin-left:5%;
-     }
-    }
-
   }
 
+  &_image2 {
+    img {
+      width: 250px;
+      position: center;
+      @media (min-width: $screen-sm) {
+        width: 350px;
+      }
+      @media (min-width: 769px) {
+        width: 50%;
+        right: 25%;
+        top: -50px;
+        position: relative;
+        z-index: 1;
+        border: 5px solid white;
+        margin-top: 2.5%;
+      }
+    }
+  }
+
+  &_image3 {
+    img {
+      width: 250px;
+      @media (min-width: $screen-sm) {
+        width: 350px;
+      }
+      @media (min-width: 769px) {
+        width: 65%;
+        right: 150px;
+        top: -90px;
+        position: relative;
+        z-index: 1;
+        border: 5px solid white;
+        margin-left: 5%;
+      }
+    }
+  }
 }
