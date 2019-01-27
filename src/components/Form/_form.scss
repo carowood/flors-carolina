@@ -111,6 +111,9 @@ div.form-box-container {
       color: #5c5cfa;
       font-size: 1em;
     }
+    textarea:invalid {
+      box-shadow: none;
+    }
     #message-field {
       height: auto;
     }
