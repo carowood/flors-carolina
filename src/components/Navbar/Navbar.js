@@ -13,7 +13,7 @@ class navbar extends React.Component {
       <header className={"navbar " + this.props.theme}>
         <nav className="navbar__navigation">
           <div className="navbar__logo">
-            <a href="/Home">
+            <a href="/home">
               <img src={logo} alt="logo" />
             </a>
           </div>
