@@ -7,6 +7,24 @@ export default class HomeMiddle extends React.Component {
     let bodyText = item[3];
     let buttonText = item[4];
 
+    let altTag1 = "";
+    if (this.props.lang === "en") {
+      altTag1 = "Carolina with Sir Alexander Fleming";
+    } else if (this.props.lang === "cat") {
+      altTag1 = "Carolina amb Sir Alexander Fleming";
+    } else {
+      altTag1 = "Carolina con Sir Alexander Fleming";
+    }
+
+    let altTag2 = "";
+    if (this.props.lang === "en") {
+      altTag2 = "Carolina and her sister, today";
+    } else if (this.props.lang === "cat") {
+      altTag2 = "Carolina i la seva germana, avui";
+    } else {
+      altTag2 = "Carolina y su hermana, hoy";
+    }
+
     return (
       <div className="container__middle">
         <div className="container__middle__border">
@@ -16,7 +34,7 @@ export default class HomeMiddle extends React.Component {
           <div className="container__middle__border__img-one">
             <img
               src={this.props.image1}
-              alt=""
+              alt={altTag1}
               className="container__middle__border__imagecontainer__img-one"
             />
           </div>
@@ -24,7 +42,7 @@ export default class HomeMiddle extends React.Component {
           <div className="container__middle__border__img-two">
             <img
               src={this.props.image2}
-              alt=""
+              alt={altTag2}
               className="container__middle__border__imagecontainer__img-two"
             />
           </div>

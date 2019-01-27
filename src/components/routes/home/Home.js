@@ -35,7 +35,11 @@ export default class Home extends React.Component {
     return (
       <div className="home-container">
         <HomeTop />
-        <HomeMiddle image1={MidsectionImage1} image2={MidsectionImage2}>
+        <HomeMiddle
+          image1={MidsectionImage1}
+          image2={MidsectionImage2}
+          lang={this.props.lang}
+        >
           <Translate string={"home-mid-section.title"} />
           <Translate string={"home-mid-section.alt-tag1"} />
           <Translate string={"home-mid-section.alt-tag2"} />
@@ -44,7 +48,11 @@ export default class Home extends React.Component {
             <Translate string={"home-mid-section.buttontext"} />
           </Link>
         </HomeMiddle>
-        <HomeBottom image1={BottomsectionImage1} image2={BottomsectionImage2}>
+        <HomeBottom
+          image1={BottomsectionImage1}
+          image2={BottomsectionImage2}
+          lang={this.props.lang}
+        >
           <Translate string={"home-last-section.title"} />
           <Translate string={"home-last-section.alt-tag1"} />
           <Translate string={"home-last-section.alt-tag2"} />

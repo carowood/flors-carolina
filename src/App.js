@@ -101,7 +101,11 @@ class App extends Component {
               exact
               path="/home"
               render={routeProps => (
-                <Home {...routeProps} changeTheme={this.changeTheme} />
+                <Home
+                  {...routeProps}
+                  changeTheme={this.changeTheme}
+                  lang={this.state.preferredLocale}
+                />
               )}
             />
             <Route exact path="/" render={() => <Redirect to="/home" />} />
