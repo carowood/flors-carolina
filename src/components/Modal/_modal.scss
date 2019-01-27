@@ -1,4 +1,5 @@
 .modal {
+  -moz-appearance: none;
   width: 50%;
   max-width: 100%;
   margin: 0 auto;
@@ -27,7 +28,7 @@
     border: none;
     position: fixed;
     align-self: flex-end;
-    margin: 10px 0 0 -10px;
+    margin: 10px 10px 0 -10px;
     background-color: transparent;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -35,26 +36,43 @@
   &__closeicon:hover {
     transform: scale(1.1);
   }
+
   &__closebutton {
-    padding: 14px 20px 25px 20px;
-    background: #717171;
-    color: #ffffff;
+    align-items: center;
+    font-size: 0.7em;
+    padding: 14px 20px 14px 20px;
+    background-color: rgba(113, 113, 113, 1);
+    color: $color-white;
     text-transform: uppercase;
     font-family: "Futura-Book-Regular", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     border-radius: 4px;
     letter-spacing: 2px;
     margin: 15px auto 40px auto;
+    border: 1px solid transparent;
     cursor: pointer;
+
     @media (max-width: $screen-md) {
       text-align: center;
-      padding: 14px 20px 25px 14px;
     }
   }
+  &__closebutton:hover {
+    background: rgba(113, 113, 113, 0.7);
+    border: 1px solid transparent;
+  }
+
+  &__closebutton:active {
+    border: 1px solid rgba(113, 113, 113, 1);
+    background: rgba(113, 113, 113, 0.7);
+  }
+
   &__content {
     margin: 50px 50px 0 50px;
     @media (max-width: $screen-md) {
       margin: 50px 20px 0 20px;
     }
+  }
+  &__spacer {
+    border: 1px solid transparent;
   }
 }
