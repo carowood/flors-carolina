@@ -1,11 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, lazy, Suspense } from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
 import Home from "./components/routes/home/Home";
-import OurStory from "./components/routes/ourstory/OurStory";
-import Contact from "./components/routes/contact/Contact";
-import Gallery from "./components/routes/gallery/Gallery";
-import Services from "./components/routes/services/Services";
-import Press from "./components/routes/press/Press";
 import { LocaleContext } from "./translations/LocaleContext";
 import Navbar from "./components/Navbar/Navbar";
 import SideBar from "./components/SideBar/Sidebar";
@@ -13,6 +8,12 @@ import Backdrop from "./components/Backdrop/Backdrop";
 import Footer from "./components/Footer/Footer";
 import "./scss/App.scss";
 import ReactGA from "react-ga";
+
+const OurStory = lazy(() => import("./components/routes/ourstory/OurStory"));
+const Contact = lazy(() => import("./components/routes/contact/Contact"));
+const Gallery = lazy(() => import("./components/routes/gallery/Gallery"));
+const Services = lazy(() => import("./components/routes/services/Services"));
+const Press = lazy(() => import("./components/routes/press/Press"));
 
 class App extends Component {
   // Using state to control the display of navBar theme, sidebar menu and langauge.
@@ -83,71 +84,73 @@ class App extends Component {
             translations will correspond to the language value of the prop.
         */}
         <LocaleContext.Provider value={this.state.preferredLocale}>
-          <Navbar
-            theme={this.state.navTheme}
-            path={this.props}
-            changeLanguage={this.changeLanguage}
-            menuSidebarClickHandler={this.menuSidebarToggleClickHandler}
-          />
-          <SideBar
-            theme={this.state.navTheme}
-            changeLanguage={this.changeLanguage}
-            show={this.state.menuSideBarOpen}
-            close={this.menuBackdropClickHandler}
-          />
-          {menuBackdrop}
-          <Switch>
-            <Route
-              exact
-              path="/home"
-              render={routeProps => (
-                <Home
-                  {...routeProps}
-                  changeTheme={this.changeTheme}
-                  lang={this.state.preferredLocale}
-                />
-              )}
+          <Suspense fallback={"Loading..."}>
+            <Navbar
+              theme={this.state.navTheme}
+              path={this.props}
+              changeLanguage={this.changeLanguage}
+              menuSidebarClickHandler={this.menuSidebarToggleClickHandler}
             />
-            <Route exact path="/" render={() => <Redirect to="/home" />} />
-            <Route
-              path="/ourstory"
-              render={routeProps => (
-                <OurStory {...routeProps} changeTheme={this.changeTheme} />
-              )}
+            <SideBar
+              theme={this.state.navTheme}
+              changeLanguage={this.changeLanguage}
+              show={this.state.menuSideBarOpen}
+              close={this.menuBackdropClickHandler}
             />
-            <Route
-              path="/services"
-              render={routeProps => (
-                <Services {...routeProps} changeTheme={this.changeTheme} />
-              )}
-            />
-            <Route
-              path="/gallery"
-              render={routeProps => (
-                <Gallery {...routeProps} changeTheme={this.changeTheme} />
-              )}
-            />
-            <Route
-              path="/contact"
-              render={routeProps => (
-                <Contact
-                  {...routeProps}
-                  changeTheme={this.changeTheme}
-                  lang={this.state.preferredLocale}
-                />
-              )}
-            />
-            <Route
-              path="/press"
-              render={routeProps => (
-                <Press {...routeProps} changeTheme={this.changeTheme} />
-              )}
-            />
-            {/* If the route page of the url is typed incorrectly, 
+            {menuBackdrop}
+            <Switch>
+              <Route
+                exact
+                path="/home"
+                render={routeProps => (
+                  <Home
+                    {...routeProps}
+                    changeTheme={this.changeTheme}
+                    lang={this.state.preferredLocale}
+                  />
+                )}
+              />
+              <Route exact path="/" render={() => <Redirect to="/home" />} />
+              <Route
+                path="/ourstory"
+                render={routeProps => (
+                  <OurStory {...routeProps} changeTheme={this.changeTheme} />
+                )}
+              />
+              <Route
+                path="/services"
+                render={routeProps => (
+                  <Services {...routeProps} changeTheme={this.changeTheme} />
+                )}
+              />
+              <Route
+                path="/gallery"
+                render={routeProps => (
+                  <Gallery {...routeProps} changeTheme={this.changeTheme} />
+                )}
+              />
+              <Route
+                path="/contact"
+                render={routeProps => (
+                  <Contact
+                    {...routeProps}
+                    changeTheme={this.changeTheme}
+                    lang={this.state.preferredLocale}
+                  />
+                )}
+              />
+              <Route
+                path="/press"
+                render={routeProps => (
+                  <Press {...routeProps} changeTheme={this.changeTheme} />
+                )}
+              />
+              {/* If the route page of the url is typed incorrectly, 
               we redirect to the homepage */}
-            <Route path="*" render={() => <Redirect to="/home" />} />
-          </Switch>
-          <Footer />
+              <Route path="*" render={() => <Redirect to="/home" />} />
+            </Switch>
+            <Footer />
+          </Suspense>
         </LocaleContext.Provider>
       </div>
     );
