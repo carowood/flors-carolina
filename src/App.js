@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import SideBar from "./components/SideBar/Sidebar";
 import Backdrop from "./components/Backdrop/Backdrop";
 import Footer from "./components/Footer/Footer";
+import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 import "./scss/App.scss";
 import ReactGA from "react-ga";
 
@@ -84,7 +85,7 @@ class App extends Component {
             translations will correspond to the language value of the prop.
         */}
         <LocaleContext.Provider value={this.state.preferredLocale}>
-          <Suspense fallback={"Loading..."}>
+          <Suspense fallback={<LoadingSpinner />}>
             <Navbar
               theme={this.state.navTheme}
               path={this.props}
