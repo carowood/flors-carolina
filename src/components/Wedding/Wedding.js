@@ -1,8 +1,8 @@
 import React from "react";
 import Translate from "../../translations/Translate";
-import Imageone from "../../assets/images/services/Wone.png";
-import Imagethree from "../../assets/images/services/Wthree.png";
-import Imagetwo from "../../assets/images/services/Wtwo.png";
+import Imageone from "../../assets/images/services/Wone.jpg";
+import Imagethree from "../../assets/images/services/Wthree.jpg";
+import Imagetwo from "../../assets/images/services/Wtwo.jpg";
 
 export default function Wedding() {
   return (

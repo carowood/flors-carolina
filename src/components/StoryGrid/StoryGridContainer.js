@@ -1,12 +1,12 @@
 import React from "react";
 import Translate from "../../translations/Translate";
 import StoryItem from "./StoryItem";
-import Image1 from "../../assets/images/ourstory/ourstory-1.png";
-import Image2 from "../../assets/images/ourstory/ourstory-2.png";
-import Image3 from "../../assets/images/ourstory/ourstory-3.png";
-import Image4 from "../../assets/images/ourstory/ourstory-4.png";
-import Image5 from "../../assets/images/ourstory/ourstory-5.png";
-import Image6 from "../../assets/images/ourstory/ourstory-main.png";
+import Image1 from "../../assets/images/ourstory/ourstory-1.jpg";
+import Image2 from "../../assets/images/ourstory/ourstory-2.jpg";
+import Image3 from "../../assets/images/ourstory/ourstory-3.jpg";
+import Image4 from "../../assets/images/ourstory/ourstory-4.jpg";
+import Image5 from "../../assets/images/ourstory/ourstory-5.jpg";
+import Image6 from "../../assets/images/ourstory/ourstory-main.jpg";
 
 export default class StoryGridContainer extends React.Component {
   state = {
@@ -26,7 +26,7 @@ export default class StoryGridContainer extends React.Component {
           image={Image1}
           selected={this.state.selected}
           onClick={this.storyItemClickHandler}
-        > 
+        >
           <Translate string={"ourstory.title2"} />
           <Translate string={"ourstory.bodytext2"} />
         </StoryItem>
