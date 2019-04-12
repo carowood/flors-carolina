@@ -1,6 +1,6 @@
 import React from "react";
-import BorderLeft from "../../assets/border/image-corner-left.svg";
-import BorderRight from "../../assets/border/image-corner-right.svg";
+import BorderLeft from "../../assets/border/image-corner-left.png";
+import BorderRight from "../../assets/border/image-corner-right.png";
 import ScrollButton from "../ScrollButton/ScrollButton";
 
 export default class TextBox extends React.Component {
