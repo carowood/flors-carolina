@@ -1,8 +1,8 @@
 import React from "react";
 import Translate from "../../translations/Translate";
-import Imagesfour from "../../assets/images/services/Wfour.png";
-import Imagesfive from "../../assets/images/services/Wfive.png";
-import Imageseight from "../../assets/images/services/Weight.png";
+import Imagesfour from "../../assets/images/services/Wfour.jpg";
+import Imagesfive from "../../assets/images/services/Wfive.jpg";
+import Imageseight from "../../assets/images/services/Weight.jpg";
 
 export default function Bouquets() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Translate from "../../translations/Translate";
-import Imagesix from "../../assets/images/services/Wsix.png";
-import Imageseven from "../../assets/images/services/Wseven.png";
+import Imagesix from "../../assets/images/services/Wsix.jpg";
+import Imageseven from "../../assets/images/services/Wseven.jpg";
 
 export default function Pillows() {
   return (

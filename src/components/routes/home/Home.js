@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import HomeTop from "../../HomeTop/HomeTop";
 import HomeMiddle from "../../HomeMiddle/HomeMiddle";
 import HomeBottom from "../../HomeBottom/HomeBottom";
-import MidsectionImage1 from "../../../assets/images/home/mid-section/home-mid-section-3.png";
-import MidsectionImage2 from "../../../assets/images/home/mid-section/home-mid-section-1.png";
-import BottomsectionImage1 from "../../../assets/images/services/Wthree.png";
-import BottomsectionImage2 from "../../../assets/images/services/Weight.png";
+import MidsectionImage1 from "../../../assets/images/home/mid-section/home-mid-section-3.jpg";
+import MidsectionImage2 from "../../../assets/images/home/mid-section/home-mid-section-1.jpg";
+import BottomsectionImage1 from "../../../assets/images/services/Wthree.jpg";
+import BottomsectionImage2 from "../../../assets/images/services/Weight.jpg";
 
 export default class Home extends React.Component {
   componentDidMount() {
